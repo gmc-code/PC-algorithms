@@ -58,15 +58,15 @@ Python code
 | The `size` parameter specifies the number of random numbers to generate from the gamma distribution.
 
 | The `np.random.normal` function generates random numbers from a normal distribution. The mean and standard deviation of the normal distribution are specified using the `loc` and `scale` arguments, respectively. 
-| The `loc` paarmeter specifies the mean of the normal distribution.
-| The `scale` paarmeter specifies the standard deviation of the normal distribution.
+| The `loc` parameter specifies the mean of the normal distribution.
+| The `scale` parameter specifies the standard deviation of the normal distribution.
 | The `size` argument specifies the number of random numbers to generate from the normal distribution. 
 
 
 Version 1 of code
 ------------------
 
-| This version is simple to read, but can be simplifed to reduce repetitive code.
+| This version is simple to read, but can be simplified to reduce repetitive code.
 
 .. literalinclude:: files/box_plots_compared.py
     :linenos:

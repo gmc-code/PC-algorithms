@@ -76,12 +76,12 @@ Hexagon patterns
 |  
 |  Python code:
 
-.. literalinclude:: files/hexagon_tessalation.py
+.. literalinclude:: files/hexagon_tesselation.py
     :linenos:
 
 ----
-
-| Overlapping hexagons. The overlap_factor can be varied from 0.5 for tiangles to 1.0 for hexagons with triangular gaps.
+s
+| Overlapping hexagons. The overlap_factor can be varied from 0.5 for triangles to 1.0 for hexagons with triangular gaps.
 
 .. grid:: 2
     :gutter: 0

@@ -14,7 +14,7 @@ Random walks
 
 | Simulate walking the plank on a pirate ship.
 | Have 9 positions on the plank, from 1 to 9, with position 1 at the start of the plank and 9 at the end.
-| Start at posiiton 3.
+| Start at position 3.
 
 ------------------------
 
@@ -89,7 +89,7 @@ Walking the plank analysis
 
 ----
 
-| The code below simulates a mulitple 2D random walks suitable for 2 to 6 walks. 
+| The code below simulates a multiple 2D random walks suitable for 2 to 6 walks. 
 
 .. literalinclude:: files/random_walk_2D_multiplot.py
     :linenos:

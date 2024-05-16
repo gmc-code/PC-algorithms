@@ -57,8 +57,8 @@ Hexagon construction
 - Step 1: Draw a circle with given radius.
 - Step 2: From the left side of the circle draw another circle.
 - Step 3: Form where these 2 circles intersect, draw another circle.
-- Step 4: Repeat in an anitclockwise direction until 6 circles have been drawn over the original circle.
-- Step 5: Mark teh intersection points and connect them.
+- Step 4: Repeat in an anticlockwise direction until 6 circles have been drawn over the original circle.
+- Step 5: Mark the intersection points and connect them.
 
 
 | Here is a diagram which illustrates the hexagon construction.

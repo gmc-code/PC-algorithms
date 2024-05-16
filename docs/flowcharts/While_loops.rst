@@ -103,7 +103,7 @@ Step size
 
     #. Write a while loop that counts up from 1 to 5, printing the numbers 1, 2, 3, 4, 5.
     #. Write a while loop that counts up from 3 to 12 in steps of 3, printing the numbers 3, 6, 9, 12.
-    #. Write a while loop that counts down from 9 to 1, showprintinging the numbers 9, 8, 7, 6, 5, 4, 3, 2, 1.
+    #. Write a while loop that counts down from 9 to 1, printing the numbers 9, 8, 7, 6, 5, 4, 3, 2, 1.
     #. Write a while loop that counts down from 24 to 18 in steps of 2, printing the numbers 24, 22, 20, 18.
     #. Write 2 while loops to print 0 to 8 going up in 2s then 9 down to 1 going down in 2s.
  

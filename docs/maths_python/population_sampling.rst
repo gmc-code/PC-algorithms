@@ -86,7 +86,7 @@ Population Proportion
 
 | Population proportion :math:`p` = :math:`\displaystyle \frac{\text{number of objects with trait in population}}{\text{population size}}`
 | The population proportion is found by collecting categorical data about every object in a population and calculating the proportion with a trait. 
-| However, it isusually impractical or costly to be able to determine the population proportion exactly.
+| However, it is usually impractical or costly to be able to determine the population proportion exactly.
 
 ----
 
@@ -117,7 +117,7 @@ Sample Proportion: Increasing samples
     :linenos:
 
 
-| The code line ``population = ['blue'] * 100 + ['red'] * 400`` creats a population list that contains 500 elements: 100 'blue' strings followed by 400 'red' strings. This represents a population of 500 balls, where 100 are blue and 400 are red.
+| The code line ``population = ['blue'] * 100 + ['red'] * 400`` creates a population list that contains 500 elements: 100 'blue' strings followed by 400 'red' strings. This represents a population of 500 balls, where 100 are blue and 400 are red.
 
 | The code line ``samples = [np.random.choice(population, size=sample_size, replace=False) for _ in range(number_of_samples_list[i])]`` generates a list of random samples from the `population` list. Each sample has a size of `sample_size` and is drawn without replacement.
 

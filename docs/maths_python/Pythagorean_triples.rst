@@ -31,7 +31,7 @@ Pythagorean triples up to a given integer
 | [13, 84, 85], [77, 36, 85], [39, 80, 89], [65, 72, 97]]
 
 
-| A second verion is below that uses list comprehension with conditionals:
+| A second version is below that uses list comprehension with conditionals:
 | The `:=` operator is called the walrus operator or the assignment expression. It allows you to assign a value to a variable and use it in the same expression.
 | In `and (c := math.pow(m, 2) + math.pow(n, 2)) < num `, 
 | the value of `math.pow(m, 2) + math.pow(n, 2)` 

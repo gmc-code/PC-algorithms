@@ -156,7 +156,7 @@ Matching tuples for coordinates
 Pseudocode alternatives
 --------------------------
 
-| In pseudocde, the code for each case can be on the same line as the case value.
+| In pseudocode, the code for each case can be on the same line as the case value.
 | The keywords: OF, OTHERS, can be used.
 | The OTHERS clause with its default sequence is optional.
 | The general pattern may be:

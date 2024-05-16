@@ -15,9 +15,9 @@ Mean
 
 .. code-block:: python
 
-    mylist = [17, 13, 14, 16, 12, 12]
-    mymean = sum(mylist)/len(mylist)
-    print("Mean:", mymean)
+    my_list = [17, 13, 14, 16, 12, 12]
+    my_mean = sum(my_list)/len(my_list)
+    print("Mean:", my_mean)
     # 14.0
 
 | Alternatively, the mean of a list can be found using **statistics.mean(list)**.
@@ -26,9 +26,9 @@ Mean
 
     from statistics import mean
 
-    mylist = [17, 13, 14, 16, 12, 12]
-    mymean = mean(mylist)
-    print("Mean usings statistics module:", mymean)
+    my_list = [17, 13, 14, 16, 12, 12]
+    my_mean = mean(my_list)
+    print("Mean usings statistics module:", my_mean)
     # 14
 
 | The mean above is 14.
@@ -38,14 +38,14 @@ Mean
 Sort list
 ---------------------------------
 
-| The list of numbers can be sorted in ascending order using **mylist.sort()**.
+| The list of numbers can be sorted in ascending order using **my_list.sort()**.
 | This is useful for manually checking for the median and mode.
 
 .. code-block:: python
 
-    mylist = [17, 13, 14, 16, 12, 12]
-    mylist.sort()
-    print("Sorted list:", mylist)
+    my_list = [17, 13, 14, 16, 12, 12]
+    my_list.sort()
+    print("Sorted list:", my_list)
     # [12, 12, 13, 14, 16, 17]
 
 | The sorted list is: [12, 12, 13, 14, 16, 17]
@@ -60,25 +60,25 @@ Median
 
 .. code-block:: python
 
-    mylist = [17, 13, 14, 16, 12, 12]
-    mylist.sort()
-    n = len(mylist)
+    my_list = [17, 13, 14, 16, 12, 12]
+    my_list.sort()
+    n = len(my_list)
     if n % 2 == 0:
         # average of middle 2 for even number of numbers
-        mymedian = (mylist[n//2 - 1] + mylist[n//2]) / 2
+        my_median = (my_list[n//2 - 1] + my_list[n//2]) / 2
     else:
         # middle number of odd number of numbers
-        mymedian = mylist[n//2]
+        my_median = my_list[n//2]
 
-    print("Median:", mymedian)
+    print("Median:", my_median)
     # 13.5
 
-| **mylist.sort()** sorts the list in ascending order.
-| **n = len(mylist)** calculates the length of the list **mylist** using the **len** function and stores the result in a variable **n**.
+| **my_list.sort()** sorts the list in ascending order.
+| **n = len(my_list)** calculates the length of the list **my_list** using the **len** function and stores the result in a variable **n**.
 | **if n % 2 == 0:** checks if **n** is even by calculating the remainder of **n** divided by **2** using the modulo operator **%**. If the remainder is **0**, this means that **n** is even.
-| **mymedian = (mylist[n//2 - 1] + mylist[n//2]) / 2** calculate the median of the list **mylist** as the average of the two middle elements, if **n** is even. The two middle elements are accessed using indexing with the expression **n//2 - 1** and **n//2**. **n//2** performs integer division (also known as floor division). The result of the division is rounded down to the nearest integer. The average is calculated by adding these two elements and dividing by **2**. The result is stored in a variable **mymedian**.
-| **mymedian = mylist[n//2]** calculate the median of the list **mylist** as the middle element if n is odd. The middle element is accessed using indexing with the expression **n//2**. The result is stored in a variable **mymedian**.
-| It's important to note that this code assumes that the list **mylist** is already sorted in ascending order.
+| **my_median = (my_list[n//2 - 1] + my_list[n//2]) / 2** calculate the median of the list **my_list** as the average of the two middle elements, if **n** is even. The two middle elements are accessed using indexing with the expression **n//2 - 1** and **n//2**. **n//2** performs integer division (also known as floor division). The result of the division is rounded down to the nearest integer. The average is calculated by adding these two elements and dividing by **2**. The result is stored in a variable **my_median**.
+| **my_median = my_list[n//2]** calculate the median of the list **my_list** as the middle element if n is odd. The middle element is accessed using indexing with the expression **n//2**. The result is stored in a variable **my_median**.
+| It's important to note that this code assumes that the list **my_list** is already sorted in ascending order.
 
 ----
 
@@ -88,9 +88,9 @@ Median
 
     from statistics import median
 
-    mylist = [17, 13, 14, 16, 12, 12]
-    mymedian = median(mylist)
-    print("Median usings statistics module:", mymedian)
+    my_list = [17, 13, 14, 16, 12, 12]
+    my_median = median(my_list)
+    print("Median usings statistics module:", my_median)
     # 13.5
 
 | The mean above is 13.5.
@@ -100,15 +100,15 @@ Median
 Mode
 ---------------------------------
 
-| The mode can be found by first creating a dictionary that counts the number of occurances of each number.
+| The mode can be found by first creating a dictionary that counts the number of occurrences of each number.
 
 .. code-block:: python
 
-    mylist = [17, 13, 14, 16, 12, 12]
+    my_list = [17, 13, 14, 16, 12, 12]
 
     # Count the occurrences of each number
     num_counts = {}
-    for num in mylist:
+    for num in my_list:
         if num in num_counts:
             num_counts[num] += 1
         else:
@@ -136,9 +136,9 @@ Mode
 
 | Here's an explanation of how each line in the given Python code works:
 
-| **mylist = [17, 13, 14, 16, 12, 12]** defines a list **mylist** with the given elements.
-| **num_counts = {}** defines an empty dictionary **num_counts** that will be used to store the number of occurrences of each number in the list **mylist**.
-| **for num in mylist:** starts a **for** loop that iterates over each element **num** in the list **mylist**.
+| **my_list = [17, 13, 14, 16, 12, 12]** defines a list **my_list** with the given elements.
+| **num_counts = {}** defines an empty dictionary **num_counts** that will be used to store the number of occurrences of each number in the list **my_list**.
+| **for num in my_list:** starts a **for** loop that iterates over each element **num** in the list **my_list**.
 | **if num in num_counts:** checks if **num** is already a key in the dictionary **num_counts**.
 | **num_counts[num] += 1** increments the value associated with this key by **1** if **num** is already a key in the dictionary.
 | **num_counts[num] = 1** adds a new key-value pair to the dictionary with key **num** and value **1** if **num** is not already a key in the dictionary.
@@ -156,11 +156,11 @@ Mode
 
 .. code-block:: python
 
-    from statistics import multimode
+    from statistics import multitude
 
-    mylist = [17, 13, 14, 16, 12, 12]
-    mymode = multimode(mylist)
-    print("Mode:", mymode)
+    my_list = [17, 13, 14, 16, 12, 12]
+    my_mode = multimode(my_list)
+    print("Mode:", my_mode)
     # [12]
 
 ----
@@ -172,7 +172,7 @@ Range
 
 .. code-block:: python
 
-    mylist = [17, 13, 14, 16, 12, 12]
-    myrange = max(mylist) - min(mylist)
-    print(myrange)
+    my_list = [17, 13, 14, 16, 12, 12]
+    my_range = max(my_list) - min(my_list)
+    print(my_range)
     # 5

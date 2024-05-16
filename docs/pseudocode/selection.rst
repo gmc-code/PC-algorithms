@@ -510,7 +510,7 @@ Nested if
 
 .. admonition:: Tasks
 
-   #. Using python code, add the variables ``teamA`` and ``teamB`` and make up team names for them. Modify the code to print the team name instead of 'A' or 'B'. Hint: To join text use a plus symbol. e.g (myteam + " my text")
+   #. Using python code, add the variables ``teamA`` and ``teamB`` and make up team names for them. Modify the code to print the team name instead of 'A' or 'B'. Hint: To join text use a plus symbol. e.g (my_team + " my text")
    #. Using pseudocode, modify the code to include the changes in Q1, and to print the winning margins. Use ``str(number)`` to convert numbers to text for joining with other text. e.g "The Chiefs won by 3."
 
    .. dropdown::
