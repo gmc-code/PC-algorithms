@@ -9,9 +9,9 @@ Input and Output
    * - Python
      - Pseudocode
    * - print
-     - OUTPUT or PRINT or DISPLAY
-   * - input 
-     - INPUT or GET  
+     - OUTPUT or Print or DISPLAY
+   * - input
+     - Input or GET
 
 ----
 
@@ -28,7 +28,7 @@ Input
 
 .. code-block::
 
-    INPUT "Enter your name:"
+    Input "Enter your name:"
 
 
 ----
@@ -67,9 +67,9 @@ Output
 
                 Write pseudocode for the python statement: ``input("Enter your age in years:")``.
 
-                .. code-block:: 
+                .. code-block::
 
-                    INPUT "Enter your age in years:"
+                    Input "Enter your age in years:"
 
 
             .. tab-item:: Q2
@@ -84,7 +84,7 @@ Output
 
 .. admonition:: Tasks
 
-    #. Write python for this pseudocode: ``INPUT "Enter your first name:"``.
+    #. Write python for this pseudocode: ``Input "Enter your first name:"``.
     #. Write python for this pseudocode: ``OUTPUT "Top score"``.
 
     .. dropdown::
@@ -96,9 +96,9 @@ Output
 
             .. tab-item:: Q1
 
-                Write python for this pseudocode: ``INPUT "Enter your first name:"``.
+                Write python for this pseudocode: ``Input "Enter your first name:"``.
 
-                .. code-block:: 
+                .. code-block::
 
                     input("Enter your first name:")
 
@@ -112,8 +112,8 @@ Output
                     print("Top score")
 
 
-                         
 
 
-                         
+
+
 

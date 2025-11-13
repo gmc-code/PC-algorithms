@@ -3,60 +3,60 @@
 # Email: manassharma07@live.com
 # License: MIT
 # Bisection Method animation using Matplotlib
- 
+
 import numpy as np
 import matplotlib.pyplot as plt
 # from matplotlib.pyplot import figure
 from matplotlib.pyplot import *
- 
+
 fig = figure(figsize=(8, 8), dpi=120)
- 
- 
+
+
 # Define the function whose roots are required
 def f(x):
     return x**3 - 6.5*x**2 + 10*x - 1.5
     #return x*np.exp(x)-np.sin(8*x)-1
- 
-# INPUT PARAMETERS------------------------
+
+# Input PARAMETERS------------------------
 maxiter = 50 # Max. number of iterations
 eps = 1E-4  # Acceptable Error (termination criteria)
 a = -0.5        # Guess Value for the lower bound on the root
 b = 10        # Guess Value for the upper bound on the root
- 
+
 # Plot the given function
 x = np.arange(a-0.5,b+0.5,0.00001)
 y = f(x)
 plt.plot(x,y, linewidth=3)
 plt.axhline(y=0, c='black',linewidth=1)
- 
- 
- 
- 
- 
+
+
+
+
+
 # Check if these values bracket the root or not?
 if f(a)*f(b)>0:
     print('The given guesses do not bracket the root.')
     exit()
- 
+
 # Print the table header
 print('--------------------------------------------------------------------------')
 print('iter \t a \t\t b \t\t c \t\t f(c)        ')
 print('--------------------------------------------------------------------------')
- 
+
 # Begin iterations for bisection method
 for i in range(maxiter):
     # Calculate the value of the root at the ith step
     c = (a+b)/2
- 
+
     # Plot the important points and annotate them on the graph
     # Title
     plt.title(r"$\bf{ITERATION} $ #"+str(i+1)+'\n\na = % 10.8f;       b = % 10.8f;      c = ?;       f(c) = ?'%(a, b))
     plt.xlabel('x')
     plt.ylabel('y')
     plt.rcParams.update({'font.size': 16})
-     
+
     ax = plt.gca() # grab the current axis
-     
+
     # Create a secondary axis for marking the a,b and c points
     secax = ax.secondary_xaxis('top')
     labels2 = [item.get_text() for item in secax.get_xticklabels()]
@@ -73,8 +73,8 @@ for i in range(maxiter):
     # plt.annotate('c=(a+b)/2',[c,0])
     plt.axvline(x=a, c='blue',linewidth=2,alpha=0.5)
     plt.axvline(x=b, c='blue',linewidth=2,alpha=0.5)
- 
- 
+
+
     plt.pause(1.0)
     plt.rcParams.update({'font.size': 10})
     plt.title(r"$\bf{ITERATION} $ #"+str(i+1)+'\n\na = % 10.8f;       b = % 10.8f;      c = % 10.8f;       f(c) = % 10.8f'%(a, b, c, f(c)))
@@ -90,7 +90,7 @@ for i in range(maxiter):
     # ax = plt.gca() # grab the current axis
     # Get axis labels
     #labels = [item.get_text() for item in ax.get_xticklabels()]
-    #Debug 
+    #Debug
     # print(labels)
     # Get x axis ticks
     #ticks = plt.xticks()[0]
@@ -103,17 +103,17 @@ for i in range(maxiter):
     #labels.append('c')
     #ax.set_xticklabels(labels)
     #-----------------------------------------------------
-     
- 
-     
+
+
+
     plt.scatter(c,f(c),c='red',s=250,alpha=0.5)
-     
+
     plt.axvline(x=c, c='red',linewidth=2,alpha=0.5)
     plt.autoscale()
-  
+
     # Print some values for the table
     print(str(i+1)+'\t% 10.8f\t% 10.8f\t% 10.8f\t% 10.8f\t' %(a, b, c, f(c)))
- 
+
     plt.pause(1.0)
     # Check whether the root lies between a and c
     if f(a)*f(c)<0:
@@ -134,7 +134,7 @@ for i in range(maxiter):
         plt.scatter(b,f(b),c='yellow',s=175,alpha=1.0)
         plt.scatter(c,f(c),c='yellow',s=175,alpha=1)
         plt.pause(1)
- 
+
     plt.pause(2.0)
     # Check if the root has been found with acceptable error or not?
     if np.abs(f(c))<eps:
@@ -152,12 +152,11 @@ for i in range(maxiter):
     plt.plot(x,y, linewidth=3)
     plt.axhline(y=0, c='black',linewidth=1)
     # plt.xlim(a-(b-a),b+(b-a))
-     
- 
+
+
 plt.show()
 print('--------------------------------------------------------------------------')
 if i==maxiter-1:
     print('\n\nMax iterations reached!')
     print('Approximaiton to the Root after max iterations is : '+str(c))
- 
-     
+

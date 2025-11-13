@@ -16,9 +16,9 @@ Sequence
    * - =
      - <-
    * - print
-     - OUTPUT or PRINT or DISPLAY
-   * - input 
-     - INPUT or GET  
+     - OUTPUT or Print or DISPLAY
+   * - input
+     - Input or GET
 
 ----
 
@@ -37,8 +37,8 @@ Input and output
 .. code-block::
 
    BEGIN
-      name <- INPUT ("Enter your name?")
-      PRINT "Hello, " + name + ". Nice to meet you."
+      name <- Input ("Enter your name?")
+      Print "Hello, " + name + ". Nice to meet you."
    END
 
 ----
@@ -77,11 +77,11 @@ Input and output
    #. Write python for the pseudocode sequence below.
       Hint: random.sample(string, k) returns a random list of k characters from the string without replacement.
 
-      .. code-block:: 
+      .. code-block::
 
          BEGIN
-            INPUT a number between 1 and 10
-            Multiply by 3 
+            Input a number between 1 and 10
+            Multiply by 3
             Add 18
             Multiply by 3
             OUTPUT all the digits but 1

@@ -10,7 +10,9 @@ Pseudocode for maths
 | See: https://www.vcaa.vic.edu.au/curriculum/vce-curriculum/vce-study-designs/pseudocode
 
 
-| Some groups prefer UPPERCASE; for some the convention is to use the keywords in **bold** lowercase.
+| Most groups prefer UPPERCASE;
+
+| For python users, the convention is to use the keywords in **bold** lowercase.
 
 ----
 
@@ -107,9 +109,9 @@ Python to Pseudocode Summary
 	* - =
 	  - <-
 	* - print
-	  - OUTPUT or PRINT or DISPLAY
+	  - OUTPUT or Print or DISPLAY
 	* - input
-	  - INPUT or GET
+	  - Input or GET
 	* - if
 	  - IF ....THEN
 	* - elif

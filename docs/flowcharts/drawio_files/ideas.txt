@@ -1,0 +1,10 @@
+Identify the Type of Angles (Acute, Obtuse, Right, Straight, Reflex, Revolution)
+Identify the Type of Triangle by its Angles (Acute, Obtuse, Right)
+Identify the Type of Triangle by its Sides (Equilateral, Isosceles, Scalene)
+Identify the Type of Fraction (Proper, Improper, Mixed Number)
+Identify the Number (Fraction, Decimal, or Percentage)
+Identify the 3D Shape (Prism, Cone, Pyramid)
+Identify the 3D Shape (Cube, Triangular Prism, Rectangular Prism)
+Calculate the Perimeter of a Triangle, Square, Parallelogram, or Circle
+Calculate the Area of a Triangle, Square, or Parallelogram
+

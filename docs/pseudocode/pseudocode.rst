@@ -29,9 +29,9 @@ Python to Pseudocode Summary
 	* - =
 	  - <-
 	* - print
-	  - OUTPUT or PRINT or DISPLAY
+	  - OUTPUT or Print or DISPLAY
 	* - input
-	  - INPUT or GET
+	  - Input or GET
 	* - if
 	  - IF ....THEN
 	* - elif

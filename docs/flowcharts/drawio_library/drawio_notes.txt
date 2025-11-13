@@ -1,0 +1,14 @@
+Manual connectors: Select a shape, hover until the blue arrows appear, then drag to another shape. Repeat for each.
+
+Clone and connect: Hover over a shape, click a blue arrow, and Draw.io will duplicate the shape and connect it automatically. This is faster when building flowcharts.
+
+Keyboard shortcuts: Hold Ctrl (or Cmd on Mac) while dragging from a blue arrow to place and connect a new shape in one step.
+
+Arrange → Layout: If you already have multiple shapes, you can use automatic layout tools (hierarchical, organic, tree) to quickly organize them and add connectors.
+
+Connector styles: Once connected, you can change arrows, line types, or routing under Format → Style.
+
+--------------------------------------------------------------------
+
+Use the parallelogram from general instead of from flow charts due to their behaviours.
+
