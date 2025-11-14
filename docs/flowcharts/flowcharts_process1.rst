@@ -51,17 +51,17 @@ Flowcharts process1 Area of a rectangle
 
                 In the pseudocode above, what symbol is used for multiplication?
 
-                "*"
+                *
 
             .. tab-item:: Q3
 
                  In the pseudocode above, what symbol is used for assignment?
 
-                "<-"
+                <-
 
             .. tab-item:: Q4
 
                 From the flowchart, what common maths symbol does this assignment symbol replace?
 
-                "="
+                =
 
