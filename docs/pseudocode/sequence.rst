@@ -16,9 +16,9 @@ Sequence
    * - =
      - <-
    * - print
-     - OUTPUT or Print or DISPLAY
+     - OUTPUT or PRINT or DISPLAY
    * - input
-     - Input or GET
+     - INPUT or GET
 
 ----
 
@@ -37,8 +37,8 @@ Input and output
 .. code-block::
 
    BEGIN
-      name <- Input ("Enter your name?")
-      Print "Hello, " + name + ". Nice to meet you."
+      name <- INPUT ("Enter your name?")
+      PRINT "Hello, " + name + ". Nice to meet you."
    END
 
 ----
@@ -80,7 +80,7 @@ Input and output
       .. code-block::
 
          BEGIN
-            Input a number between 1 and 10
+            INPUT a number between 1 and 10
             Multiply by 3
             Add 18
             Multiply by 3

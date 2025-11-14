@@ -1,9 +1,9 @@
-==========================
-Flowcharts input
-==========================
+=============================
+Flowcharts input1 askName
+=============================
 
+| The Pseudocode below prompts the user to enter their name, then prints it out.
 | Pseudocode can start with BEGIN or START.
-
 
 .. code-block:: none
 

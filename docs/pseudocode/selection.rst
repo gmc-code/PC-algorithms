@@ -5,7 +5,7 @@ Selection
 | Selection is one of the three basic control structures.
 | Selection provides alternatives or branching using ``if`` ... ``elif`` ... ``else``.
 | Selection tests condition that evaluate to True or False.
-| The logical operators, ``and``, ``or``, and ``not`` increase the options for testing conditions.  
+| The logical operators, ``and``, ``or``, and ``not`` increase the options for testing conditions.
 
 
 .. list-table:: Python - Pseudocode equivalents
@@ -18,21 +18,21 @@ Selection
      - <-
    * - if
      - IF ....THEN
-   * - elif 
+   * - elif
      - ELSEIF   ....THEN
-   * - else 
+   * - else
      - ELSE
    * - "end of if"
      - ENDIF
-   * - or 
-     - OR 
-   * - and 
-     - AND 
-   * - not 
-     - NOT 
-   * - True 
-     - TRUE 
-   * - False 
+   * - or
+     - OR
+   * - and
+     - AND
+   * - not
+     - NOT
+   * - True
+     - TRUE
+   * - False
      - FALSE
 
 
@@ -100,13 +100,13 @@ If, else
          .. tab-item:: Q3
 
             | Assuming scores can only be integers from and including 0 to 100, how many different scores would result in the output of ``"Do a retest."``?
-            | Required scores are from 0 to 59. 
+            | Required scores are from 0 to 59.
             | There are 60 scores.
 
          .. tab-item:: Q4
 
             | Assuming scores can only be integers from and including 0 to 100, how many different scores would result in the output of ``"Suitable standard."``?
-            | Required scores are from 60 to 100. 
+            | Required scores are from 60 to 100.
             | There are 41 scores.
 
 ----
@@ -276,7 +276,7 @@ And, or, not
             | Yes, since the condition would evaluate to False instead of True.
 
          .. tab-item:: Q4
-            
+
             | Would changing ``is_raining`` to ``False`` and ``is_cold`` to ``False`` result in a change from the original output?
             | Yes, the out put would be: "Umbrella and jacket are optional."
 
@@ -345,7 +345,7 @@ And, or, not
             | Yes, since the condition would evaluate to True instead of False.
 
          .. tab-item:: Q4
-            
+
             | Would changing ``is_raining`` to ``True`` and ``is_cold`` to ``True`` result in a change from the original output?
             | Yes, the output would be: "Bring Umbrella or jacket or both."
 
@@ -462,7 +462,7 @@ Nested if
 ----------------------------
 
 | Nesting is the inclusion of other ``if`` statements within ``if`` statements.
-| Both the ``if`` and the ``elif`` below have a nested ``if`` and ``else`` that are used when their condition is true. 
+| Both the ``if`` and the ``elif`` below have a nested ``if`` and ``else`` that are used when their condition is true.
 
 .. code-block:: python
 
@@ -525,7 +525,7 @@ Nested if
             .. code-block:: python
 
                teamA = "Chiefs"
-               teamB = "Eagles"               
+               teamB = "Eagles"
                scoreA = 38
                scoreB = 35
 
@@ -548,7 +548,7 @@ Nested if
 
                BEGIN
                   teamA <- "Chiefs"
-                  teamB <- "Eagles" 
+                  teamB <- "Eagles"
                   scoreA <-38
                   scoreB <- 35
                   IF scoreA > scoreB THEN

@@ -1,24 +1,23 @@
-==========================
-Flowcharts process1
-==========================
+=================================================
+Flowcharts process1 Area of a rectangle
+=================================================
 
-| Indenting means adding tabs at the beginning of lines to visually group related statements.
-| Indent after control statements like IF, ELSE, ELSEIF, WHILE, FOR.
-| Unindent after closing blocks like ENDIF, ENDWHILE, ENDFOR.
-
-| The pseudocode below has errors. See the questions for the corrections.
+| Process - Area of a rectangle
 
 .. code-block:: none
 
-    ALGORITHM favouriteColour()
+    ALGORITHM rectangleArea()
 
-    START
-    PRINT "What is your favorite colour?"
-    INPUT colour
-    PRINT colour + " is lovely!"
+    BEGIN
+        INPUT l, w
+        A  <-  l * w
+        PRINT A
     END
 
 
+| The new shape in the flowchart (Compute A = l x w), is for a process, such as calculating the value of a variable using a formula and storing it for later use.
+| When calculating the area, the value is put in the variable, A. This is known as assignment. A value is assigned to the variable, A.
+`A  <-  l * w` can be read out as "A gets l times w"
 
 .. image:: drawio_files/input_output/ask_favourite_colour_st.png
     :scale: 100 %
@@ -29,8 +28,10 @@ Flowcharts process1
 
 .. admonition:: Tasks
 
-    #. In the incorrect pseudocode above, what keypress is missing before each PRINT and INPUT statements? Mark it in before each of the 3 lines.
-    #. On the flowchart, draw the correct shape for input statement (INPUT) and the correct shape for the output statements (PRINT).
+    #. What shape is used to calculate the area using length and width?
+    #. In the pseudocode above, what symbol is used for multiplication?
+    #. In the pseudocode above, what symbol is used for assignment?
+    #. From the flowchart, what common maths symbol does this assignment symbol replace?
 
     .. dropdown::
         :icon: codescan
@@ -41,23 +42,25 @@ Flowcharts process1
 
             .. tab-item:: Q1
 
-                In the incorrect pseudocode above, what keypress is missing before each PRINT and INPUT statements? Mark it in before each of the 3 lines.
+                What shape is used to calculate the area using length and width?
 
-                The TAB character is used to indent the code.
-
-                .. code-block:: none
-
-                    START
-                        PRINT "What is your favorite colour?"
-                        INPUT colour
-                        PRINT colour + " is lovely!"
-                    END
+                A rectangle.
 
             .. tab-item:: Q2
 
-                On the flowchart, draw the correct shape for input statement (INPUT) and the correct shape for the output statements (PRINT).
+                In the pseudocode above, what symbol is used for multiplication?
 
-                .. image:: drawio_files/input_output/ask_favourite_colour.png
-                    :scale: 100 %
-                    :align: center
+                "*"
+
+            .. tab-item:: Q3
+
+                 In the pseudocode above, what symbol is used for assignment?
+
+                "<-"
+
+            .. tab-item:: Q4
+
+                From the flowchart, what common maths symbol does this assignment symbol replace?
+
+                "="
 
