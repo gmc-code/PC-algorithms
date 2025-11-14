@@ -1,5 +1,5 @@
 ==========================
-Flowcharts
+Flowcharts introduction
 ==========================
 
 | A flowchart is a visual diagram that illustrates the logical sequence of steps in an algorithm.

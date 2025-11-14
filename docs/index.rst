@@ -34,8 +34,7 @@ PC-algorithms
     :numbered:
 
 
-    flowcharts\flowcharts.rst
-    flowcharts\flowcharts and pseudocode.docx
+    flowcharts\flowcharts_introduction.rst
     flowcharts\Selection.rst
     flowcharts\While_loops.rst
     flowcharts\While_True_loops.rst
