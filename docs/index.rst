@@ -46,38 +46,87 @@ PC-algorithms
     :caption: Maths python
     :numbered:
 
-    maths_python/Aboriginal_grain_belt.rst
-    maths_python/angle_bisection.rst
-    maths_python/bisection.rst
-    maths_python/debugging.rst
-    maths_python/derangements.rst
+
+    maths_python/maths_python_intro.rst
     maths_python/divisibility.rst
+    maths_python/highest_common_factor.rst
+    maths_python/newtons_method.rst
+    maths_python/prime_factors.rst
+    maths_python/quick_sort.rst
+    maths_python/selection_sort.rst
+    maths_python/simple_stats.rst
+    maths_python/sums_of_sequences.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python5
+    :numbered:
+
+    maths_python/multiple_or_factor.rst
+    maths_python/random_walks.rst
+    maths_python/sets_of_numbers.rst
+    maths_python/spreadsheet_fill_down.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python6
+    :numbered:
+
     maths_python/factors.rst
     maths_python/flow_charts.rst
     maths_python/fraction_sequence.rst
-    maths_python/geometric_patterns.rst
-    maths_python/highest_common_factor.rst
     maths_python/highest_common_factors.rst
     maths_python/lowest_common_multiples.rst
-    maths_python/maths_python_intro.rst
-    maths_python/matrix_transformations.rst
-    maths_python/monty_hall.rst
-    maths_python/multiple_or_factor.rst
-    maths_python/newtons_method.rst
-    maths_python/pointers.rst
+    maths_python/primes_as sums_of_squares.rst
+    maths_python/Sieve_of_Eratosthenes.rst
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python7
+    :numbered:
+
+    maths_python/Aboriginal_grain_belt.rst
+    maths_python/geometric_patterns.rst
+
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python8
+    :numbered:
+
+    maths_python/debugging.rst
+
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python9
+    :numbered:
+
+    maths_python/angle_bisection.rst
     maths_python/polygon_construction.rst
     maths_python/population_sampling.rst
-    maths_python/primes_as sums_of_squares.rst
-    maths_python/prime_factors.rst
     maths_python/Pythagorean_triples.rst
-    maths_python/quick_sort.rst
-    maths_python/random_walks.rst
-    maths_python/selection_sort.rst
-    maths_python/sets_of_numbers.rst
-    maths_python/Sieve_of_Eratosthenes.rst
-    maths_python/simple_stats.rst
-    maths_python/spreadsheet_fill_down.rst
-    maths_python/sums_of_sequences.rst
+
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python10
+    :numbered:
+
+    maths_python/bisection.rst
+    maths_python/derangements.rst
+    maths_python/matrix_transformations.rst
+    maths_python/monty_hall.rst
+    maths_python/pointers.rst
+
+
+
 
 
 .. toctree::
