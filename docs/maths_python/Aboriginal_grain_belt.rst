@@ -8,7 +8,7 @@ Aboriginal grain belt
 
 ----
 
-Prime factor list
+Modelling
 ---------------------
 
 | To use mathematical modelling to investigate the proportion of land mass/area of Aboriginal Peoples' traditional grain belt compared with Australia's current grain belt, estimate the following:
@@ -18,8 +18,8 @@ Prime factor list
 * The land area of the Indigenous grain belt
 
 
-| According to Wikipedia, the total land area of Australia is **7.7 million square kilometres**. 
+| According to Wikipedia, the total land area of Australia is **7.7 million square kilometres**.
 | See: https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/area-of-australia-states-and-territories
-| The land area of the current wheat belt is estimated to be **460,000 square kilometres**. 
+| The land area of the current wheat belt is estimated to be **460,000 square kilometres**.
 | See: http://www.consortiumland.com/investors/introduction-to-the-australian-wheatbelt/
-| It seems that the Indigenous grain belt with native grasses covers a similar or slightly larger area than the current wheat belt, but this is just a guess. 
+| It seems that the Indigenous grain belt with native grasses covers a similar or slightly larger area than the current wheat belt, but this is just a guess.

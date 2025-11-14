@@ -50,17 +50,14 @@ PC-algorithms
     maths_python/maths_python_intro.rst
     maths_python/divisibility.rst
     maths_python/highest_common_factor.rst
-    maths_python/newtons_method.rst
     maths_python/prime_factors.rst
-    maths_python/quick_sort.rst
-    maths_python/selection_sort.rst
     maths_python/simple_stats.rst
     maths_python/sums_of_sequences.rst
 
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python5
+    :caption: Maths python 5
     :numbered:
 
     maths_python/multiple_or_factor.rst
@@ -71,7 +68,7 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python6
+    :caption: Maths python 6
     :numbered:
 
     maths_python/factors.rst
@@ -85,26 +82,24 @@ PC-algorithms
 
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python7
+    :caption: Maths python 7
     :numbered:
 
     maths_python/Aboriginal_grain_belt.rst
     maths_python/geometric_patterns.rst
 
 
-
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python8
+    :caption: Maths python 8
     :numbered:
 
     maths_python/debugging.rst
 
 
-
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python9
+    :caption: Maths python 9
     :numbered:
 
     maths_python/angle_bisection.rst
@@ -113,10 +108,9 @@ PC-algorithms
     maths_python/Pythagorean_triples.rst
 
 
-
 .. toctree::
     :maxdepth: 2
-    :caption: Maths python10
+    :caption: Maths python 10
     :numbered:
 
     maths_python/bisection.rst
@@ -126,7 +120,14 @@ PC-algorithms
     maths_python/pointers.rst
 
 
+.. toctree::
+    :maxdepth: 2
+    :caption: Maths python 12
+    :numbered:
 
+    maths_python/newtons_method.rst
+    maths_python/quick_sort.rst
+    maths_python/selection_sort.rst
 
 
 .. toctree::
