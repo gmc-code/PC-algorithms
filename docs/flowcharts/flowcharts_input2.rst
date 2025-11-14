@@ -6,7 +6,7 @@ Flowcharts input2
 | Indent after control statements like IF, ELSE, ELSEIF, WHILE, FOR.
 | Unindent after closing blocks like ENDIF, ENDWHILE, ENDFOR.
 
-| THe pseudocode below has errors. See the questions for the corrections.
+| The pseudocode below has errors. See the questions for the corrections.
 
 .. code-block:: none
 
@@ -30,8 +30,7 @@ Flowcharts input2
 .. admonition:: Tasks
 
     #. In the incorrect pseudocode above, what keypress is missing before each PRINT and INPUT statements? Mark it in before each of the 3 lines.
-    #. On the flowchart, draw the correct shape for input statement (INPUT).
-    On the flowchart, draw the correct shape for the output statements (PRINT).
+    #. On the flowchart, draw the correct shape for input statement (INPUT) and the correct shape for the output statements (PRINT).
 
     .. dropdown::
         :icon: codescan
@@ -44,6 +43,8 @@ Flowcharts input2
 
                 In the incorrect pseudocode above, what keypress is missing before each PRINT and INPUT statements? Mark it in before each of the 3 lines.
 
+                The TAB character is used to indent the code.
+
                 .. code-block:: none
 
                     START
@@ -54,10 +55,9 @@ Flowcharts input2
 
             .. tab-item:: Q2
 
-                On the flowchart, draw the correct shape for input statement (INPUT).
-                On the flowchart, draw the correct shape for the output statements (PRINT).
+                On the flowchart, draw the correct shape for input statement (INPUT) and the correct shape for the output statements (PRINT).
 
                 .. image:: drawio_files/input_output/ask_favourite_colour.png
-                    :scale: 60 %
+                    :scale: 75 %
                     :align: center
 
