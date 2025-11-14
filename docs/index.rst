@@ -28,16 +28,25 @@ PC-algorithms
     pseudocode/case.rst
 
 
+
+.. .. toctree::
+..     :maxdepth: 2
+..     :caption: Flowcharts
+..     :numbered:
+
+
+..     flowcharts\flowcharts_introduction.rst
+..     flowcharts\Selection.rst
+..     flowcharts\While_loops.rst
+..     flowcharts\While_True_loops.rst
+
+
 .. toctree::
     :maxdepth: 2
     :caption: Flowcharts
     :numbered:
 
-
-    flowcharts\flowcharts_introduction.rst
-    flowcharts\Selection.rst
-    flowcharts\While_loops.rst
-    flowcharts\While_True_loops.rst
+    flowcharts/flowcharts_introduction.rst
 
 
 .. toctree::
