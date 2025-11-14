@@ -10,7 +10,7 @@ Pseudocode for maths
 | See: https://www.vcaa.vic.edu.au/curriculum/vce-curriculum/vce-study-designs/pseudocode
 
 
-| Most groups prefer UPPERCASE;
+| Most groups prefer UPPERCASE.
 
 | For python users, the convention is to use the keywords in **bold** lowercase.
 
