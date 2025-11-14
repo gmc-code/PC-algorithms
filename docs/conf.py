@@ -6,7 +6,7 @@ import os
 import sys
 import sphinx_rtd_theme
 project = 'PC-algorithms'
-copyright = '2022-3, GMC'
+copyright = '2022-6, GMC'
 author = 'GMC'
 
 sys.path.insert(0, os.path.abspath('../../'))
@@ -88,7 +88,7 @@ html_theme_options = {
     'style_external_links': True,  # True to Add an icon next to external links
     # 'style_nav_header_background': 'blue',
     'style_nav_header_background': 'linear-gradient(to right, blueviolet 15%, limegreen 50%, royalblue 80%)',
-    # Toc options; 
+    # Toc options;
     'collapse_navigation': False,  # False so nav entries have the [+] icons
     'sticky_navigation': False,  # False so the nav does not scroll
     'navigation_depth': 4,  # -1 for no limit
