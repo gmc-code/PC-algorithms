@@ -12,12 +12,13 @@ Flowcharts process1 Area of a rectangle
         INPUT l, w
         A  <-  l * w
         PRINT A
+        &larr;
     END
 
 
 | The new shape in the flowchart (Compute A = l x w), is for a process, such as calculating the value of a variable using a formula and storing it for later use.
 | When calculating the area, the value is put in the variable, A. This is known as assignment. A value is assigned to the variable, A.
-`A  <-  l * w` can be read out as "A gets l times w"
+``A  &larr;  l * w`` can be read out as "A gets l times w"
 
 .. image:: drawio_files/process/area_rectangle.png
 
