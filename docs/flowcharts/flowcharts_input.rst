@@ -7,21 +7,22 @@ Flowcharts input
 
 .. code-block:: none
 
-
     ALGORITHM askName()
 
     BEGIN
-    PRINT "What is your name?"
-    INPUT name
-    PRINT "Hello, " + name
+        PRINT "What is your name?"
+        INPUT name
+        PRINT "Hello, " + name
     END
 
 
 
 .. image:: drawio_files/input_output/ask_name.png
-    :scale: 75 %
+    :scale: 60 %
     :align: center
 
+|
+|
 
 .. admonition:: Tasks
 
@@ -44,7 +45,7 @@ Flowcharts input
 
                 .. code-block:: none
 
-                    A oval.
+                    An oval.
 
             .. tab-item:: Q2
 
