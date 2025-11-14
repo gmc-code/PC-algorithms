@@ -19,7 +19,8 @@ Flowcharts process1 Area of a rectangle
 | When calculating the area, the value is put in the variable, A. This is known as assignment. A value is assigned to the variable, A.
 `A  <-  l * w` can be read out as "A gets l times w"
 
-.. image:: drawio_files/input_output/ask_favourite_colour_st.png
+.. image:: drawio_files/process/area_rectangle.png
+
     :scale: 100 %
     :align: center
 
