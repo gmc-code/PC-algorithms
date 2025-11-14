@@ -33,7 +33,12 @@ PC-algorithms
     :caption: Flowcharts
     :numbered:
 
-   flowcharts/flowcharts.rst
+
+    flowcharts\flowcharts.rst
+    flowcharts\flowcharts and pseudocode.docx
+    flowcharts\Selection.rst
+    flowcharts\While_loops.rst
+    flowcharts\While_True_loops.rst
 
 
 .. toctree::
