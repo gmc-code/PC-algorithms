@@ -36,6 +36,9 @@ PC-algorithms
     flowcharts/flowcharts_introduction.rst
     flowcharts/flowcharts_input.rst
     flowcharts/flowcharts_input2.rst
+    flowcharts/flowcharts_process1.rst
+    flowcharts/flowcharts_process2.rst
+    flowcharts/flowcharts_process3.rst
 
     flowcharts/Selection.rst
     flowcharts/While_loops.rst
