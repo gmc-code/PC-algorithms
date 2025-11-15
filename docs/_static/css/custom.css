@@ -260,13 +260,17 @@ button.copybtn {
     font-weight: bold;
 }
 
-.highlight-pseudocode .err {
-    color: #ff3d3d;  /* red */
+/* Override keyword color inside pseudocode */
+.highlight-pseudocode .n {
+    color: #008000;  /* green */
+    font-weight: bold;
 }
 
-.highlight .err {
-    color: #fca3a3;  /* red */
+.highlight-pseudocode .err {
+    color: #000;  /* default is red */
+    border: 0px solid #fff;
 }
+
 
 /* .highlight {
      background: rgb(234, 234, 234);
