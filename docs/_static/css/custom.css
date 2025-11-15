@@ -242,11 +242,24 @@ button.copybtn {
 
 /* Target code blocks with "none" lexer */
 .highlight-none {
-    background-color: #f3fff0;  /* light green */
-    border: 1px solid #ccc;
-    padding: 0.5em;
+    background: #f3fff0;  /* light green */
+}
+.highlight-none {
+    background: #f3fff0;  /* light green */
 }
 
+.highlight {
+     background: rgb(234, 234, 234);
+}
+
+/* Keywords in blue */
+.highlight .k { color: #0000cc; font-weight: bold; }
+
+/* Strings in green */
+.highlight .s { color: #008000; }
+
+/* Numbers in purple */
+.highlight .m { color: #800080; }
 
 /** to override text  file background */
 
