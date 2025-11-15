@@ -40,23 +40,8 @@ Divibility by 2
 
 | The python code implementing the algorithm is shown below:
 
-.. code-block:: python
-
-    import random
-
-
-    def div_by_2(num):
-        endings = ["0", "2", "4", "6", "8"]
-        last_digit = str(num)[-1]
-        if last_digit in endings:
-            return True
-        else:
-            return False
-
-
-    num = random.randint(10, 300)
-    print(num, div_by_2(num))
-
+.. literalinclude:: files/div_test_2.py
+    :linenos:
 
 ----
 
@@ -111,35 +96,8 @@ by 3.
 
 | The python code implementing the algorithm is shown below:
 
-.. code-block:: python
-
-    import random
-
-
-    def div_by_3(num):
-        sum_of_digits = repeated_sum_digits(num)
-        if sum_of_digits in [3, 6, 9]:
-            return True
-        else:
-            return False
-
-
-    def sum_digits(num):
-        sum = 0
-        for digit in str(num):
-            sum += int(digit)
-        return sum
-
-
-    def repeated_sum_digits(num):
-        sum_of_digits = sum_digits(num)
-        while sum_of_digits > 10:
-            sum_of_digits = sum_digits(sum_of_digits)
-        return sum_of_digits
-
-
-    num = random.randint(12, 300)
-    print(num, div_by_3(num))
+.. literalinclude:: files/div_test_3.py
+    :linenos:
 
 ----
 
@@ -174,23 +132,8 @@ Divibility by 5
 
 | The python code implementing the algorithm is shown below:
 
-.. code-block:: python
-
-    import random
-
-
-    def div_by_5(num):
-        endings = ["0", "5"]
-        last_digit = str(num)[-1]
-        if last_digit in endings:
-            return True
-        else:
-            return False
-
-
-    num = random.randint(10, 300)
-    print(num, div_by_5(num))
-
+.. literalinclude:: files/div_test_5.py
+    :linenos:
 
 ----
 
@@ -204,11 +147,6 @@ Divisibility by 7
 | 4.	If this new number is either 0 or a number that's divisible by 7, then the original number is also divisible by 7.
 | 5.	If you can't tell yet if the new number is divisible by 7, go back to the first step with this new (smaller) number and repeat.
 
-
-
-
-
-|
 | The pseudocode for the algorithm is as follows:
 
 
@@ -251,32 +189,5 @@ Divisibility by 7
 
 | The python code implementing the algorithm is shown below:
 
-.. code-block:: python
-
-    import random
-
-
-    def div_by_7(num):
-        diff = repeated_diff_from_dbl_last(num)
-        if diff in [0, 7, -7]:
-            return True
-        else:
-            return False
-
-
-    def diff_from_dbl_last(num):
-        last = int(str(num)[-1])
-        all_but_last = int(str(num)[:-1])
-        return all_but_last - 2 * last
-
-
-    def repeated_diff_from_dbl_last(num):
-        diff = diff_from_dbl_last(num)
-        while diff > 10:
-            diff = diff_from_dbl_last(diff)
-        return diff
-
-
-    num = random.randint(12, 300)
-    print(num, div_by_7(num))
-
+.. literalinclude:: files/div_test_7.py
+    :linenos:

@@ -12,3 +12,4 @@ def div_by_2(num):
 
 num = random.randint(10, 300)
 print(num, div_by_2(num))
+
