@@ -5,9 +5,14 @@
 import os
 import sys
 import sphinx_rtd_theme
+from sphinx.highlighting import lexers
+from pseudocode_lexer import PseudocodeLexer
+
 project = 'PC-algorithms'
 copyright = '2022-6, GMC'
 author = 'GMC'
+
+
 
 sys.path.insert(0, os.path.abspath('../../'))
 package_path = os.path.abspath('../..')
@@ -49,6 +54,9 @@ todo_include_todos = True
 # default python Pygments (syntax highlighting) style to use.
 # for other styles see https://pygments.org/docs/lexers/#lexers-for-python-and-related-languages
 pygments_style = 'sphinx'
+
+lexers['pseudocode'] = PseudocodeLexer()
+
 
 jupyter_sphinx_thebelab_config = {
     'requestKernel': True,
