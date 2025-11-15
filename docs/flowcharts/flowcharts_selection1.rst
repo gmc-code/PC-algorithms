@@ -8,7 +8,7 @@ Flowcharts Positive Numbers
 
 | The pseudocode below checks to see whether a number is positive or not.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM positiveOrNot()
 
@@ -50,7 +50,7 @@ Flowcharts Positive Numbers
 
                 What shape is used for a decision?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     A diamond
 
@@ -58,7 +58,7 @@ Flowcharts Positive Numbers
 
                 In the pseudocode above, what keywords start and end the line that checks the number?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     IF and THEN
 
@@ -66,7 +66,7 @@ Flowcharts Positive Numbers
 
                  In the pseudocode above, what keyword starts the code for the NO branch of the flowchart?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     ELSE
 
@@ -74,7 +74,7 @@ Flowcharts Positive Numbers
 
                 In the pseudocode above, what keyword ends the code for the IF block?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     ENDIF
 

@@ -6,7 +6,7 @@ Flowcharts What to Wear
 | It allows you to check additional conditions if the first IF condition is false — without ending the decision block.
 | The pseudocode below shows an algorithm, with 2 decision steps, that suggests what to wear based on the temperature input by the user.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM whatToWear()
 
@@ -47,7 +47,7 @@ Flowcharts What to Wear
 
                 In the pseudocode above, there are two lines that end with THEN. What keywords do those lines start with?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     IF and ELSEIF
 
@@ -55,7 +55,7 @@ Flowcharts What to Wear
 
                 What do you wear if the first condition is False and the second is True?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     A jumper.
 
@@ -63,7 +63,7 @@ Flowcharts What to Wear
 
                 What do you wear if all conditions are False?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     A shirt.
 

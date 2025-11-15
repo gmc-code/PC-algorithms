@@ -4,7 +4,7 @@ Flowcharts Area of a parallelogram
 
 | The pseudocode below calculates the area of a parallelogram given the base, b, and height, h.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM parallelogramArea()
 

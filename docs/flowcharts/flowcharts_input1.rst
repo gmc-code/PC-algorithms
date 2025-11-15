@@ -5,7 +5,7 @@ Flowcharts askName
 | The Pseudocode below prompts the user to enter their name, then prints it out.
 | Pseudocode can start with BEGIN or START.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM askName()
 
@@ -43,7 +43,7 @@ Flowcharts askName
 
                 What shape is used to start and end the flowchart?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     An oval.
 
@@ -51,7 +51,7 @@ Flowcharts askName
 
                 What shape is used for input?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     A parallelogram.
 
@@ -60,7 +60,7 @@ Flowcharts askName
 
                 What keyword (in caps) indicates output?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     PRINT
 

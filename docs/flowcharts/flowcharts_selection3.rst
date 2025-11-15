@@ -32,7 +32,7 @@ Flowcharts Study or not
 
 | The pseudocode below checks to see whether a it is time to study for an exam or not.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM studyOrNot ()
 
@@ -69,7 +69,7 @@ Flowcharts Study or not
 
                In the pseudocode above what is the comparison operator that is used to test equality?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     =
 

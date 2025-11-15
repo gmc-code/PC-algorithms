@@ -4,7 +4,7 @@ Flowcharts Classify Quadrilateral by Sides
 
 | The pseudocode below checks to see if a quadrilateral has all sides equal, or just opposite sides equal, and classifies it accordingly.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM classifyQuadrilateralBySides()
 

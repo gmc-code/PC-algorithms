@@ -7,7 +7,7 @@ Flowcharts Area of a rectangle
 | This is known as assignment. A value is assigned to the variable, A.
 | ``A  ←  l * w`` can be read out as "A gets l times w".
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM rectangleArea()
 
@@ -46,7 +46,7 @@ Flowcharts Area of a rectangle
 
                 What shape is used to calculate the area using length and width?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     A rectangle.
 
@@ -54,7 +54,7 @@ Flowcharts Area of a rectangle
 
                 In the pseudocode above, what symbol is used for multiplication?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     *
 
@@ -62,7 +62,7 @@ Flowcharts Area of a rectangle
 
                  In the pseudocode above, what symbol is used for assignment?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     ←
 
@@ -70,7 +70,7 @@ Flowcharts Area of a rectangle
 
                 From the flowchart, what common maths symbol does this assignment symbol replace?
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     =
 

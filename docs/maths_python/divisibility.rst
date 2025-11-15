@@ -19,7 +19,7 @@ Divibility by 2
 
 | The pseudocode for the algorithm is as follows:
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     FUNCTION DIV_BY_2(number):
         endings ← ["0", "2", "4", "6", "8"]

@@ -6,7 +6,7 @@ Flowcharts Jumper or not
 | In the pseudocode below, the temperature determines whether a jumper will be worn or not.
 
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM jumperOrNot()
 

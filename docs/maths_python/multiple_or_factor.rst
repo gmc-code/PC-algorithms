@@ -13,7 +13,7 @@ Pseudocode
 
 | The pseudocode to determine if one number is a factor or multiple of a second number.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     FUNCTION is_multiple_or_factor(a, b)
         IF a = 0 OR b = 0 THEN

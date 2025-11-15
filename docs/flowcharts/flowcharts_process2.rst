@@ -4,7 +4,7 @@ Flowcharts Area of a square
 
 | The pseudocode below calculates the area of a square given the length of one side, l.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM squareArea()
 

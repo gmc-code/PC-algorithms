@@ -20,7 +20,7 @@ Prime factor list
     * While the factor goes in exactly, add it to the prime factors list and divide the number, num, by the factor.
     * Return the list of prime factors.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     FUNCTION get_prime_factors(number):
         SET max_possible = square_root(number) + 1
@@ -74,7 +74,7 @@ Prime factor lists
 | The following code checks all the numbers from 2 to 100 for prime factors and lists those with atleast 3 different prime factors.
 | A crictical line of code is: ``if len(set(fact)) > 2:`` which converts the list of prime factors to a set, which can only include one copy of each prime factor.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     FUNCTION get_prime_factors(number):
         SET max_possible = square_root(number) + 1

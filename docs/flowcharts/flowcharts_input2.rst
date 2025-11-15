@@ -11,7 +11,7 @@ Flowcharts favouriteColour
 | The pseudocode below has errors. See the questions for the corrections.
 
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     ALGORITHM favouriteColour()
 
@@ -39,7 +39,7 @@ Flowcharts favouriteColour
 
                 The TAB character is used to indent the code.
 
-                .. code-block:: none
+                .. code-block:: pseudocode
 
                     START
                         PRINT "What is your favorite colour?"

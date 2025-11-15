@@ -13,7 +13,7 @@ Simple rule
 
 | Return a set of numbers using the rule: if a number is even, halve it; if a number is odd, subtract 1 then halve it.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     FUNCTION manipulate_numbers(numbers):
         CREATE empty set result
@@ -44,7 +44,7 @@ Even numbers
 
 | Return a set of even numbers.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     FUNCTION get_even_numbers(numbers):
         CREATE empty set even_numbers
@@ -70,7 +70,7 @@ Sum numbers in sequence
 
 | Return a list of numbers that are a running total as each member of the set is added to the running total.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     FUNCTION sum_numbers_in_sequence(numbers):
         CREATE empty list running_totals

@@ -18,7 +18,7 @@ Random walks
 
 | The pseudocode to simulate a 1D random walk and plot the results.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     SET current_directory = directory_of_this_file
 
@@ -191,7 +191,7 @@ Levy flights
 
 | The pseudocode to simulate a 2D random walk with Levy flights and plot the results.
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     SET current_directory = directory_of_this_file
 

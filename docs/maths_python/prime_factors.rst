@@ -15,7 +15,7 @@ Prime factor list
 
 | The pseudocode for the algorithm is as follows:
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     FUNCTION get_prime_factors(num):
         CREATE empty list prime_factors
@@ -42,7 +42,7 @@ Prime factor lists to 100
 
 | The pseudocode for the algorithm is as follows:
 
-.. code-block:: none
+.. code-block:: pseudocode
 
     FUNCTION get_prime_factors(num):
         CREATE empty list prime_factors
