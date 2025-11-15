@@ -10,15 +10,14 @@ Flowcharts process1 Area of a rectangle
 
     BEGIN
         INPUT l, w
-        A  <-  l * w
+        A  ←  l * w
         PRINT A
-        &larr;
     END
 
 
 | The new shape in the flowchart (Compute A = l x w), is for a process, such as calculating the value of a variable using a formula and storing it for later use.
 | When calculating the area, the value is put in the variable, A. This is known as assignment. A value is assigned to the variable, A.
-``A  &larr;  l * w`` can be read out as "A gets l times w"
+``A  ←  l * w`` can be read out as "A gets l times w"
 
 .. image:: drawio_files/process/area_rectangle.png
 
@@ -52,17 +51,17 @@ Flowcharts process1 Area of a rectangle
 
                 In the pseudocode above, what symbol is used for multiplication?
 
-                *
+                ``*``
 
             .. tab-item:: Q3
 
                  In the pseudocode above, what symbol is used for assignment?
 
-                <-
+                ``←``
 
             .. tab-item:: Q4
 
                 From the flowchart, what common maths symbol does this assignment symbol replace?
 
-                =
+               `` =``
 
