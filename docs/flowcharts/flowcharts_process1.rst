@@ -54,7 +54,7 @@ Flowcharts process1 Area of a rectangle
 
                 .. code-block:: none
 
-                    ``*``
+                    *
 
             .. tab-item:: Q3
 
@@ -62,7 +62,7 @@ Flowcharts process1 Area of a rectangle
 
                 .. code-block:: none
 
-                    ``←``
+                    ←
 
             .. tab-item:: Q4
 
@@ -70,5 +70,5 @@ Flowcharts process1 Area of a rectangle
 
                 .. code-block:: none
 
-                    ``=``
+                    =
 
