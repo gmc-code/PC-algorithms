@@ -13,13 +13,10 @@ os.environ['PYTHONPATH'] = ':'.join((package_path, os.environ.get('PYTHONPATH', 
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 from pseudocode_lexer import PseudocodeLexer
-# from pygments.lexers.python import PythonLexer
-
-
 
 lexers['pseudocode'] = PseudocodeLexer()
 
-
+# from pygments.lexers.python import PythonLexer
 # Register pseudocode as Python lexer
 # lexers['pseudocode'] = PythonLexer()
 
@@ -33,10 +30,7 @@ author = 'GMC'
 
 
 
-from pseudocode_lexer import PseudocodeLexer
-from sphinx.highlighting import lexers
 
-lexers['pseudocode'] = PseudocodeLexer()
 
 # -- General configuration ---------------------------------
 # Add any Sphinx extension module names here, as strings. They can be
