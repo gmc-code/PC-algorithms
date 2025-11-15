@@ -242,19 +242,15 @@ button.copybtn {
 
 /* Target code blocks with "none" lexer */
 .highlight-none {
-    background: rgb(234, 234, 234);
+    background: rgb(234, 234, 234) !important;
+    border: 1px solid #7e7e7e;
 }
 
 /* Only pseudocode blocks */
 .highlight-pseudocode {
-    background:  rgb(234, 234, 234);
+    background:  rgb(234, 234, 234) !important;
     border: 1px solid #7e7e7e;
     padding: 0.5em;
-}
-
-/* Pseudocode blocks only */
-.highlight-pseudocode {
-    background: #c9c9c9;  /* light grey */
 }
 
 /* Override keyword color inside pseudocode */
