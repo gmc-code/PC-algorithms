@@ -260,7 +260,13 @@ button.copybtn {
     font-weight: bold;
 }
 
+.highlight-pseudocode .err {
+    color: #ff3d3d;  /* red */
+}
 
+.highlight .err {
+    color: #fca3a3;  /* red */
+}
 
 /* .highlight {
      background: rgb(234, 234, 234);
