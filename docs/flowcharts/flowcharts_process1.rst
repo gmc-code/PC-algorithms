@@ -3,8 +3,9 @@ Flowcharts Area of a rectangle
 =================================================
 
 | The pseudocode below calculates the area of a rectangle given the length and width of the sides.
-| When calculating the area, the value is put in the variable, A. This is known as assignment. A value is assigned to the variable, A.
-``A  ←  l * w`` can be read out as "A gets l times w".
+| When calculating the area, the value is put in the variable, A.
+| This is known as assignment. A value is assigned to the variable, A.
+| ``A  ←  l * w`` can be read out as "A gets l times w".
 
 .. code-block:: none
 
