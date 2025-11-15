@@ -256,7 +256,7 @@ button.copybtn {
 
 /* Override keyword color inside pseudocode */
 .highlight-pseudocode .k {
-    color: #0000FF;  /* blue */
+    color: #3d3dff;  /* blue */
     font-weight: bold;
 }
 
