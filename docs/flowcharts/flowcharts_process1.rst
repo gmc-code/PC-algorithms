@@ -45,23 +45,27 @@ Flowcharts process1 Area of a rectangle
 
                 What shape is used to calculate the area using length and width?
 
-                A rectangle.
+                .. code-block:: none
+                    A rectangle.
 
             .. tab-item:: Q2
 
                 In the pseudocode above, what symbol is used for multiplication?
 
-                ``*``
+                .. code-block:: none
+                    ``*``
 
             .. tab-item:: Q3
 
                  In the pseudocode above, what symbol is used for assignment?
 
-                ``←``
+                .. code-block:: none
+                    ``←``
 
             .. tab-item:: Q4
 
                 From the flowchart, what common maths symbol does this assignment symbol replace?
 
-                ``=``
+                .. code-block:: none
+                    ``=``
 
