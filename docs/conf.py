@@ -8,9 +8,10 @@ import sphinx_rtd_theme
 from sphinx.highlighting import lexers
 
 sys.path.insert(0, os.path.abspath('../../'))
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 package_path = os.path.abspath('../..')
 os.environ['PYTHONPATH'] = ':'.join((package_path, os.environ.get('PYTHONPATH', '')))
-sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
 
 from pseudocode_lexer import PseudocodeLexer
 
