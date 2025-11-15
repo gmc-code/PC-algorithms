@@ -13,9 +13,9 @@ Flowcharts Jumper or not
     BEGIN
         INPUT temperature
         IF temperature < 20 THEN
-            PRINT "Wear jumper."
+            PRINT "Wear jumper"
         ELSE
-            PRINT "No jumper."
+            PRINT "No jumper"
         ENDIF
     END
 
