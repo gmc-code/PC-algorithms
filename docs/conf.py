@@ -6,12 +6,18 @@ import os
 import sys
 import sphinx_rtd_theme
 from sphinx.highlighting import lexers
+
+sys.path.insert(0, os.path.abspath('../../'))
+package_path = os.path.abspath('../..')
+os.environ['PYTHONPATH'] = ':'.join((package_path, os.environ.get('PYTHONPATH', '')))
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
 from pseudocode_lexer import PseudocodeLexer
 # from pygments.lexers.python import PythonLexer
 
 
 
-# lexers['pseudocode'] = PseudocodeLexer()
+lexers['pseudocode'] = PseudocodeLexer()
 
 
 # Register pseudocode as Python lexer
@@ -25,9 +31,12 @@ author = 'GMC'
 
 
 
-sys.path.insert(0, os.path.abspath('../../'))
-package_path = os.path.abspath('../..')
-os.environ['PYTHONPATH'] = ':'.join((package_path, os.environ.get('PYTHONPATH', '')))
+
+
+from pseudocode_lexer import PseudocodeLexer
+from sphinx.highlighting import lexers
+
+lexers['pseudocode'] = PseudocodeLexer()
 
 # -- General configuration ---------------------------------
 # Add any Sphinx extension module names here, as strings. They can be
