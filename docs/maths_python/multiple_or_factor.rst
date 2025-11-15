@@ -34,6 +34,8 @@ Pseudocode
 Multiple or factor code
 ------------------------------------------------
 
+| The python to determine if one number is a factor or multiple of a second number.
+
 .. literalinclude:: files/multiple_or_factor.py
     :linenos:
 

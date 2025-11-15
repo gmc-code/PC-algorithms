@@ -16,6 +16,8 @@ Random walks
 | Have 9 positions on the plank, from 1 to 9, with position 1 at the start of the plank and 9 at the end.
 | Start at position 3.
 
+| The pseudocode to simulate a 1D random walk and plot the results.
+
 .. code-block:: none
 
     SET current_directory = directory_of_this_file
@@ -57,7 +59,7 @@ Random walks
 
 ------------------------
 
-| The code below simulates a 1D random walk.
+| The python to simulate a 1D random walk and plot the results.
 
 .. literalinclude:: files/random_walk_1D_plot.py
     :linenos:
@@ -185,6 +187,82 @@ Levy flights
 | Levy flights are random walks with longer jumps.
 | They can simulate animals looking for food.
 | The code below creates some longer jumps.
+
+
+| The pseudocode to simulate a 2D random walk with Levy flights and plot the results.
+
+.. code-block:: none
+
+    SET current_directory = directory_of_this_file
+
+
+    FUNCTION levy_flight(total_steps, levy_interval, min_jump, max_jump):
+        SET x = 0, y = 0
+        CREATE list coords = [(0, 0)]
+
+        FOR i from 0 to total_steps - 1:
+            IF i is divisible by levy_interval:
+                r = random integer between min_jump and max_jump
+                theta = random angle between 0 and 2π
+                dx = integer part of (r * cos(theta))
+                dy = integer part of (r * sin(theta))
+            ELSE:
+                (dx, dy) = random choice from [(0,1), (0,-1), (1,0), (-1,0)]
+
+            x = x + dx
+            y = y + dy
+            ADD (x, y) to coords
+
+        RETURN coords
+
+
+    FUNCTION plot_walk(coords, levy_interval):
+        EXTRACT x_coords and y_coords from coords
+        DRAW line graph of (x_coords, y_coords)
+        MARK starting point in green
+        MARK ending point in red
+
+        SET max_coord = maximum absolute value among all coordinates
+
+        IF max_coord > 100:
+            ticks = multiples of 50 up to max_coord
+        ELSE IF max_coord > 60:
+            ticks = multiples of 20 up to max_coord
+        ELSE IF max_coord > 30:
+            ticks = multiples of 10 up to max_coord
+        ELSE IF max_coord > 16:
+            ticks = multiples of 5 up to max_coord
+        ELSE IF max_coord > 8:
+            ticks = multiples of 2 up to max_coord
+        ELSE:
+            ticks = integers from -max_coord to +max_coord
+
+        SET x-axis ticks = ticks
+        SET y-axis ticks = ticks
+        LIMIT x-axis and y-axis to [-max_coord, +max_coord]
+        ADD legend for Start and End
+        SET title = "Random Walk (total_steps steps)"
+        ADJUST layout for legend
+        CALL save_plot(graph, "random_walk_Levy_every_[levy_interval]_of_[total_steps]")
+        DISPLAY graph
+
+
+    FUNCTION save_plot(graph, filename):
+        filepath = current_directory + filename
+        SAVE graph to filepath with high resolution
+
+
+    MAIN PROGRAM:
+        levy_interval = 100
+        total_steps = 1000
+        min_jump = 10
+        max_jump = 20
+
+        coords = CALL levy_flight(total_steps, levy_interval, min_jump, max_jump)
+        CALL plot_walk(coords, levy_interval)
+
+
+| The python to simulate a 2D random walk with Levy flights and plot the results.
 
 
 .. literalinclude:: files/random_walk_2D_plot_Levy.py
