@@ -8,6 +8,10 @@ import sphinx_rtd_theme
 from sphinx.highlighting import lexers
 from pseudocode_lexer import PseudocodeLexer
 
+lexers['pseudocode'] = PseudocodeLexer()
+
+
+
 project = 'PC-algorithms'
 copyright = '2022-6, GMC'
 author = 'GMC'
@@ -55,7 +59,6 @@ todo_include_todos = True
 # for other styles see https://pygments.org/docs/lexers/#lexers-for-python-and-related-languages
 pygments_style = 'sphinx'
 
-lexers['pseudocode'] = PseudocodeLexer()
 
 
 jupyter_sphinx_thebelab_config = {

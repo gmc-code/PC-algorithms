@@ -247,18 +247,18 @@ button.copybtn {
 
 /* Only pseudocode blocks */
 .highlight-pseudocode {
-    background: #f3fff0;  /* light green */
-    border: 1px solid #ccc;
+    background:  rgb(234, 234, 234);
+    border: 1px solid #7e7e7e;
     padding: 0.5em;
 }
 
 
-.highlight {
+/* .highlight {
      background: rgb(234, 234, 234);
-}
+} */
 
 /* Keywords in blue */
-.highlight .k { color: #0000cc; font-weight: bold; }
+.highlight .k { color: #008000; font-weight: bold; }
 
 /* Strings in green */
 .highlight .s { color: #008000; }
@@ -271,6 +271,7 @@ button.copybtn {
 div.highlight-default div.highlight {
     background: #eef5ff;
 }
+
 
 /** to override table padding from 8 and 16 */
 

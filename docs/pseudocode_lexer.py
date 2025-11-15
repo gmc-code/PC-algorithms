@@ -14,18 +14,17 @@ class PseudocodeLexer(RegexLexer):
             # Identifiers
             (r'\b[A-Za-z_][A-Za-z0-9_]*\b', Name),
 
-            # Strings
-            (r'"[^"\n]*"', String),
+            # Strings (double-quoted or single-quoted)
+            (r'".*?"', String),
+            (r"'.*?'", String),
 
-            # Whitespace
-            (r'\s+', Text),
+            # Numbers
+            (r'\d+', Number),
 
-            # Numbers (int or float)
-            (r'\d+(\.\d+)?', Number),
-
-            # Operators
-            (r'==|<=|>=|!=|[=<>%+\-*/]', Operator),
+            # Operators (include assignment arrow ←)
+            (r'[=<>%+\-*/←]', Operator),
 
             (r"[ \[\] \(\)\{\},;:.?!'\"]", Punctuation)
         ],
     }
+
