@@ -2,6 +2,10 @@
 Flowcharts Positive Numbers
 =================================================
 
+| Selection is a control structure that allows a program to choose between different actions based on a condition.
+| It's represented by IF…THEN…ELSE statements.
+| In simple terms: “If something is true, do this. Otherwise, do that.”
+
 | The pseudocode below checks to see whether a number is positive or not.
 
 .. code-block:: none
