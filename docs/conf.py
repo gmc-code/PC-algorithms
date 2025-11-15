@@ -14,11 +14,8 @@ sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
 from pseudocode_lexer import PseudocodeLexer
 
-# lexers['pseudocode'] = PseudocodeLexer()
+lexers['pseudocode'] = PseudocodeLexer()
 
-from pygments.lexers.python import PythonLexer
-# Register pseudocode as Python lexer
-lexers['pseudocode'] = PythonLexer()
 
 project = 'PC-algorithms'
 copyright = '2022-6, GMC'
