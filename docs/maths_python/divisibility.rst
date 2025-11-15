@@ -17,6 +17,29 @@ Divibility by 2
 | The code below checks if the last digit to see if it is divisible by 2.
 | To get the last digit, the number is converted to a string, **str(num)**, then string indexing, **str(num)[-1]**, gets the last character.
 
+| The pseudocode for the algorithm is as follows:
+
+.. code-block:: pseudocode
+
+    FUNCTION DIV_BY_2(number):
+        endings ← ["0", "2", "4", "6", "8"]
+        last_digit ← last character of number (as string)
+
+        IF last_digit IS IN endings:
+            RETURN TRUE
+        ELSE:
+            RETURN FALSE
+        ENDIF
+    ENDFUNCTION
+
+
+    MAIN PROGRAM:
+        num ← RANDOM INTEGER BETWEEN 10 AND 300
+        result ← DIV_BY_2(num)
+        PRINT num, result
+
+| The python code implementing the algorithm is shown below:
+
 .. code-block:: python
 
     import random
@@ -35,22 +58,6 @@ Divibility by 2
     print(num, div_by_2(num))
 
 
-| Pseudocode:
-
-| function div_by_2(num)
-|     endings ← ["0", "2", "4", "6", "8"]
-|     last_digit ← str(num)[-1]
-|     if last_digit in endings then
-|         return True
-|     else
-|         return False
-|     endif
-| endfunction
-|
-| num ← random integer from 10 to 300
-| **print** num, div_by_2(num)
-
-
 ----
 
 Divibility by 3
@@ -60,6 +67,49 @@ Divibility by 3
 | For example: 162 is divisible by 3 since the sum of the digits is 9 (1 + 6 + 2 = 9) and 9 is divisible
 by 3.
 | The code below sums the digits of the number via **sum_digits**, and repeats summing the digits via **repeated_sum_digits** until there is just one digit, then, in **div_by_3**, checks if that sum is 3, 6, or 9.
+
+| The pseudocode for the algorithm is as follows:
+
+.. code-block:: pseudocode
+
+    FUNCTION DIV_BY_3(num):
+        sum_of_digits ← REPEATED_SUM_DIGITS(num)
+
+        IF sum_of_digits IS IN [3, 6, 9]:
+            RETURN TRUE
+        ELSE:
+            RETURN FALSE
+        ENDIF
+    ENDFUNCTION
+
+
+    FUNCTION SUM_DIGITS(num):
+        total ← 0
+        FOR each digit IN STRING(num):
+            total ← total + INTEGER(digit)
+        ENDFOR
+        RETURN total
+    ENDFUNCTION
+
+
+    FUNCTION REPEATED_SUM_DIGITS(num):
+        sum_of_digits ← SUM_DIGITS(num)
+
+        WHILE sum_of_digits > 10:
+            sum_of_digits ← SUM_DIGITS(sum_of_digits)
+        ENDWHILE
+
+        RETURN sum_of_digits
+    ENDFUNCTION
+
+
+    MAIN PROGRAM:
+        num ← RANDOM INTEGER BETWEEN 12 AND 300
+        result ← DIV_BY_3(num)
+        PRINT num, result
+
+
+| The python code implementing the algorithm is shown below:
 
 .. code-block:: python
 
@@ -101,6 +151,29 @@ Divibility by 5
 | The code below checks if the last digit is a 5 or 0.
 | To get the last digit, the number is converted to a string, **str(num)**, then string indexing, **str(num)[-1]**, gets the last character.
 
+| The pseudocode for the algorithm is as follows:
+
+.. code-block:: pseudocode
+
+    FUNCTION DIV_BY_5(num):
+        endings ← ["0", "5"]
+        last_digit ← LAST CHARACTER OF STRING(num)
+
+        IF last_digit IS IN endings:
+            RETURN TRUE
+        ELSE:
+            RETURN FALSE
+        ENDIF
+    ENDFUNCTION
+
+
+    MAIN PROGRAM:
+        num ← RANDOM INTEGER BETWEEN 10 AND 300
+        result ← DIV_BY_5(num)
+        PRINT num, result
+
+| The python code implementing the algorithm is shown below:
+
 .. code-block:: python
 
     import random
@@ -130,6 +203,53 @@ Divisibility by 7
 | 3.	Subtract this number from the rest of the digits in the original number that you wrote down.
 | 4.	If this new number is either 0 or a number that's divisible by 7, then the original number is also divisible by 7.
 | 5.	If you can't tell yet if the new number is divisible by 7, go back to the first step with this new (smaller) number and repeat.
+
+
+
+
+
+|
+| The pseudocode for the algorithm is as follows:
+
+
+.. code-block:: pseudocode
+
+
+    FUNCTION DIV_BY_7(num):
+        diff ← REPEATED_DIFF_FROM_DBL_LAST(num)
+
+        IF diff IS IN [0, 7, -7]:
+            RETURN TRUE
+        ELSE:
+            RETURN FALSE
+        ENDIF
+    ENDFUNCTION
+
+
+    FUNCTION DIFF_FROM_DBL_LAST(num):
+        last ← INTEGER(LAST CHARACTER OF STRING(num))
+        all_but_last ← INTEGER(STRING(num) WITHOUT LAST CHARACTER)
+        RETURN all_but_last - 2 * last
+    ENDFUNCTION
+
+
+    FUNCTION REPEATED_DIFF_FROM_DBL_LAST(num):
+        diff ← DIFF_FROM_DBL_LAST(num)
+
+        WHILE diff > 10:
+            diff ← DIFF_FROM_DBL_LAST(diff)
+        ENDWHILE
+
+        RETURN diff
+    ENDFUNCTION
+
+
+    MAIN PROGRAM:
+        num ← RANDOM INTEGER BETWEEN 12 AND 300
+        result ← DIV_BY_7(num)
+        PRINT num, result
+
+| The python code implementing the algorithm is shown below:
 
 .. code-block:: python
 
