@@ -5,7 +5,7 @@ class PseudocodeStyle(Style):
     default_style = ""
     styles = {
         # Keywords like def, class, if, else
-        Keyword: 'bold #0000FF',          # Blue
+        Keyword: '#0000FF',          # Blue
 
         # Constants like True, False, None
         Keyword.Constant: '#008000',      # Green

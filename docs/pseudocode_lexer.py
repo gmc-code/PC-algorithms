@@ -22,7 +22,7 @@ class PseudocodeLexer(RegexLexer):
             (r'\d+', Number),
 
             # Operators (include assignment arrow ←)
-            (r'[=<>%+\-*/←]', Operator),
+            (r'[/≠=<>%+\-*/←]', Operator),
 
             (r"[ \[\] \(\)\{\},;:.?!'\"]", Punctuation)
         ],

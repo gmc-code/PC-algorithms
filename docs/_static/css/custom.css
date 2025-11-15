@@ -257,14 +257,15 @@ button.copybtn {
      background: rgb(234, 234, 234);
 } */
 
-/* Keywords in blue */
+/* Keywords in blue
 .highlight .k { color: #008000; font-weight: bold; }
 
 /* Strings in green */
-.highlight .s { color: #008000; }
+/* .highlight .s { color: #008000; }
 
 /* Numbers in purple */
-.highlight .m { color: #800080; }
+/* .highlight .m { color: #800080; } */ */ */
+
 
 /** to override text  file background */
 
