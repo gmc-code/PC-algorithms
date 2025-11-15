@@ -13,6 +13,22 @@ Prime factor list
 * While the factor goes in exactly, add it to the prime factors list and divide the number, num, by the factor.
 * Return the list of prime factors.
 
+.. code-block:: none
+
+    FUNCTION get_prime_factors(num):
+        CREATE empty list prime_factors
+        WHILE num mod 2 == 0:
+            ADD 2 to prime_factors
+            num = num / 2
+        FOR factor from 3 to sqrt(num) step 2:
+            WHILE num mod factor == 0:
+                ADD factor to prime_factors
+                num = num / factor
+        IF num > 2:
+            ADD num to prime_factors
+        RETURN prime_factors
+
+
 .. code-block:: python
 
     import random
@@ -42,6 +58,27 @@ Prime factor list
 
 Prime factor lists to 100
 ---------------------------
+
+.. code-block:: none
+
+    FUNCTION get_prime_factors(num):
+        CREATE empty list prime_factors
+        WHILE num mod 2 == 0:
+            ADD 2 to prime_factors
+            num = num / 2
+        FOR factor from 3 to sqrt(num) step 2:
+            WHILE num mod factor == 0:
+                ADD factor to prime_factors
+                num = num / factor
+        IF num > 2:
+            ADD num to prime_factors
+        RETURN prime_factors
+
+    FOR num from 1 to 100:
+        fact  = CALL get_prime_factors(num)
+        PRINT num, fact
+
+
 
 .. code-block:: python
 

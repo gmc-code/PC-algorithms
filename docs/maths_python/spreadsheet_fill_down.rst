@@ -24,5 +24,6 @@ Simple rule
     :width: 600
     :align: center
 
-
+|
+|
 

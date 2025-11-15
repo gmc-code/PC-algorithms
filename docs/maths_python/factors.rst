@@ -20,6 +20,34 @@ Prime factor list
     * While the factor goes in exactly, add it to the prime factors list and divide the number, num, by the factor.
     * Return the list of prime factors.
 
+.. code-block:: none
+
+    FUNCTION get_prime_factors(number):
+        SET max_possible = square_root(number) + 1
+        CREATE empty list prime_factors
+
+        WHILE number divisible by 2:
+            ADD 2 to prime_factors
+            number = number / 2
+
+        FOR factor from 3 to max_possible, step 2:
+            WHILE number divisible by factor:
+                ADD factor to prime_factors
+                number = number / factor
+
+        IF number > 2:
+            ADD number to prime_factors
+
+        RETURN prime_factors
+
+
+    MAIN PROGRAM:
+        REPEAT 10 times:
+            num = random integer between 12 and 300
+            factors = CALL get_prime_factors(num)
+            PRINT num and factors
+
+
 .. literalinclude:: files/prime_factors.py
     :linenos:
 
@@ -29,7 +57,7 @@ Prime factor list
 
     97 [97]
     235 [5, 47]
-    96 [2, 2, 2, 2, 2, 3]       
+    96 [2, 2, 2, 2, 2, 3]
     256 [2, 2, 2, 2, 2, 2, 2, 2]
     210 [2, 3, 5, 7]
     247 [13, 19]
@@ -44,7 +72,36 @@ Prime factor lists
 ------------------------------
 
 | The following code checks all the numbers from 2 to 100 for prime factors and lists those with atleast 3 different prime factors.
-| A crictical line of code is: ``if len(set(fact)) > 2:`` which converts the list of prime factors to a set, which can only include one copy of each prime factor. 
+| A crictical line of code is: ``if len(set(fact)) > 2:`` which converts the list of prime factors to a set, which can only include one copy of each prime factor.
+
+.. code-block:: none
+
+    FUNCTION get_prime_factors(number):
+        SET max_possible = square_root(number) + 1
+        CREATE empty list prime_factors
+
+        WHILE number divisible by 2:
+            ADD 2 to prime_factors
+            number = number / 2
+
+        FOR factor from 3 to max_possible, step 2:
+            WHILE number divisible by factor:
+                ADD factor to prime_factors
+                number = number / factor
+
+        IF number > 2:
+            ADD number to prime_factors
+
+        RETURN prime_factors
+
+
+    MAIN PROGRAM:
+        FOR num from 2 to 100:
+            factors = CALL get_prime_factors(num)
+            IF count of unique values in factors > 2:
+                PRINT num and factors
+
+
 
 .. literalinclude:: files/prime_factor_sets.py
     :linenos:
@@ -54,12 +111,11 @@ Prime factor lists
 .. parsed-literal::
 
     30 [2, 3, 5]
-    42 [2, 3, 7]   
+    42 [2, 3, 7]
     60 [2, 2, 3, 5]
-    66 [2, 3, 11]  
-    70 [2, 5, 7]   
-    78 [2, 3, 13]  
+    66 [2, 3, 11]
+    70 [2, 5, 7]
+    78 [2, 3, 13]
     84 [2, 2, 3, 7]
     90 [2, 3, 3, 5]
 
-    
