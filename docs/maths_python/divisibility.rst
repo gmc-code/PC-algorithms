@@ -38,16 +38,16 @@ Divibility by 2
 | Pseudocode:
 
 | function div_by_2(num)
-|     endings <- ["0", "2", "4", "6", "8"]
-|     last_digit <- str(num)[-1]
+|     endings ← ["0", "2", "4", "6", "8"]
+|     last_digit ← str(num)[-1]
 |     if last_digit in endings then
 |         return True
 |     else
 |         return False
 |     endif
 | endfunction
-| 
-| num <- random integer from 10 to 300
+|
+| num ← random integer from 10 to 300
 | **print** num, div_by_2(num)
 
 
@@ -57,7 +57,7 @@ Divibility by 3
 -------------------
 
 | A number is divisible by 3 if the sum of the digits in the number is divisible by 3.
-| For example: 162 is divisible by 3 since the sum of the digits is 9 (1 + 6 + 2 = 9) and 9 is divisible 
+| For example: 162 is divisible by 3 since the sum of the digits is 9 (1 + 6 + 2 = 9) and 9 is divisible
 by 3.
 | The code below sums the digits of the number via **sum_digits**, and repeats summing the digits via **repeated_sum_digits** until there is just one digit, then, in **div_by_3**, checks if that sum is 3, 6, or 9.
 
@@ -126,10 +126,10 @@ Divisibility by 7
 
 | The process for divisibility by 7 requires a few steps. Follow the steps below to test divisibility by 7, and then work through the example provided.
 | 1.	Write down all the digits in the number except the last digit.
-| 2.	Take the last digit of the number you're testing and double it. 
-| 3.	Subtract this number from the rest of the digits in the original number that you wrote down. 
-| 4.	If this new number is either 0 or a number that's divisible by 7, then the original number is also divisible by 7. 
-| 5.	If you can't tell yet if the new number is divisible by 7, go back to the first step with this new (smaller) number and repeat. 
+| 2.	Take the last digit of the number you're testing and double it.
+| 3.	Subtract this number from the rest of the digits in the original number that you wrote down.
+| 4.	If this new number is either 0 or a number that's divisible by 7, then the original number is also divisible by 7.
+| 5.	If you can't tell yet if the new number is divisible by 7, go back to the first step with this new (smaller) number and repeat.
 
 .. code-block:: python
 

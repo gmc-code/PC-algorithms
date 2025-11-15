@@ -10,9 +10,9 @@ Iteration
 Loops
 -------------
 
-There are two types of loops: 
+There are two types of loops:
 * ``for`` loops, that keep count of the number of times a block of code is executed
-* ``while`` loops which perform an action until a specified condition is no longer true. 
+* ``while`` loops which perform an action until a specified condition is no longer true.
 
 ----
 
@@ -33,7 +33,7 @@ For loops
 .. code-block::
 
     BEGIN
-        FOR i <- 0 TO 3
+        FOR i ← 0 TO 3
             OUTPUT i
         NEXT i
     END
@@ -66,9 +66,9 @@ For loops
 | **Pseudocode**. The equivalent pseudocode is:
 
 .. code-block::
- 
+
     BEGIN
-        FOR i <- 4 TO 8
+        FOR i ← 4 TO 8
             OUTPUT i
         NEXT i
     END
@@ -128,10 +128,10 @@ While loops: pre-test
 .. code-block::
 
     BEGIN
-        num <- 1
+        num ← 1
         WHILE num < 10
             OUTPUT num
-            num <- num + 1
+            num ← num + 1
         ENDWHILE
     END
 
@@ -149,10 +149,10 @@ Pseudocode: post-test REPEAT UNTIL
 .. code-block::
 
     BEGIN
-        num <- 1
+        num ← 1
         REPEAT
             OUTPUT num
-            num <- num + 2
+            num ← num + 2
         UNTIL num > 9
     END
 
@@ -192,10 +192,10 @@ Pseudocode: post-test DO WHILE
 .. code-block::
 
     BEGIN
-        num <- 1
+        num ← 1
         DO
             OUTPUT num
-            num <- num + 2
+            num ← num + 2
         WHILE num < 10
     END
 
@@ -232,7 +232,7 @@ Practice Questions
     #. What is the expected output from the code above?
     #. How many times is the loop below executed?
 
-        .. code-block:: 
+        .. code-block::
 
             BEGIN
                 i = 0
@@ -254,10 +254,9 @@ Practice Questions
                 | What is the expected output from the code above?
                 | 1, 3, 5, 7, 9 on separate lines.
 
-            
+
             .. tab-item:: Q2
 
                 | How many times is the loop below executed?
                 | Once.
 
-            

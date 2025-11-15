@@ -32,7 +32,7 @@ Python to Pseudocode Summary
 	* - ==
 	  - =
 	* - =
-	  - <-
+	  - ←
 	* - print
 	  - **output** or **print** or **display**
 	* - input
@@ -107,7 +107,7 @@ Python to Pseudocode Summary
 	* - ==
 	  - =
 	* - =
-	  - <-
+	  - ←
 	* - print
 	  - OUTPUT or Print or DISPLAY
 	* - input

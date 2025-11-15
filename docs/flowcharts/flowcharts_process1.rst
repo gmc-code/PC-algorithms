@@ -63,5 +63,5 @@ Flowcharts process1 Area of a rectangle
 
                 From the flowchart, what common maths symbol does this assignment symbol replace?
 
-               `` =``
+                ``=``
 

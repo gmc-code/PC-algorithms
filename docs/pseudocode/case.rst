@@ -2,7 +2,7 @@
 Case
 ==========================
 
-| Match-case statements are in python from 3.10. 
+| Match-case statements are in python from 3.10.
 | Python refers to this as structural pattern matching.
 | Match-case statements can be used for what is known as switch-case statements in general use in other languages.
 | See: https://docs.python.org/3/whatsnew/3.10.html#pep-634-structural-pattern-matching
@@ -38,10 +38,10 @@ Match-case
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block:: 
+.. code-block::
 
     BEGIN
-        age_flag <- FALSE
+        age_flag ← FALSE
         CASE age_flag:
             TRUE: OUTPUT "Entry permitted"
             FALSE: OUTPUT "No entry until you reach 13 years of age."
@@ -66,10 +66,10 @@ Alternatives
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block:: 
+.. code-block::
 
     BEGIN
-        grade <- "A"
+        grade ← "A"
         CASE grade:
             "A+" | "A" | "B+" |  "B" | "C+" | "C": OUTPUT "Acceptable standard."
             "D+" | "D" | "NP" | "UG": OUTPUT "Retest required."
@@ -84,7 +84,7 @@ Wildcard
 
 | If an exact match is not confirmed, the last case, if provided, will be used as the matching case.
 | The wildcard ``_`` is usually used when it is not referred to again in the code block.
-| Another variable name, such as ``other``, is used if it is referred to in the following case block code. 
+| Another variable name, such as ``other``, is used if it is referred to in the following case block code.
 
 .. code-block:: python
 
@@ -99,10 +99,10 @@ Wildcard
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block:: 
+.. code-block::
 
     BEGIN
-        grade <- "A-"
+        grade ← "A-"
         CASE grade:
             "A+" OR "A" OR "B+" OR  "B" OR "C+" OR "C": OUTPUT "Acceptable standard."
             "D+" OR "D" OR "NP" OR "UG": OUTPUT "Retest required."
@@ -116,7 +116,7 @@ Wildcard
 Matching tuples for coordinates
 --------------------------------
 
-| Other objects, apart from strings can be matched. 
+| Other objects, apart from strings can be matched.
 | An example with a tuple is below.
 
 
@@ -138,10 +138,10 @@ Matching tuples for coordinates
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block:: 
+.. code-block::
 
     BEGIN
-        point <- (2, 3)
+        point ← (2, 3)
         CASE point:
             (0, 0): OUTPUT "Origin"
             (0, y): OUTPUT f"{y} on Y axis"
