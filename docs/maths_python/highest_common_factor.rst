@@ -24,7 +24,7 @@ HCF by repeated subtraction (Euclidean algorithm)
 
 | The pseudocode for the algorithm is as follows:
 
-..code-block:: pseudocode
+.. code-block:: pseudocode
 
     FUNCTION HCF_SUB(a, b):
         WHILE a ≠ b:
