@@ -252,6 +252,18 @@ button.copybtn {
     padding: 0.5em;
 }
 
+/* Pseudocode blocks only */
+.highlight-pseudocode {
+    background: #c9c9c9;  /* light grey */
+}
+
+/* Override keyword color inside pseudocode */
+.highlight-pseudocode .k {
+    color: #97147b;  /* blue */
+    font-weight: bold;
+}
+
+
 
 /* .highlight {
      background: rgb(234, 234, 234);
