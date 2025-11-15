@@ -18,7 +18,7 @@ Flowcharts input1 askName
 
 
 .. image:: drawio_files/input_output/ask_name.png
-    :scale: 50 %
+    :scale: 60 %
     :align: center
 
 |
@@ -82,3 +82,4 @@ Flowcharts input1 askName
                 .. code-block::  none
 
                     They are linked by arrows.
+

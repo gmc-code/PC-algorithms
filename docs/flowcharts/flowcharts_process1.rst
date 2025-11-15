@@ -20,8 +20,7 @@ Flowcharts process1 Area of a rectangle
 ``A  ←  l * w`` can be read out as "A gets l times w"
 
 .. image:: drawio_files/process/area_rectangle.png
-
-    :scale: 50 %
+    :scale: 60 %
     :align: center
 
 |
@@ -46,6 +45,7 @@ Flowcharts process1 Area of a rectangle
                 What shape is used to calculate the area using length and width?
 
                 .. code-block:: none
+
                     A rectangle.
 
             .. tab-item:: Q2
@@ -53,6 +53,7 @@ Flowcharts process1 Area of a rectangle
                 In the pseudocode above, what symbol is used for multiplication?
 
                 .. code-block:: none
+
                     ``*``
 
             .. tab-item:: Q3
@@ -60,6 +61,7 @@ Flowcharts process1 Area of a rectangle
                  In the pseudocode above, what symbol is used for assignment?
 
                 .. code-block:: none
+
                     ``←``
 
             .. tab-item:: Q4
@@ -67,5 +69,6 @@ Flowcharts process1 Area of a rectangle
                 From the flowchart, what common maths symbol does this assignment symbol replace?
 
                 .. code-block:: none
+
                     ``=``
 

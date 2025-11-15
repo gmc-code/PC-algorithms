@@ -48,7 +48,7 @@ Flowcharts input2 favouriteColour
 
 
 .. image:: drawio_files/input_output/ask_favourite_colour_st.png
-    :scale: 50 %
+    :scale: 60 %
     :align: center
 
 |
@@ -70,6 +70,6 @@ Flowcharts input2 favouriteColour
                 On the flowchart, draw the correct shape for input statement (INPUT) and the correct shape for the output statements (PRINT).
 
                 .. image:: drawio_files/input_output/ask_favourite_colour.png
-                    :scale: 50 %
+                    :scale: 60 %
                     :align: center
 
