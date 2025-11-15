@@ -1,39 +1,36 @@
 =================================================
-Flowcharts Positive Numbers
+Flowcharts Classify Quadrilateral by Sides
 =================================================
 
-| The pseudocode below checks to see whether a number is positive or not.
+| The pseudocode below checks to see if a quadrilateral has all sides equal, or just opposite sides equal, and classifies it accordingly.
 
 .. code-block:: none
 
-    ALGORITHM positiveOrNot()
+    ALGORITHM classifyQuadrilateralBySides()
 
     BEGIN
-        INPUT number
-        IF number > 0 THEN
-            PRINT number + " is positive."
+        INPUT sidesEqual, oppositeSidesEqual
+        IF sidesEqual = TRUE THEN
+            PRINT "Rhombus"
+        ELSEIF oppositeSidesEqual = TRUE THEN
+            PRINT "Parallelogram"
         ELSE
-            PRINT number + " is not positive."
+            PRINT "Other quadrilateral"
         ENDIF
     END
 
 
-| The new shape in the flowchart (number > 0?), is for a decision, which tests a condition and answers True (Yes) or False (No).
-| These decisions are written on each branch line.
-
-.. image:: drawio_files/selection/positive_or_not.png
-    :scale: 60 %
-    :align: center
-
 |
 |
+
 
 .. admonition:: Tasks
 
-    #. What shape is used for a decision?
-    #. In the pseudocode above, what keywords start and end the line that checks the number?
-    #. In the pseudocode above, what keyword starts the code for the NO branch of the flowchart?
-    #. In the pseudocode above, what keyword ends the code for the IF block?
+    #. On the flowchart, fill in the shapes with text to represent the pseudocode above.
+
+        .. image:: drawio_files/selection/quadrilaterals_by_sides_st.png
+            :scale: 60 %
+            :align: center
 
     .. dropdown::
         :icon: codescan
@@ -44,33 +41,8 @@ Flowcharts Positive Numbers
 
             .. tab-item:: Q1
 
-                What shape is used for a decision?
+                On the flowchart, fill in the shapes with text to represent the pseudocode above.
 
-                .. code-block:: none
-
-                    A diamond
-
-            .. tab-item:: Q2
-
-                In the pseudocode above, what keywords start and end the line that checks the number?
-
-                .. code-block:: none
-
-                    IF and THEN
-
-            .. tab-item:: Q3
-
-                 In the pseudocode above, what keyword starts the code for the NO branch of the flowchart?
-
-                .. code-block:: none
-
-                    ELSE
-
-            .. tab-item:: Q4
-
-                In the pseudocode above, what keyword ends the code for the IF block?
-
-                .. code-block:: none
-
-                    ENDIF
-
+                .. image:: drawio_files/selection/quadrilaterals_by_sides.png
+                    :scale: 60 %
+                    :align: center
