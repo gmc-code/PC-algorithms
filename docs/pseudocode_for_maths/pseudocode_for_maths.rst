@@ -4,7 +4,7 @@ Pseudocode for maths
 
 | Pseudocode is known as Structured English.
 | Pseudocode is a way of writing a program that generalizes it for conversion into a programming language.
-| Pseudocode represents the the steps of the program in natural language and mathematical notation.
+| Pseudocode represents the steps of the program in natural language and mathematical notation.
 | Pseudocode describes the logic of the program or algorithm.
 
 | See: https://www.vcaa.vic.edu.au/curriculum/vce-curriculum/vce-study-designs/pseudocode

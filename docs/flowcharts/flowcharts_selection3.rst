@@ -66,7 +66,7 @@ Flowcharts Study or not
 
             .. tab-item:: Q2
 
-                Use the pseducode to add the missing text to the flowchart.
+                Use the pseudocode to add the missing text to the flowchart.
 
                 .. image:: drawio_files/selection/study_or_not.png
                     :scale: 60 %

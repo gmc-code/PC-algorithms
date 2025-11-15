@@ -24,7 +24,7 @@ Flowcharts Jumper or not
 
 .. admonition:: Tasks
 
-    #. Use the pseducode to add the missing text to the flowchart.
+    #. Use the pseudocode to add the missing text to the flowchart.
 
         .. image:: drawio_files/selection/jumper_or_not_st.png
             :scale: 60 %
@@ -39,7 +39,7 @@ Flowcharts Jumper or not
 
             .. tab-item:: Q1
 
-                Use the pseducode to add the missing text to the flowchart.
+                Use the pseudocode to add the missing text to the flowchart.
 
                 .. image:: drawio_files/selection/jumper_or_not.png
                     :scale: 60 %

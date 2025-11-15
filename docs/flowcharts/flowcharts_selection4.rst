@@ -1,27 +1,28 @@
 =================================================
-Flowcharts Positive Numbers
+Flowcharts What to Wear
 =================================================
 
-| The pseudocode below checks to see whether a number is positive or not.
+| ELSEIF (or ELSE IF) is used in pseudocode to handle multiple conditions in a decision-making structure.
+| It allows you to check additional conditions if the first IF condition is false — without ending the decision block.
+| The pseudocode below shows an algorithm, with 2 decision steps, that suggests what to wear based on the temperature input by the user.
 
 .. code-block:: none
 
-    ALGORITHM positiveOrNot()
+    ALGORITHM whatToWear()
 
     BEGIN
-        INPUT number
-        IF number > 0 THEN
-            PRINT number + " is positive."
+        INPUT temperature
+        IF temperature < 10 THEN
+            PRINT "Wear a coat."
+        ELSEIF temperature < 20 THEN
+            PRINT "Wear a jumper."
         ELSE
-            PRINT number + " is not positive."
+            PRINT "Wear a shirt."
         ENDIF
     END
 
 
-| The new shape in the flowchart (number > 0?), is for a decision, which tests a condition and answers True (Yes) or False (No).
-| These decisions are written on each branch line.
-
-.. image:: drawio_files/selection/positive_or_not.png
+.. image:: drawio_files/selection/what_to_wear.png
     :scale: 60 %
     :align: center
 
@@ -30,10 +31,10 @@ Flowcharts Positive Numbers
 
 .. admonition:: Tasks
 
-    #. What shape is used for a decision?
-    #. In the pseudocode above, what keywords start and end the line that checks the number?
-    #. In the pseudocode above, what keyword starts the code for the NO branch of the flowchart?
-    #. In the pseudocode above, what keyword ends the code for the IF block?
+    #. In the pseudocode above, there are two lines that end with THEN. What keywords do those lines start with?
+    #. What do you wear if the first condition is False and the second is True?
+    #. What do you wear if all conditions are False?
+
 
     .. dropdown::
         :icon: codescan
@@ -44,33 +45,25 @@ Flowcharts Positive Numbers
 
             .. tab-item:: Q1
 
-                What shape is used for a decision?
+                In the pseudocode above, there are two lines that end with THEN. What keywords do those lines start with?
 
                 .. code-block:: none
 
-                    A diamond
+                    IF and ELSEIF
 
             .. tab-item:: Q2
 
-                In the pseudocode above, what keywords start and end the line that checks the number?
+                What do you wear if the first condition is False and the second is True?
 
                 .. code-block:: none
 
-                    IF and THEN
+                    A jumper.
 
             .. tab-item:: Q3
 
-                 In the pseudocode above, what keyword starts the code for the NO branch of the flowchart?
+                What do you wear if all conditions are False?
 
                 .. code-block:: none
 
-                    ELSE
-
-            .. tab-item:: Q4
-
-                In the pseudocode above, what keyword ends the code for the IF block?
-
-                .. code-block:: none
-
-                    ENDIF
+                    A shirt.
 

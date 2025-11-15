@@ -3,7 +3,7 @@ Flowcharts introduction
 ==========================
 
 | A flowchart is a visual diagram that illustrates the logical sequence of steps in an algorithm.
-| Different shapes and colors are used to represent specific instructions or decisions.
+| Different shapes and colours are used to represent specific instructions or decisions.
 
 The basic components of a flowchart are:
 
