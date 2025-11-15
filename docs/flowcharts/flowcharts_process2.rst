@@ -20,7 +20,7 @@ Flowcharts process2
 
 
 
-.. image:: drawio_files/input_output/ask_favourite_colour_st.png
+.. image:: drawio_files/process/area_rectangle.png
     :scale: 100 %
     :align: center
 

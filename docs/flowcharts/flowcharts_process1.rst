@@ -21,7 +21,7 @@ Flowcharts process1 Area of a rectangle
 
 .. image:: drawio_files/process/area_rectangle.png
 
-    :scale: 100 %
+    :scale: 50 %
     :align: center
 
 |

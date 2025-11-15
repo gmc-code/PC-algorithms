@@ -18,7 +18,7 @@ Flowcharts input1 askName
 
 
 .. image:: drawio_files/input_output/ask_name.png
-    :scale: 60 %
+    :scale: 50 %
     :align: center
 
 |

@@ -5,14 +5,14 @@ Flowcharts introduction
 | A flowchart is a visual diagram that illustrates the logical sequence of steps in an algorithm.
 | Different shapes and colors are used to represent specific instructions or decisions.
 
-The fundamental components of a flowchart include:
+The basic components of a flowchart are:
 
-- **Start and End points** marking the start and end of the algorithm
-- **Data input**
-- **Output of results**
-- **Processes** such as assignments, calculations
+- **Start and End points** for marking the start and end of the algorithm
+- **Data input** for user input
+- **Output of results** for output
+- **Processes** for assignments, calculations
 - **Selection diamonds** for a decision that determine the next path in the workflow
-- **Lines with Arrows** indicating the order in which steps are carried out, especially for loops.
+- **Lines with Arrows** for indicating the order in which steps are carried out, especially for loops.
 
 .. image:: drawio_files/general/general_shapes.png
     :scale: 75 %
