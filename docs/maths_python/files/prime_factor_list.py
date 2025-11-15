@@ -17,7 +17,7 @@ def get_prime_factors(num):
     return prime_factors
 
 
-for num in range(2, 101):
+for num in range(1, 101):
     fact  = get_prime_factors(num)
     print(num, fact)
 

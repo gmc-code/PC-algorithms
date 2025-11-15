@@ -1,4 +1,6 @@
 # Define a function to find the hcf of any number of numbers using subtraction
+
+
 def hcf_sub_multi(*args):
     # Use the logic for subtraction a-b-c-... = ((a-b)-c)-...
     result = args[0]
