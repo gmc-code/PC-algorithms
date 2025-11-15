@@ -19,7 +19,6 @@ PC-algorithms
     :numbered:
 
     pseudocode/pseudocode.rst
-    pseudocode_for_maths/pseudocode_for_maths.rst
     pseudocode/assignment.rst
     pseudocode/input_and_output.rst
     pseudocode/sequence.rst

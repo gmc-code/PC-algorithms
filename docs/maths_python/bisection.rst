@@ -11,18 +11,18 @@ Bisection
 The Bisection method
 ------------------------
 
-| The bisection method is an algorithms that can be used to approximate the roots of a function. 
+| The bisection method is an algorithms that can be used to approximate the roots of a function.
 
 .. image:: images/bisection_quadratic.png
     :width: 600
     :align: center
 
-|      
-| The bisection method works by repeatedly dividing an interval in half and checking which half contains a root. 
-| The method starts with an interval `[a,b]` such that `f(a)` and `f(b)` have opposite signs, which means that there must be at least one root in the interval. 
-| The midpoint of the interval is calculated as `c = (a + b) / 2`, and the function is evaluated at this point. 
-| If `f(c)` is zero, then `c` is a root of the function. Otherwise, the sign of `f(c)` is compared to the sign of `f(a)` and `f(b)`. 
-| If `f(c)` has the same sign as one of the endpoints, then the root must be in the other half of the interval, so the interval is updated accordingly. 
+|
+| The bisection method works by repeatedly dividing an interval in half and checking which half contains a root.
+| The method starts with an interval `[a,b]` such that `f(a)` and `f(b)` have opposite signs, which means that there must be at least one root in the interval.
+| The midpoint of the interval is calculated as `c = (a + b) / 2`, and the function is evaluated at this point.
+| If `f(c)` is zero, then `c` is a root of the function. Otherwise, the sign of `f(c)` is compared to the sign of `f(a)` and `f(b)`.
+| If `f(c)` has the same sign as one of the endpoints, then the root must be in the other half of the interval, so the interval is updated accordingly.
 | This process is repeated until a sufficiently accurate approximation of the root is found.
 
 | It's important to choose an appropriate initial interval or initial guess and to monitor the convergence of the method to ensure that it's providing accurate results.
@@ -33,34 +33,43 @@ Bisection with specified Iterations
 ------------------------------------------
 
 | Pseudocode for the bisection method is below.
-| This code defines a function bisection that takes four arguments: f, a, b, and max_iter. 
-| The function checks if the product of f(a) and f(b) is greater than 0. If it is, it returns "Invalid interval". 
-| Otherwise, it enters a while loop that iterates max_iter times. 
-| During each iteration, the code calculates the midpoint between a and b and checks if f(mid) is equal to 0. 
-| If it is, the function returns mid. 
-| If not, the code checks if the product of f(a) and f(mid) is less than 0. 
-| If it is, the value of b is updated to be equal to mid. 
-| Otherwise, the value of a is updated to be equal to mid. 
-| The loop counter i is then incremented by 1. 
+| This code defines a function bisection that takes four arguments: f, a, b, and max_iter.
+| The function checks if the product of f(a) and f(b) is greater than 0. If it is, it returns "Invalid interval".
+| Otherwise, it enters a while loop that iterates max_iter times.
+| During each iteration, the code calculates the midpoint between a and b and checks if f(mid) is equal to 0.
+| If it is, the function returns mid.
+| If not, the code checks if the product of f(a) and f(mid) is less than 0.
+| If it is, the value of b is updated to be equal to mid.
+| Otherwise, the value of a is updated to be equal to mid.
+| The loop counter i is then incremented by 1.
 | After the loop has completed, the function returns the final value of mid.
 
-| Pseudocode:
+| The bisection algorithm in pseudocode:
 
-| **define** bisection (f(x), a, b, max_iter)
-|     **if** f(a) x f(b) > 0 **then**		
-|         **return** "Invalid interval"
-|     i ← 0 
-|     **while** i < max_iter
-|         mid ← (a + b) ÷ 2 
-|         **if** f(mid) = 0 **then** 
-|             **return** mid 
-|         **else if** f(a) x f(mid) < 0 **then** 
-|             b ← mid 
-|         **else**
-|             a ← mid 
-|         i ← i + 1 
-|     **end while** 
-|     **return** mid 
+.. code-block:: pseudocode
+
+    DEFINE bisection(f(x), a, b, max_iter)
+        IF f(a) * f(b) > 0 THEN
+            RETURN "Invalid interval"
+        END IF
+
+        i ← 0
+        WHILE i < max_iter
+            mid ← (a + b) ÷ 2
+
+            IF f(mid) = 0 THEN
+                RETURN mid
+            ELSE IF f(a) * f(mid) < 0 THEN
+                b ← mid
+            ELSE
+                a ← mid
+            END IF
+
+            i ← i + 1
+        END WHILE
+
+        RETURN mid
+    END DEFINE
 
 
 | Python implementation:
@@ -92,7 +101,7 @@ Cubic Example
     :width: 600
     :align: center
 
-|    
+|
 | Here's an example of how you can use the bisection function to find the root of a cubic function in the interval [1, 3] with a maximum of 10 Iterations.
 | The output value is 2.123046875.
 
@@ -116,7 +125,7 @@ Cubic Example
             i += 1
         return mid
 
-        bisec_value = bisection(f,1,3,10) 
+        bisec_value = bisection(f,1,3,10)
 
         print(bisec_value)
         # 2.123046875
@@ -155,7 +164,7 @@ Example with sin function
             i += 1
         return mid
 
-    bisec_value = bisection(f,2,4,5) 
+    bisec_value = bisection(f,2,4,5)
 
     print(bisec_value)
     # 3.1875
@@ -169,24 +178,33 @@ Bisection with specified error tolerance
 | The bisection method can check how close the y value is to zero when estimating the root of the equation and stop when a certain tolerance, max_diff, has been reached.
 | A print statement is included to output the x and y values at each Iteration.
 
-| Pseudocode:
+| The bisection algorithm in pseudocode with max_diff:
 
-| **define** bisection (f(x), a, b, max_iter, max_diff)
-|     **if** f(a) x f(b) > 0 **then**		
-|         **return** "Invalid interval"
-|     i ← 0 
-|     **while** i < max_iter
-|         mid ← (a + b) ÷ 2
-|         **print** ("Iteration i: a, b, mid, y")
-|         **if** abs(f(mid)) <= max_diff **then** 
-|             **return** mid 
-|         **else if** f(a) x f(mid) < 0 **then** 
-|             b ← mid 
-|         **else**
-|             a ← mid 
-|         i ← i + 1 
-|     **end while** 
-|     **return** mid 
+.. code-block:: pseudocode
+
+    DEFINE bisection(f(x), a, b, max_iter, max_diff)
+        IF f(a) * f(b) > 0 THEN
+            RETURN "Invalid interval"
+        END IF
+
+        i ← 0
+        WHILE i < max_iter
+            mid ← (a + b) ÷ 2
+            PRINT("Iteration", i, ": a =", a, ", b =", b, ", mid =", mid, ", f(mid) =", f(mid))
+
+            IF abs(f(mid)) ≤ max_diff THEN
+                RETURN mid
+            ELSE IF f(a) * f(mid) < 0 THEN
+                b ← mid
+            ELSE
+                a ← mid
+            END IF
+
+            i ← i + 1
+        END WHILE
+
+        RETURN mid
+    END DEFINE
 
 
 | Python implementation:
@@ -239,7 +257,7 @@ Cubic Example
         return mid
 
 
-    bisec_value = bisection(f,1,3,100,0.0001) 
+    bisec_value = bisection(f,1,3,100,0.0001)
 
     print(bisec_value)
     # 2.12353515625
