@@ -24,13 +24,20 @@ Listed numbers
         sum += num
     print(sum)
 
-| Pseudocode:
 
-| nums ← [1, 2, 3, 4, 5]
-| sum ← 0
-| **for** each num in nums
-|     sum ← sum + num
-| **print** sum
+| The pseudocode below uses a for each loop to iterate over the nums list.
+
+.. code-block:: pseudocode
+
+    DECLARE nums ← [1, 2, 3, 4, 5]
+    DECLARE sum ← 0
+
+    FOR EACH num IN nums DO
+        sum ← sum + num
+    END FOR
+
+    PRINT sum
+
 
 ----
 
@@ -48,14 +55,22 @@ Range from 0
         sum += num
     print(sum)
 
-| Pseudocode:
+| The pseudocode below uses a for each loop to iterate over the nums list.
 
-| nums ← list from 0 to 5
-| **print** nums
-| sum ← 0
-| **for** each num in nums
-|     sum ← sum + num
-| **print** sum
+.. code-block:: pseudocode
+
+    DECLARE nums ← [0, 1, 2, 3, 4, 5]
+    PRINT nums
+
+    DECLARE sum ← 0
+
+    FOR EACH num IN nums DO
+        sum ← sum + num
+    END FOR
+
+    PRINT sum
+
+
 
 ----
 
@@ -75,16 +90,24 @@ Range: first and last
         sum += num
     print(sum)
 
-| Pseudocode:
+| The pseudocode below uses a for each loop to iterate over the nums list.
 
-| start_num ← 4
-| end_num ← 12
-| nums ← list of integers from start_num to end_num
-| **print** nums
-| sum ← 0
-| **for** each num in nums
-|     sum ← sum + num
-| **print** sum
+.. code-block:: pseudocode
+
+    DECLARE start_num ← 4
+    DECLARE end_num ← 12
+
+    DECLARE nums ← list of integers from start_num to end_num
+    PRINT nums
+
+    DECLARE sum ← 0
+
+    FOR EACH num IN nums DO
+        sum ← sum + num
+    END FOR
+
+    PRINT sum
+
 
 ----
 
@@ -105,17 +128,25 @@ Range: step size
         sum += num
     print(sum)
 
-| Pseudocode:
+| The pseudocode below uses a for each loop to iterate over the nums list.
 
-| start_num ← 4
-| end_num ← 12
-| step_size ← 2
-| nums ← list of integers from start_num to end_num in steps of step_size
-| **print** nums
-| sum ← 0
-| **for** each num in nums
-|     sum ← sum + num
-| **print** sum
+.. code-block:: pseudocode
+
+    DECLARE start_num ← 4
+    DECLARE end_num ← 12
+    DECLARE step_size ← 2
+
+    DECLARE nums ← list of integers from start_num to end_num in steps of step_size
+    PRINT nums
+
+    DECLARE sum ← 0
+
+    FOR EACH num IN nums DO
+        sum ← sum + num
+    END FOR
+
+    PRINT sum
+
 
 ----
 
@@ -138,13 +169,17 @@ Arithmetic sequence formula 1
     sum = (n/2) * (2*a + (n-1)*d)
     print(sum)
 
-| Pseudocode:
 
-| a ← 4
-| n ← 5
-| d ← 2
-| sum ← (n/2) * (2*a + (n-1)*d)
-| **print** sum
+| The pseudocode below calculates the sum using this formula.
+
+.. code-block:: pseudocode
+
+    DECLARE a ← 4
+    DECLARE n ← 5
+    DECLARE d ← 2
+
+    DECLARE sum ← (n / 2) * (2 * a + (n - 1) * d)
+    PRINT sum
 
 
 ----
@@ -168,12 +203,18 @@ Arithmetic sequence formula 2
     sum = (n/2) * (a + l)
     print(sum)
 
-| Pseudocode:
 
-| a ← 4
-| n ← 5
-| l ← 12
-| sum ← (n/2) * (a + l)
-| **print** sum
+| The pseudocode below calculates the sum using this formula.
+
+.. code-block:: pseudocode
+
+    DECLARE a ← 4
+    DECLARE n ← 5
+    DECLARE l ← 12
+
+    DECLARE sum ← (n / 2) * (a + l)
+    PRINT sum
+
+
 
 
