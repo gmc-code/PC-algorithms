@@ -9,7 +9,10 @@ from sphinx.highlighting import lexers
 from pseudocode_lexer import PseudocodeLexer
 # from pygments.lexers.python import PythonLexer
 
-lexers['pseudocode'] = PseudocodeLexer()
+
+
+# lexers['pseudocode'] = PseudocodeLexer()
+
 
 # Register pseudocode as Python lexer
 # lexers['pseudocode'] = PythonLexer()
