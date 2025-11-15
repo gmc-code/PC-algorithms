@@ -242,11 +242,16 @@ button.copybtn {
 
 /* Target code blocks with "none" lexer */
 .highlight-none {
-    background: #f3fff0;  /* light green */
+    background: rgb(234, 234, 234);
 }
-.highlight-none {
+
+/* Only pseudocode blocks */
+.highlight-pseudocode {
     background: #f3fff0;  /* light green */
+    border: 1px solid #ccc;
+    padding: 0.5em;
 }
+
 
 .highlight {
      background: rgb(234, 234, 234);
