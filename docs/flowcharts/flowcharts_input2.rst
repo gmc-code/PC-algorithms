@@ -1,6 +1,8 @@
 ===============================================
-Flowcharts input2 favouriteColour
+Flowcharts favouriteColour
 ===============================================
+
+| The Pseudocode below prompts the user to enter a colour, then prints it out.
 
 | Indenting means adding tabs at the beginning of lines to visually group related statements.
 | Indent after control statements like IF, ELSE, ELSEIF, WHILE, FOR.

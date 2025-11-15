@@ -1,8 +1,7 @@
 =================================================
-Flowcharts process2 Area of a square
+Flowcharts Area of a square
 =================================================
 
-| Process - Area of a square
 | The pseudocode below calculates the area of a square given the length of one side, l.
 
 .. code-block:: none
@@ -23,6 +22,10 @@ Flowcharts process2 Area of a square
 
     #. On the flowchart, draw the correct shape for the process.
 
+        .. image:: drawio_files/process/area_square_st.png
+            :scale: 60 %
+            :align: center
+
     .. dropdown::
         :icon: codescan
         :color: primary
@@ -34,7 +37,7 @@ Flowcharts process2 Area of a square
 
                 On the flowchart, draw the correct shape for the process.
 
-                .. image:: drawio_files/process/area_square_st.png
+                .. image:: drawio_files/process/area_square.png
                     :scale: 60 %
                     :align: center
 

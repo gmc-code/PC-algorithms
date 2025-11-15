@@ -1,5 +1,5 @@
 =============================
-Flowcharts input1 askName
+Flowcharts askName
 =============================
 
 | The Pseudocode below prompts the user to enter their name, then prints it out.

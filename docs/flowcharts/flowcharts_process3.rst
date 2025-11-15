@@ -1,36 +1,30 @@
-==========================
-Flowcharts process3
-==========================
+=================================================
+Flowcharts Area of a parallelogram
+=================================================
 
-| Indenting means adding tabs at the beginning of lines to visually group related statements.
-| Indent after control statements like IF, ELSE, ELSEIF, WHILE, FOR.
-| Unindent after closing blocks like ENDIF, ENDWHILE, ENDFOR.
-
-| The pseudocode below has errors. See the questions for the corrections.
+| The pseudocode below calculates the area of a parallelogram given the base, b, and height, h.
 
 .. code-block:: none
 
-    ALGORITHM favouriteColour()
+    ALGORITHM parallelogramArea()
 
-    START
-    PRINT "What is your favorite colour?"
-    INPUT colour
-    PRINT colour + " is lovely!"
+    BEGIN
+        INPUT b, h
+        A  ←  b * h
+        PRINT A
     END
 
-
-
-.. image:: drawio_files/input_output/ask_favourite_colour_st.png
-    :scale: 100 %
-    :align: center
 
 |
 |
 
 .. admonition:: Tasks
 
-    #. In the incorrect pseudocode above, what keypress is missing before each PRINT and INPUT statements? Mark it in before each of the 3 lines.
-    #. On the flowchart, draw the correct shape for input statement (INPUT) and the correct shape for the output statements (PRINT).
+    #. On the flowchart, fill in the shapes with text to represent the pseudocode above.
+
+        .. image:: drawio_files/process/area_parallelogram_st.png
+            :scale: 60 %
+            :align: center
 
     .. dropdown::
         :icon: codescan
@@ -41,23 +35,9 @@ Flowcharts process3
 
             .. tab-item:: Q1
 
-                In the incorrect pseudocode above, what keypress is missing before each PRINT and INPUT statements? Mark it in before each of the 3 lines.
+                On the flowchart, fill in the shapes with text to represent the pseudocode above.
 
-                The TAB character is used to indent the code.
-
-                .. code-block:: none
-
-                    START
-                        PRINT "What is your favorite colour?"
-                        INPUT colour
-                        PRINT colour + " is lovely!"
-                    END
-
-            .. tab-item:: Q2
-
-                On the flowchart, draw the correct shape for input statement (INPUT) and the correct shape for the output statements (PRINT).
-
-                .. image:: drawio_files/input_output/ask_favourite_colour.png
-                    :scale: 100 %
+                .. image:: drawio_files/process/area_parallelogram.png
+                    :scale: 60 %
                     :align: center
 
