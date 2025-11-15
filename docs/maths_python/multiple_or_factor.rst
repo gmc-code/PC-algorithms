@@ -13,18 +13,21 @@ Pseudocode
 
 | The pseudocode to determine if one number is a factor or multiple of a second number.
 
-| **function** is_multiple_or_factor(a, b)
-|     **if** a = 0 **or** b = 0
-|         return "Do not use 0 for a or b"
-|     **end if**
-|     **if** b % a = 0
-|         **return** a + " is a factor of " + b
-|     **else if** a % b = 0
-|         **return** a + " is a multiple of " + b
-|     **else**
-|         **return** a + " is neither factor nor multiple of " + b
-|     **end if**
-| **end function**
+.. code-block:: none
+
+    FUNCTION is_multiple_or_factor(a, b)
+        IF a = 0 OR b = 0 THEN
+            RETURN "Do not use 0 for a or b"
+        ENDIF
+
+        IF b % a = 0 THEN
+            RETURN a + " is a factor of " + b
+        ELSEIF a % b = 0 THEN
+            RETURN a + " is a multiple of " + b
+        ELSE
+            RETURN a + " is neither factor nor multiple of " + b
+        ENDIF
+    END FUNCTION
 
 ----
 

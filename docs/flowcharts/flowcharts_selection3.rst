@@ -4,22 +4,6 @@ Flowcharts Study or not
 
 | In flowcharts, these comparison operators are used in decision shapes (diamonds) to test conditions that lead to different branches (Yes/No).
 
-+----------+---------------------------+-----------------------------------------------+
-| Operator | Meaning                   | Example Sentence                              |
-+==========+===========================+===============================================+
-| =        | Equal to                  | If score = 100, print "Perfect!"              |
-+----------+---------------------------+-----------------------------------------------+
-| !=       | Not equal to              | If color != "red", change to "blue".          |
-+----------+---------------------------+-----------------------------------------------+
-| >        | Greater than              | If speed > 60, show "Slow down!"              |
-+----------+---------------------------+-----------------------------------------------+
-| <        | Less than                 | If age < 18, deny access.                     |
-+----------+---------------------------+-----------------------------------------------+
-| >=       | Greater than or equal to  | If temperature >= 30, turn on fan.            |
-+----------+---------------------------+-----------------------------------------------+
-| <=       | Less than or equal to     | If hours <= 8, allow break.                   |
-+----------+---------------------------+-----------------------------------------------+
-
 .. list-table::
    :header-rows: 1
 
