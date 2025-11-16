@@ -50,7 +50,7 @@ Flowcharts Classify Triangles by Sides
 
                 '' code-block:: none
 
-                    =
+                    AND
 
             .. tab-item:: Q2
 
