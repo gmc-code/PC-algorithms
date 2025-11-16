@@ -38,7 +38,7 @@ Divisibility by 2
     BEGIN
         num ← RANDOM INTEGER BETWEEN 10 AND 300
         result ← DIV_BY_2(num)
-        PRINT(num, result)
+        PRINT num, result
     END
 
 
@@ -95,7 +95,7 @@ by 3.
     BEGIN
         num ← RANDOM INTEGER BETWEEN 12 AND 300
         result ← DIV_BY_3(num)
-        PRINT(num, result)
+        PRINT num, result)
     END
 
 
@@ -134,7 +134,7 @@ Divisibility by 5
     BEGIN
         num ← RANDOM INTEGER BETWEEN 10 AND 300
         result ← DIV_BY_5(num)
-        PRINT(num, result)
+        PRINT num, result)
     END
 
 
@@ -192,7 +192,7 @@ Divisibility by 7
     BEGIN
         num ← RANDOM INTEGER BETWEEN 12 AND 300
         result ← DIV_BY_7(num)
-        PRINT(num, result)
+        PRINT num, result)
     END
 
 

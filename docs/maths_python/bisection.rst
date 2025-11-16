@@ -190,7 +190,7 @@ Bisection with specified error tolerance
         i ← 0
         WHILE i < max_iter
             mid ← (a + b) ÷ 2
-            PRINT("Iteration", i, ": a =", a, ", b =", b, ", mid =", mid, ", f(mid) =", f(mid))
+            PRINT "Iteration", i, ": a =", a, ", b =", b, ", mid =", mid, ", f(mid) =", f(mid))
 
             IF abs(f(mid)) ≤ max_diff THEN
                 RETURN mid

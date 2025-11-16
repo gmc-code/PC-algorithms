@@ -56,9 +56,9 @@ Match-case
 
         CASE age_flag OF
             TRUE:
-                OUTPUT "Entry permitted"
+                PRINT "Entry permitted"
             FALSE:
-                OUTPUT "No entry until you reach 13 years of age."
+                PRINT "No entry until you reach 13 years of age."
         ENDCASE
     END
 
@@ -87,9 +87,9 @@ Alternatives
 
         CASE grade OF
             "A+", "A", "B+", "B", "C+", "C":
-                PRINT("Acceptable standard.")
+                PRINT "Acceptable standard."
             "D+", "D", "NP", "UG":
-                PRINT("Retest required.")
+                PRINT "Retest required."
         ENDCASE
     END
 
@@ -125,11 +125,11 @@ Wildcard
 
         CASE grade OF
             "A+", "A", "B+", "B", "C+", "C":
-                PRINT("Acceptable standard.")
+                PRINT "Acceptable standard."
             "D+", "D", "NP", "UG":
-                PRINT("Retest required.")
+                PRINT "Retest required."
             OTHERWISE:
-                PRINT("Not a valid grade")
+                PRINT "Not a valid grade"
         ENDCASE
     END
 
@@ -168,15 +168,15 @@ Matching tuples for coordinates
 
         CASE point OF
             (0, 0):
-                PRINT("Origin")
+                PRINT "Origin"
             (0, y):
-                PRINT(f"{y} on Y axis")
+                PRINT f"{y} on Y axis"
             (x, 0):
-                PRINT(f"{x} on X axis")
+                PRINT f"{x} on X axis"
             (x, y):
-                PRINT(f"{x} on X axis, {y} on Y axis")
+                PRINT f"{x} on X axis, {y} on Y axis"
             OTHERWISE:
-                PRINT("Invalid point")
+                PRINT "Invalid point"
         ENDCASE
     END
 
@@ -213,13 +213,13 @@ Example:
     BEGIN
         CASE Title OF
             "Mr":
-                PRINT("Mister")
+                PRINT "Mister"
             "Mrs":
-                PRINT("Missus")
+                PRINT "Missus"
             "Ms":
-                PRINT("Miss")
+                PRINT "Miss"
             OTHERWISE:
-                PRINT("Form of address not recognised")
+                PRINT "Form of address not recognised"
         ENDCASE
     END
 

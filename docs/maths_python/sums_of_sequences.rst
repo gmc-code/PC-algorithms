@@ -39,7 +39,7 @@ Listed numbers
             sum ← sum + num
         ENDFOR
 
-        PRINT("Sum is ", sum)
+        PRINT "Sum is ", sum
     END
 
 
@@ -66,7 +66,7 @@ Range from 0
 
     BEGIN
         nums ← [0, 1, 2, 3, 4, 5]
-        PRINT("Numbers are ", nums)
+        PRINT "Numbers are ", nums
 
         sum ← 0
 
@@ -74,7 +74,7 @@ Range from 0
             sum ← sum + num
         ENDFOR
 
-        PRINT("Sum is ", sum)
+        PRINT "Sum is ", sum
     END
 
 
@@ -106,7 +106,7 @@ Range: first and last
         end_num ← 12
 
         nums ← LIST OF INTEGERS FROM start_num TO end_num
-        PRINT("Numbers are ", nums)
+        PRINT "Numbers are ", nums
 
         sum ← 0
 
@@ -114,7 +114,7 @@ Range: first and last
             sum ← sum + num
         ENDFOR
 
-        PRINT("Sum is ", sum)
+        PRINT "Sum is ", sum
     END
 
 
@@ -148,7 +148,7 @@ Range: step size
         step_size ← 2
 
         nums ← LIST OF INTEGERS FROM start_num TO end_num IN STEPS OF step_size
-        PRINT("Numbers are ", nums)
+        PRINT "Numbers are ", nums
 
         sum ← 0
 
@@ -156,7 +156,7 @@ Range: step size
             sum ← sum + num
         ENDFOR
 
-        PRINT("Sum is ", sum)
+        PRINT "Sum is ", sum
     END
 
 
@@ -194,7 +194,7 @@ Arithmetic sequence formula 1
 
         sum ← (n ÷ 2) * (2 * a + (n - 1) * d)
 
-        PRINT("Sum of arithmetic progression is ", sum)
+        PRINT "Sum of arithmetic progression is ", sum
     END
 
 
@@ -232,7 +232,7 @@ Arithmetic sequence formula 2
 
         sum ← (n ÷ 2) * (a + l)
 
-        PRINT("Sum of arithmetic progression is ", sum)
+        PRINT "Sum of arithmetic progression is ", sum
     END
 
 

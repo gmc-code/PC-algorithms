@@ -39,7 +39,7 @@ Simple rule
             manipulated_numbers ← CALL manipulate_numbers(numbers)
 
         OUTPUT:
-            PRINT("Manipulated numbers are ", manipulated_numbers)
+            PRINT "Manipulated numbers are ", manipulated_numbers
     END
 
 
@@ -77,7 +77,7 @@ Even numbers
             even_numbers ← CALL get_even_numbers(numbers)
 
         OUTPUT:
-            PRINT("Even numbers are ", even_numbers)
+            PRINT "Even numbers are ", even_numbers
     END
 
 
@@ -114,7 +114,7 @@ Sum numbers in sequence
             running_totals ← CALL sum_numbers_in_sequence(numbers)
 
         OUTPUT:
-            PRINT("Running totals are ", running_totals)
+            PRINT "Running totals are ", running_totals
     END
 
 

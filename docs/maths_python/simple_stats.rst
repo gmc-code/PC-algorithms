@@ -27,7 +27,7 @@ Mean
     BEGIN
         my_list ← [17, 13, 14, 16, 12, 12]
         my_mean ← SUM(my_list) ÷ LENGTH(my_list)
-        PRINT("Mean is ", my_mean)
+        PRINT "Mean is ", my_mean
     END
 
 | Alternatively, the mean of a list can be found using **statistics.mean(list)**.
@@ -48,7 +48,7 @@ Mean
     BEGIN
         my_list ← [17, 13, 14, 16, 12, 12]
         my_mean ← MEAN(my_list)
-        PRINT("Mean using statistics module is ", my_mean)
+        PRINT "Mean using statistics module is ", my_mean
     END
 
 
@@ -76,7 +76,7 @@ Sort list
     BEGIN
         my_list ← [17, 13, 14, 16, 12, 12]
         SORT(my_list)
-        PRINT("Sorted list is ", my_list)
+        PRINT "Sorted list is ", my_list
     END
 
 ----
@@ -126,7 +126,7 @@ Median
             my_median ← my_list[n ÷ 2]
         ENDIF
 
-        PRINT("Median is ", my_median)
+        PRINT "Median is ", my_median
     END
 
 
@@ -153,7 +153,7 @@ Median
     BEGIN
         my_list ← [17, 13, 14, 16, 12, 12]
         my_median ← MEDIAN(my_list)
-        PRINT("Median using statistics module is ", my_median)
+        PRINT "Median using statistics module is ", my_median
     END
 
 
@@ -204,7 +204,7 @@ Mode
 
         -- Print the frequency of each number
         FOR EACH (num, cnt) IN ITEMS OF num_counts DO
-            PRINT("Frequency of ", num, " is ", cnt)
+            PRINT "Frequency of ", num, " is ", cnt
         ENDFOR
 
         -- Find the number(s) with the highest count
@@ -216,7 +216,7 @@ Mode
             ENDIF
         ENDFOR
 
-        PRINT("Mode is ", mode_nums)
+        PRINT "Mode is ", mode_nums
     END
 
 
@@ -267,7 +267,7 @@ Mode
     BEGIN
         my_list ← [17, 13, 14, 16, 12, 12]
         my_mode ← MODE(my_list)
-        PRINT("Mode is ", my_mode)
+        PRINT "Mode is ", my_mode
     END
 
 
@@ -292,6 +292,5 @@ Range
     BEGIN
         my_list ← [17, 13, 14, 16, 12, 12]
         my_range ← MAX(my_list) - MIN(my_list)
-        PRINT("Range is ", my_range)
-    END
+        PRINT "Range is ", my_range
 

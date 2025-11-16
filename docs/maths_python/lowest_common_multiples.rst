@@ -44,7 +44,7 @@ LCM of 2 numbers using HCF
         a ← 48
         b ← 18
         result ← LCM(a, b)
-        PRINT("LCM of ", a, " and ", b, " is ", result)
+        PRINT "LCM of ", a, " and ", b, " is ", result
     END
 
 | The Python code below implements this algorithm.
@@ -89,7 +89,7 @@ LCM of multiple numbers
     BEGIN
         numbers ← [12, 18, 30]
         result ← LCM_LIST(numbers)
-        PRINT("LCM of ", numbers, " is ", result)
+        PRINT "LCM of ", numbers, " is ", result
     END
 
 

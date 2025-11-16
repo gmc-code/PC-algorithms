@@ -50,7 +50,7 @@ Output
 
 .. admonition:: Note
 
-    Some pseudocode variants use the python style: PRINT("Winner")
+    Some pseudocode variants use the python style: PRINT "Winner"
 
 ----
 

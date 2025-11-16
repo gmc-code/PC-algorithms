@@ -48,7 +48,7 @@ HCF by repeated subtraction (Euclidean algorithm)
         a ← 48
         b ← 18
         result ← HCF_SUB(a, b)
-        PRINT("HCF of ", a, " and ", b, " is ", result)
+        PRINT "HCF of ", a, " and ", b, " is ", result
     END
 
 
@@ -90,7 +90,7 @@ HCF by repeatedly getting remainders from division
         a ← 48
         b ← 18
         result ← HCF_DIV(a, b)
-        PRINT("HCF of ", a, " and ", b, " is ", result)
+        PRINT "HCF of ", a, " and ", b, " is ", result
     END
 
 | The python code implementing the algorithm is shown below:
@@ -120,7 +120,7 @@ HCF by repeatedly getting remainders from division
         a ← 48
         b ← 18
         result ← HCF_MOD(a, b)
-        PRINT("HCF of ", a, " and ", b, " is ", result)
+        PRINT "HCF of ", a, " and ", b, " is ", result
     END
 
 | The python code implementing the algorithm is shown below:
@@ -161,7 +161,7 @@ HCF of triples and more by repeated subtraction
         nums ← USER INPUT "Enter the numbers separated by commas"
         nums ← CONVERT EACH ELEMENT OF SPLIT(nums, ",") TO INTEGER
         result ← HCF_SUB_MULTI(nums)
-        PRINT("The HCF of ", nums, " is ", result)
+        PRINT "The HCF of ", nums, " is ", result
     END
 
 
