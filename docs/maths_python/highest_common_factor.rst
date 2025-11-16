@@ -26,11 +26,11 @@ HCF by repeated subtraction (Euclidean algorithm)
 
 .. code-block:: pseudocode
 
-    FUNCTION HCF_SUB(a, b):
-        WHILE a ≠ b:
-            IF a > b:
+    FUNCTION HCF_SUB(a, b)
+        WHILE a ≠ b
+            IF a > b THEN
                 a ← a - b
-            ELSE:
+            ELSE
                 b ← b - a
             ENDIF
         ENDWHILE
@@ -38,12 +38,12 @@ HCF by repeated subtraction (Euclidean algorithm)
     ENDFUNCTION
 
 
-    BEGIN:
+    BEGIN
         a ← 48
         b ← 18
         result ← HCF_SUB(a, b)
-        PRINT "HCF(", a, ",", b, ") IS", result
-
+        PRINT("HCF(a, b) IS", result)
+    END
 
 
 | The python code implementing the algorithm is shown below:
@@ -68,8 +68,8 @@ HCF by repeatedly getting remainders from division
 
 .. code-block:: pseudocode
 
-    FUNCTION HCF_DIV(a, b):
-        WHILE b ≠ 0:
+    FUNCTION HCF_DIV(a, b)
+        WHILE b ≠ 0
             t ← b
             b ← a - (a // b) * b
             a ← t
@@ -82,8 +82,8 @@ HCF by repeatedly getting remainders from division
         a ← 48
         b ← 18
         result ← HCF_DIV(a, b)
-        PRINT "HCF(", a, ",", b, ") IS", result
-
+        PRINT "HCF(a, b) IS", result
+    END
 
 | The python code implementing the algorithm is shown below:
 
@@ -98,8 +98,8 @@ HCF by repeatedly getting remainders from division
 
 .. code-block:: pseudocode
 
-    FUNCTION HCF_MOD(a, b):
-        WHILE b ≠ 0:
+    FUNCTION HCF_MOD(a, b)
+        WHILE b ≠ 0
             t ← b
             b ← a % b
             a ← t
@@ -112,7 +112,8 @@ HCF by repeatedly getting remainders from division
         a ← 48        # Example: 1071
         b ← 18        # Example: 462
         result ← HCF_MOD(a, b)
-        PRINT "HCF(", a, ",", b, ") IS", result
+        PRINT("HCF(a, b) IS", result)
+    END
 
 | The python code implementing the algorithm is shown below:
 
