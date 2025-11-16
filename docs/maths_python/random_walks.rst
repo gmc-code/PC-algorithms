@@ -20,40 +20,52 @@ Random walks
 
 .. code-block:: pseudocode
 
-    SET current_directory = directory_of_this_file
+    FUNCTION random_walk_1d(start_position)
+        x ← start_position
+        positions ← [x]
 
-    FUNCTION random_walk_1d(start_position = 3):
-        SET x = start_position
-        CREATE list positions = [x]
-
-        WHILE x > 0 AND x < 10:
-            CHOOSE step randomly from [-1, +1]
-            IF step == +1:
-                x = x + 1
-            ELSE:
-                x = x - 1
-            ADD x to positions
+        WHILE x > 0 AND x < 10 DO
+            step ← RANDOM CHOICE FROM [-1, +1]
+            IF step = +1 THEN
+                x ← x + 1
+            ELSE
+                x ← x - 1
+            ENDIF
+            APPEND x TO positions
+        ENDWHILE
 
         RETURN positions
+    ENDFUNCTION
 
 
-    FUNCTION plot_random_walk_1d(positions):
-        DRAW line graph of positions
-        SET title = "Random Walk 1D"
-        LABEL x-axis = "Step"
-        LABEL y-axis = "Position"
+    FUNCTION plot_random_walk_1d(positions)
+        DRAW LINE GRAPH OF positions
+        SET TITLE ← "Random Walk 1D"
+        LABEL X-AXIS ← "Step"
+        LABEL Y-AXIS ← "Position"
         CALL save_plot(graph, "random_walk_1D.png")
         DISPLAY graph
+    ENDFUNCTION
 
 
-    FUNCTION save_plot(graph, filename):
-        SET filepath = current_directory + filename
-        SAVE graph to filepath with high resolution
+    FUNCTION save_plot(graph, filename)
+        filepath ← DIRECTORY OF THIS FILE + filename
+        SAVE graph TO filepath WITH HIGH RESOLUTION
+    ENDFUNCTION
 
 
-    BEGIN:
-        positions = CALL random_walk_1d(start_position = 3)
-        CALL plot_random_walk_1d(positions)
+    BEGIN
+        INPUTS:
+            start_position ← 3   -- initial position for the walk
+
+        PROCESS:
+            positions ← CALL random_walk_1d(start_position)
+            CALL plot_random_walk_1d(positions)
+
+        OUTPUT:
+            DISPLAY graph of the random walk with labelled axes and title
+    END
+
 
 
 
@@ -193,73 +205,87 @@ Levy flights
 
 .. code-block:: pseudocode
 
-    SET current_directory = directory_of_this_file
+    FUNCTION levy_flight(total_steps, levy_interval, min_jump, max_jump)
+        x ← 0
+        y ← 0
+        coords ← [(0, 0)]
 
+        FOR i ← 0 TO total_steps - 1 DO
+            IF i MOD levy_interval = 0 THEN
+                r ← RANDOM INTEGER BETWEEN min_jump AND max_jump
+                theta ← RANDOM ANGLE BETWEEN 0 AND 2π
+                dx ← INTEGER PART OF (r * COS(theta))
+                dy ← INTEGER PART OF (r * SIN(theta))
+            ELSE
+                (dx, dy) ← RANDOM CHOICE FROM [(0,1), (0,-1), (1,0), (-1,0)]
+            ENDIF
 
-    FUNCTION levy_flight(total_steps, levy_interval, min_jump, max_jump):
-        SET x = 0, y = 0
-        CREATE list coords = [(0, 0)]
-
-        FOR i from 0 to total_steps - 1:
-            IF i is divisible by levy_interval:
-                r = random integer between min_jump and max_jump
-                theta = random angle between 0 and 2π
-                dx = integer part of (r * cos(theta))
-                dy = integer part of (r * sin(theta))
-            ELSE:
-                (dx, dy) = random choice from [(0,1), (0,-1), (1,0), (-1,0)]
-
-            x = x + dx
-            y = y + dy
-            ADD (x, y) to coords
+            x ← x + dx
+            y ← y + dy
+            APPEND (x, y) TO coords
+        ENDFOR
 
         RETURN coords
+    ENDFUNCTION
 
 
-    FUNCTION plot_walk(coords, levy_interval):
-        EXTRACT x_coords and y_coords from coords
-        DRAW line graph of (x_coords, y_coords)
-        MARK starting point in green
-        MARK ending point in red
+    FUNCTION plot_walk(coords, levy_interval, total_steps)
+        x_coords ← EXTRACT X VALUES FROM coords
+        y_coords ← EXTRACT Y VALUES FROM coords
 
-        SET max_coord = maximum absolute value among all coordinates
+        DRAW LINE GRAPH OF (x_coords, y_coords)
+        MARK STARTING POINT GREEN
+        MARK ENDING POINT RED
 
-        IF max_coord > 100:
-            ticks = multiples of 50 up to max_coord
-        ELSE IF max_coord > 60:
-            ticks = multiples of 20 up to max_coord
-        ELSE IF max_coord > 30:
-            ticks = multiples of 10 up to max_coord
-        ELSE IF max_coord > 16:
-            ticks = multiples of 5 up to max_coord
-        ELSE IF max_coord > 8:
-            ticks = multiples of 2 up to max_coord
-        ELSE:
-            ticks = integers from -max_coord to +max_coord
+        max_coord ← MAXIMUM ABSOLUTE VALUE AMONG ALL COORDINATES
 
-        SET x-axis ticks = ticks
-        SET y-axis ticks = ticks
-        LIMIT x-axis and y-axis to [-max_coord, +max_coord]
-        ADD legend for Start and End
-        SET title = "Random Walk (total_steps steps)"
-        ADJUST layout for legend
-        CALL save_plot(graph, "random_walk_Levy_every_[levy_interval]_of_[total_steps]")
+        IF max_coord > 100 THEN
+            ticks ← MULTIPLES OF 50 UP TO max_coord
+        ELSE IF max_coord > 60 THEN
+            ticks ← MULTIPLES OF 20 UP TO max_coord
+        ELSE IF max_coord > 30 THEN
+            ticks ← MULTIPLES OF 10 UP TO max_coord
+        ELSE IF max_coord > 16 THEN
+            ticks ← MULTIPLES OF 5 UP TO max_coord
+        ELSE IF max_coord > 8 THEN
+            ticks ← MULTIPLES OF 2 UP TO max_coord
+        ELSE
+            ticks ← INTEGERS FROM -max_coord TO +max_coord
+        ENDIF
+
+        SET X-AXIS TICKS ← ticks
+        SET Y-AXIS TICKS ← ticks
+        LIMIT X-AXIS AND Y-AXIS TO [-max_coord, +max_coord]
+        ADD LEGEND FOR Start AND End
+        SET TITLE ← "Random Walk (" + total_steps + " steps)"
+        ADJUST LAYOUT FOR LEGEND
+        CALL save_plot(graph, "random_walk_Levy_every_" + levy_interval + "_of_" + total_steps)
         DISPLAY graph
+    ENDFUNCTION
 
 
-    FUNCTION save_plot(graph, filename):
-        filepath = current_directory + filename
-        SAVE graph to filepath with high resolution
+    FUNCTION save_plot(graph, filename)
+        filepath ← DIRECTORY OF THIS FILE + filename
+        SAVE graph TO filepath WITH HIGH RESOLUTION
+    ENDFUNCTION
 
 
-    BEGIN:
-        levy_interval = 100
-        total_steps = 1000
-        min_jump = 10
-        max_jump = 20
+    BEGIN
+        INPUTS:
+            levy_interval ← 100        -- number of steps between Levy jumps
+            total_steps ← 1000         -- total number of steps in the walk
+            min_jump ← 10              -- minimum jump size for Levy flight
+            max_jump ← 20              -- maximum jump size for Levy flight
 
-        coords = CALL levy_flight(total_steps, levy_interval, min_jump, max_jump)
-        CALL plot_walk(coords, levy_interval)
+        PROCESS:
+            coords ← CALL levy_flight(total_steps, levy_interval, min_jump, max_jump)
+            CALL plot_walk(coords, levy_interval, total_steps)
+
+        OUTPUT:
+            DISPLAY graph of the walk with start and end marked
+    END
+
+
 
 
 | The python to simulate a 2D random walk with Levy flights and plot the results.
