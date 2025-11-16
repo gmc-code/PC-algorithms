@@ -266,7 +266,7 @@ button.copybtn {
 .highlight-vcaapseudocode .k {
     color: #3d3dff;       /* blue */
     font-weight: bold;    /* make bold */
-    text-transform: lowercase; /* force lowercase */
+    text-transform: capitalize; /* force capitalize */
 }
 
 
@@ -279,7 +279,7 @@ button.copybtn {
 .highlight-vcaapseudocode .n {
     color: #008000;  /* green */
     font-weight: bold;    /* make bold */
-    text-transform: lowercase; /* force lowercase */
+    text-transform: capitalize; /* force capitalize */
 }
 
 .highlight-pseudocode .err {
