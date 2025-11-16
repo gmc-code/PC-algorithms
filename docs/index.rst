@@ -57,10 +57,9 @@ PC-algorithms
 
     maths_python/introduction_maths_python.rst
     maths_python/divisibility.rst
-
     maths_python/prime_factors.rst
     maths_python/simple_stats.rst
-    maths_python/sums_of_sequences.rst
+
 
 
 .. toctree::
