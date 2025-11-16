@@ -311,7 +311,7 @@ And, or, not
 
             .. code-block:: none
 
-               Yes, the out put would be: "Umbrella and jacket are optional."
+               Yes, the output would be: "Umbrella and jacket are optional."
 
 ----
 

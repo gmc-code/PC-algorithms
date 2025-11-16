@@ -55,7 +55,7 @@ For loops
 
                 How many times does the loop run?
 
-                .. code-block::
+                .. code-block:: none
 
                     The code runs 4 times, with i being assigned the values 0, 1, 2, 3 in order.
 
@@ -256,7 +256,7 @@ Practice Questions
 
                 What is the expected output from the code above?
 
-                .. code-block::
+                .. code-block:: none
 
                     1, 3, 5, 7, 9 on separate lines.
 
@@ -265,7 +265,7 @@ Practice Questions
 
                 How many times is the loop below executed?
 
-                .. code-block::
+                .. code-block:: none
 
                     Once.
 
