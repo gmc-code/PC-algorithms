@@ -29,8 +29,8 @@ Listed numbers
 
 .. code-block:: pseudocode
 
-    DECLARE nums ← [1, 2, 3, 4, 5]
-    DECLARE sum ← 0
+    nums ← [1, 2, 3, 4, 5]
+    sum ← 0
 
     FOR EACH num IN nums DO
         sum ← sum + num
@@ -59,10 +59,10 @@ Range from 0
 
 .. code-block:: pseudocode
 
-    DECLARE nums ← [0, 1, 2, 3, 4, 5]
+    nums ← [0, 1, 2, 3, 4, 5]
     PRINT nums
 
-    DECLARE sum ← 0
+    sum ← 0
 
     FOR EACH num IN nums DO
         sum ← sum + num
@@ -94,13 +94,13 @@ Range: first and last
 
 .. code-block:: pseudocode
 
-    DECLARE start_num ← 4
-    DECLARE end_num ← 12
+    start_num ← 4
+    end_num ← 12
 
-    DECLARE nums ← list of integers from start_num to end_num
+    nums ← list of integers from start_num to end_num
     PRINT nums
 
-    DECLARE sum ← 0
+    sum ← 0
 
     FOR EACH num IN nums DO
         sum ← sum + num
@@ -132,14 +132,14 @@ Range: step size
 
 .. code-block:: pseudocode
 
-    DECLARE start_num ← 4
-    DECLARE end_num ← 12
-    DECLARE step_size ← 2
+    start_num ← 4
+    end_num ← 12
+    step_size ← 2
 
-    DECLARE nums ← list of integers from start_num to end_num in steps of step_size
+    nums ← list of integers from start_num to end_num in steps of step_size
     PRINT nums
 
-    DECLARE sum ← 0
+    sum ← 0
 
     FOR EACH num IN nums DO
         sum ← sum + num
@@ -174,11 +174,11 @@ Arithmetic sequence formula 1
 
 .. code-block:: pseudocode
 
-    DECLARE a ← 4
-    DECLARE n ← 5
-    DECLARE d ← 2
+    a ← 4
+    n ← 5
+    d ← 2
 
-    DECLARE sum ← (n / 2) * (2 * a + (n - 1) * d)
+    sum ← (n / 2) * (2 * a + (n - 1) * d)
     PRINT sum
 
 
@@ -208,11 +208,11 @@ Arithmetic sequence formula 2
 
 .. code-block:: pseudocode
 
-    DECLARE a ← 4
-    DECLARE n ← 5
-    DECLARE l ← 12
+    a ← 4
+    n ← 5
+    l ← 12
 
-    DECLARE sum ← (n / 2) * (a + l)
+    sum ← (n / 2) * (a + l)
     PRINT sum
 
 
