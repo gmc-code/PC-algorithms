@@ -29,7 +29,13 @@ Match-case
 
 .. code-block:: python
 
-    age_flag = False
+
+    age = int(input("Enter your age: "))
+    if age >= 13:
+        age_flag = True
+    else:
+        age_flag = False
+
     match age_flag:
         case True:
             print("Entry permitted")
@@ -41,10 +47,18 @@ Match-case
 .. code-block:: pseudocode
 
     BEGIN
-        age_flag ← FALSE
-        CASE age_flag:
-            TRUE: OUTPUT "Entry permitted"
-            FALSE: OUTPUT "No entry until you reach 13 years of age."
+        INPUT age
+        IF age >= 13 THEN
+            age_flag ← TRUE
+        ELSE
+            age_flag ← FALSE
+        ENDIF
+
+        CASE age_flag OF
+            TRUE:
+                OUTPUT "Entry permitted"
+            FALSE:
+                OUTPUT "No entry until you reach 13 years of age."
         ENDCASE
     END
 
