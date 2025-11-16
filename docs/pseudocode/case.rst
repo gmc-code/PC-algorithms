@@ -84,11 +84,16 @@ Alternatives
 
     BEGIN
         grade ← "A"
-        CASE grade:
-            "A+" | "A" | "B+" |  "B" | "C+" | "C": OUTPUT "Acceptable standard."
-            "D+" | "D" | "NP" | "UG": OUTPUT "Retest required."
+
+        CASE grade OF
+            "A+", "A", "B+", "B", "C+", "C":
+                PRINT("Acceptable standard.")
+            "D+", "D", "NP", "UG":
+                PRINT("Retest required.")
         ENDCASE
     END
+
+
 
 
 ----
@@ -117,10 +122,14 @@ Wildcard
 
     BEGIN
         grade ← "A-"
-        CASE grade:
-            "A+" OR "A" OR "B+" OR  "B" OR "C+" OR "C": OUTPUT "Acceptable standard."
-            "D+" OR "D" OR "NP" OR "UG": OUTPUT "Retest required."
-            OTHERWISE: OUTPUT "Not a valid grade"
+
+        CASE grade OF
+            "A+", "A", "B+", "B", "C+", "C":
+                PRINT("Acceptable standard.")
+            "D+", "D", "NP", "UG":
+                PRINT("Retest required.")
+            OTHERWISE:
+                PRINT("Not a valid grade")
         ENDCASE
     END
 
@@ -156,14 +165,22 @@ Matching tuples for coordinates
 
     BEGIN
         point ← (2, 3)
-        CASE point:
-            (0, 0): OUTPUT "Origin"
-            (0, y): OUTPUT f"{y} on Y axis"
-            (x, 0): OUTPUT f"{x} on X axis"
-            (x, y): OUTPUT f"{x} on X axis, {y} on Y axis"
-            OTHERWISE: OUTPUT "Invalid point"
+
+        CASE point OF
+            (0, 0):
+                PRINT("Origin")
+            (0, y):
+                PRINT(f"{y} on Y axis")
+            (x, 0):
+                PRINT(f"{x} on X axis")
+            (x, y):
+                PRINT(f"{x} on X axis, {y} on Y axis")
+            OTHERWISE:
+                PRINT("Invalid point")
         ENDCASE
     END
+
+
 
 ----
 
@@ -177,13 +194,18 @@ Pseudocode alternatives
 
 .. code-block:: pseudocode
 
-   CASE expression OF
-      condition 1 : sequence 1
-      condition 2 : sequence 2
-      ...
-      condition n : sequence n
-      OTHERS : default sequence
-   ENDCASE
+    CASE expression OF
+        condition 1 :
+            sequence 1
+        condition 2 :
+            sequence 2
+        ...
+        condition n :
+            sequence n
+        OTHERS :
+            default sequence
+    ENDCASE
+
 
 
 Example:
@@ -191,13 +213,18 @@ Example:
 .. code-block:: pseudocode
 
     BEGIN
-        CASE  Title  OF
-                Mr   : OUTPUT "Mister"
-                Mrs  : OUTPUT "Missus"
-                Ms   : OUTPUT "Miss"
-                OTHERS : OUTPUT "Form of address not recognised"
+        CASE Title OF
+            "Mr":
+                PRINT("Mister")
+            "Mrs":
+                PRINT("Missus")
+            "Ms":
+                PRINT("Miss")
+            OTHERWISE:
+                PRINT("Form of address not recognised")
         ENDCASE
     END
+
 
 | **Python**. The equivalent python is:
 
