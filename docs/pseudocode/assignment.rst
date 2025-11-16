@@ -26,7 +26,7 @@ Assignment
 | **Pseudocode**. Assignment uses a left pointing arrow in pseudocode.
 | The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
     num ← 7
 
@@ -48,7 +48,7 @@ Assignment
 
                 Write pseudocode for the python assignment: ``year = 2022``.
 
-                .. code-block::
+                .. code-block:: pseudocode
 
                     year ← 2022
 
@@ -56,7 +56,7 @@ Assignment
 
                 Write pseudocode for the python assignment: ``name = "Sylvia"``.
 
-                .. code-block::
+                .. code-block:: pseudocode
 
                     name ← "Sylvia"
 

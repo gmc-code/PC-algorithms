@@ -38,7 +38,7 @@ Match-case
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         age_flag ← FALSE
@@ -66,7 +66,7 @@ Alternatives
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         grade ← "A"
@@ -99,7 +99,7 @@ Wildcard
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         grade ← "A-"
@@ -138,7 +138,7 @@ Matching tuples for coordinates
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         point ← (2, 3)
@@ -161,7 +161,7 @@ Pseudocode alternatives
 | The OTHERS clause with its default sequence is optional.
 | The general pattern may be:
 
-.. code-block::
+.. code-block:: pseudocode
 
    CASE expression OF
       condition 1 : sequence 1
@@ -174,7 +174,7 @@ Pseudocode alternatives
 
 Example:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         CASE  Title  OF

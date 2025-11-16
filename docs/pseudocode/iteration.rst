@@ -30,7 +30,7 @@ For loops
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         FOR i ← 0 TO 3
@@ -65,7 +65,7 @@ For loops
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         FOR i ← 4 TO 8
@@ -89,7 +89,7 @@ While loops: forever
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         WHILE TRUE
@@ -108,7 +108,7 @@ While loops: pre-test
 
 | The general pattern is:
 
-.. code-block::
+.. code-block:: python
 
     # pre-test loop
     while <conditional>:
@@ -125,7 +125,7 @@ While loops: pre-test
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         num ← 1
@@ -146,7 +146,7 @@ Pseudocode: post-test REPEAT UNTIL
 
 | Example pseudocode:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         num ← 1
@@ -189,7 +189,7 @@ Pseudocode: post-test DO WHILE
 
 | Example pseudocode:
 
-.. code-block::
+.. code-block:: pseudocode
 
     BEGIN
         num ← 1
@@ -202,7 +202,7 @@ Pseudocode: post-test DO WHILE
 | There is no direct post-test syntax in python. A ``while True`` loop is run with a break if the condition is met.
 | The general pattern is:
 
-.. code-block::
+.. code-block:: python
 
     # post-test loop
     while True:
@@ -232,7 +232,7 @@ Practice Questions
     #. What is the expected output from the code above?
     #. How many times is the loop below executed?
 
-        .. code-block::
+        .. code-block:: pseudocode
 
             BEGIN
                 i = 0

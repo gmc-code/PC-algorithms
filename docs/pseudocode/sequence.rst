@@ -34,7 +34,7 @@ Input and output
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
    BEGIN
       name ← INPUT ("Enter your name?")
@@ -64,7 +64,7 @@ Input and output
 
             Write pseudocode for the python sequence.
 
-            .. code-block::
+            .. code-block:: pseudocode
 
                a ← 5
                b ← 6
@@ -77,7 +77,7 @@ Input and output
    #. Write python for the pseudocode sequence below.
       Hint: random.sample(string, k) returns a random list of k characters from the string without replacement.
 
-      .. code-block::
+      .. code-block:: pseudocode
 
          BEGIN
             INPUT a number between 1 and 10

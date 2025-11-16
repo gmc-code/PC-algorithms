@@ -57,7 +57,7 @@ If, else
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
    BEGIN
       score ← 65
@@ -130,7 +130,7 @@ If, elif, else
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
    BEGIN
       scoreA ← 88
@@ -180,7 +180,7 @@ If, elif, else
 
    #. Write python code for the following pseudocode for travelling to school.
 
-      .. code-block::
+      .. code-block:: pseudocode
 
          BEGIN
             is_raining ← TRUE
@@ -231,7 +231,7 @@ And, or, not
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
    BEGIN
       is_raining ← TRUE
@@ -300,7 +300,7 @@ And, or, not
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
    BEGIN
       is_raining ← FALSE
@@ -366,7 +366,7 @@ And, or, not
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
    BEGIN
       is_raining ← TRUE
@@ -416,7 +416,7 @@ And, or, not
 
    #. Write python code for the following pseudocode on preparing for the weather.
 
-      .. code-block::
+      .. code-block:: pseudocode
 
          BEGIN
             is_raining ← False
@@ -484,7 +484,7 @@ Nested if
 
 | **Pseudocode**. The equivalent pseudocode is:
 
-.. code-block::
+.. code-block:: pseudocode
 
    BEGIN
       scoreA ←38
@@ -544,7 +544,7 @@ Nested if
 
          .. tab-item:: Q2
 
-            .. code-block::
+            .. code-block:: pseudocode
 
                BEGIN
                   teamA ← "Chiefs"
