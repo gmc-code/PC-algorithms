@@ -46,7 +46,7 @@ Output
 
 .. code-block:: pseudocode
 
-    OUTPUT "Winner"
+    PRINT("Winner")
 
 
 ----
