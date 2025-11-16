@@ -76,7 +76,7 @@ Output
 
                 Write pseudocode for the python statement: ``print("Melbourne")``.
 
-                .. code-block:: python
+                .. code-block:: pseudocode
 
                     PRINT("Melbourne")
 
