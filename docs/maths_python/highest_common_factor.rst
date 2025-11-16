@@ -121,4 +121,51 @@ HCF by repeatedly getting remainders from division
     :linenos:
 
 
+----
+
+HCF of triples and more by repeated subtraction
+---------------------------------------------------
+
+| The code below uses repeated subtraction with multiple numbers to find their HCF.
+
+.. literalinclude:: files/hcf_sub_multi.py
+    :linenos:
+
+.. code-block:: pseudocode
+
+    FUNCTION HCF_SUB_MULTI(numbers)
+        hcf ← FIRST ELEMENT OF numbers
+
+        FOR EACH number IN REMAINING ELEMENTS OF numbers DO
+            WHILE hcf ≠ number DO
+                IF hcf > number THEN
+                    hcf ← hcf - number
+                ELSE
+                    number ← number - hcf
+                ENDIF
+            ENDWHILE
+        ENDFOR
+
+        RETURN hcf
+    ENDFUNCTION
+
+    BEGIN
+        nums ← USER INPUT "Enter the numbers separated by commas"
+        nums ← CONVERT EACH ELEMENT OF SPLIT(nums, ",") TO INTEGER
+        result ← HCF_SUB_MULTI(nums)
+        PRINT("The HCF of ", nums, " is ", result)
+    END
+
+
+----
+
+HCF of triples and more by math.gcd
+---------------------------------------------------
+
+| The code below uses the python math.gcd function for multiple numbers to find their HCF.
+| The code uses error chekcing as well.
+
+.. literalinclude:: files/hcf_multi.py
+    :linenos:
+
 
