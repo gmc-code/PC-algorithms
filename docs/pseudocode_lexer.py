@@ -13,7 +13,7 @@ class PseudocodeLexer(RegexLexer):
             # (r'\b(MAIN PROGRAM|DEFINE|FUNCTION|ENDFUNCTION|END\s+FUNCTION|PROCEDURE|ENDPROCEDURE|END\s+PROCEDURE|CALL|RETURN|IF|THEN|ELSEIF|ELSE\s+IF|ELSE|ENDIF|END\s+IF|CASE|OF|ENDCASE|END\s+CASE|FOR|TO|STEP|ENDFOR|END\s+FOR|WHILE|ENDWHILE|END\s+WHILE|REPEAT|UNTIL|DO|INPUT|OUTPUT|PRINT|READ|WRITE|AND|OR|NOT|TRUE|FALSE|ARRAY|LIST|RECORD|DECLARE|SET|BEGIN|START|END|EXIT|BREAK|CONTINUE|IS|IN)\b', Keyword),
 
             # Any other ALL CAPS identifiers of atleast 2 letters
-            (r'\b[A-Z]{2,}[A-Z_]*\b', Name),
+            (r'\b[A-Z]{2,}\w*\b', Name),
 
             # Default: everything else
             (r'.', Text),

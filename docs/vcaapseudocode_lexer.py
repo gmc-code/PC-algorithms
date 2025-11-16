@@ -12,7 +12,7 @@ class VcaaPseudocodeLexer(RegexLexer):
 
 
             # Any other ALL CAPS identifiers of atleast 2 letters
-            (r'\b[A-Z]{2,}[A-Z_]*\b', Name),
+            (r'\b[A-Z]{2,}\w*\b', Name),
 
             # Default: everything else
             (r'.', Text),
