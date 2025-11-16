@@ -53,8 +53,11 @@ For loops
 
             .. tab-item:: Q1
 
-                | How many times does the loop run?
-                | The code runs 4 times, with i being assigned the values 0, 1, 2, 3 in order.
+                How many times does the loop run?
+
+                .. code-block::
+
+                    The code runs 4 times, with i being assigned the values 0, 1, 2, 3 in order.
 
 ----
 
@@ -251,12 +254,18 @@ Practice Questions
 
             .. tab-item:: Q1
 
-                | What is the expected output from the code above?
-                | 1, 3, 5, 7, 9 on separate lines.
+                What is the expected output from the code above?
+
+                .. code-block::
+
+                    1, 3, 5, 7, 9 on separate lines.
 
 
             .. tab-item:: Q2
 
-                | How many times is the loop below executed?
-                | Once.
+                How many times is the loop below executed?
+
+                .. code-block::
+
+                    Once.
 

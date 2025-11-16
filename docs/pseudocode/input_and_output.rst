@@ -69,7 +69,7 @@ Output
 
                 .. code-block:: pseudocode
 
-                    Input "Enter your age in years:"
+                    INPUT "Enter your age in years:"
 
 
             .. tab-item:: Q2
@@ -78,7 +78,7 @@ Output
 
                 .. code-block:: python
 
-                    OUTPUT "Melbourne"
+                    PRINT("Melbourne")
 
 ----
 
