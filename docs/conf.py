@@ -14,8 +14,10 @@ os.environ['PYTHONPATH'] = ':'.join((package_path, os.environ.get('PYTHONPATH', 
 
 
 from pseudocode_lexer import PseudocodeLexer
-
 lexers['pseudocode'] = PseudocodeLexer()
+
+from vcaapseudocode_lexer import VcaaPseudocodeLexer
+lexers['vcaapseudocode'] = VcaaPseudocodeLexer()
 
 
 project = 'PC-algorithms'

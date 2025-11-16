@@ -9,3 +9,13 @@ Calculate the Perimeter of a Triangle, Square, Parallelogram, or Circle
 Calculate the Area of a Triangle, Square, or Parallelogram
 
 loops as in turtle graphics drawing shapes
+
+sphinx-build -b html docs docs/_build/html
+
+sphinx-build -b latex docs docs/_build/latex
+cd docs/_build/latex
+xelatex PC-algorithms.tex
+
+sphinx-build -b latex docs docs/_build/latex
+cd docs/_build/latex
+xelatex PC-Using-RTD.tex

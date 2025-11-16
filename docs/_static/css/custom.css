@@ -260,6 +260,13 @@ button.copybtn {
     /* font-weight: bold; */
 }
 
+.highlight-vcaapseudocode .k {
+    color: #3d3dff;       /* blue */
+    font-weight: bold;    /* make bold */
+    text-transform: lowercase; /* force lowercase */
+}
+
+
 /* Override keyword color inside pseudocode */
 .highlight-pseudocode .n {
     color: #008000;  /* green */

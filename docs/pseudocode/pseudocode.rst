@@ -8,6 +8,8 @@ Pseudocode
 | Pseudocode describes the logic of the program or algorithm.
 
 | See: https://www.vcaa.vic.edu.au/curriculum/vce-curriculum/vce-study-designs/pseudocode
+| VCAA uses bold lowercase for pseudocode keywords, but in this documentation the common standard is to use UPPERCASE.
+
 
 ----
 

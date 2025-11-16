@@ -38,9 +38,9 @@ Equilateral triangle
 
 | This python saves the equilateral triangle construction as a gif file.
 
-.. image:: gifs/construct_equilateral_triangle.gif
-    :width: 400
-    :align: center
+.. .. image:: gifs/construct_equilateral_triangle.gif
+..     :width: 400
+..     :align: center
 
 .. literalinclude:: files/equilateral_triangle_construction_as_gif.py
     :linenos:
@@ -70,9 +70,9 @@ Hexagon construction
 
 | This python saves the hexagon construction as a gif file.
 
-.. image:: gifs/hexagon_construction.gif
-    :width: 400
-    :align: center
+.. .. image:: gifs/hexagon_construction.gif
+..     :width: 400
+..     :align: center
 
 .. literalinclude:: files/hexagon_construction_as_gif.py
     :linenos:
