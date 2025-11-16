@@ -88,7 +88,7 @@ Output
 .. admonition:: Tasks
 
     #. Write python for this pseudocode: ``INPUT "Enter your first name:"``.
-    #. Write python for this pseudocode: ``OUTPUT "Top score"``.
+    #. Write python for this pseudocode: ``PRINT "Top score"``.
 
     .. dropdown::
         :icon: codescan
@@ -108,7 +108,7 @@ Output
 
             .. tab-item:: Q2
 
-                Write python for this pseudocode: ``OUTPUT "Top score"``.
+                Write python for this pseudocode: ``PRINT "Top score"``.
 
                 .. code-block:: python
 
