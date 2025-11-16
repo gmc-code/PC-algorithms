@@ -93,8 +93,10 @@ PC-algorithms
     :caption: Maths python 7
     :numbered:
 
-    maths_python/Aboriginal_grain_belt.rst
+    maths_python/sums_of_sequences.rst
     maths_python/geometric_patterns.rst
+    maths_python/Aboriginal_grain_belt.rst
+
 
 
 .. toctree::
