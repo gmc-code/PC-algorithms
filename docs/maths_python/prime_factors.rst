@@ -17,18 +17,30 @@ Prime factor list
 
 .. code-block:: pseudocode
 
-    FUNCTION get_prime_factors(num):
-        CREATE empty list prime_factors
-        WHILE num mod 2 == 0:
-            ADD 2 to prime_factors
-            num = num / 2
-        FOR factor from 3 to sqrt(num) step 2:
-            WHILE num mod factor == 0:
-                ADD factor to prime_factors
-                num = num / factor
-        IF num > 2:
-            ADD num to prime_factors
+    FUNCTION get_prime_factors(num)
+
+        prime_factors ← empty list
+
+        WHILE num MOD 2 = 0 DO
+            APPEND 2 TO prime_factors
+            num ← num ÷ 2
+        END WHILE
+
+        FOR factor ← 3 TO sqrt(num) STEP 2 DO
+            WHILE num MOD factor = 0 DO
+                APPEND factor TO prime_factors
+                num ← num ÷ factor
+            END WHILE
+        END FOR
+
+        IF num > 2 THEN
+            APPEND num TO prime_factors
+        END IF
+
         RETURN prime_factors
+
+    END FUNCTION
+
 
 | The python code implementing the algorithm is shown below:
 
@@ -44,22 +56,35 @@ Prime factor lists to 100
 
 .. code-block:: pseudocode
 
-    FUNCTION get_prime_factors(num):
-        CREATE empty list prime_factors
-        WHILE num mod 2 == 0:
-            ADD 2 to prime_factors
-            num = num / 2
-        FOR factor from 3 to sqrt(num) step 2:
-            WHILE num mod factor == 0:
-                ADD factor to prime_factors
-                num = num / factor
-        IF num > 2:
-            ADD num to prime_factors
+    FUNCTION get_prime_factors(num)
+
+        prime_factors ← empty list
+
+        WHILE num MOD 2 = 0 DO
+            prime_factors ← prime_factors APPEND 2
+            num ← num ÷ 2
+        END WHILE
+
+        FOR factor ← 3 TO sqrt(num) STEP 2 DO
+            WHILE num MOD factor = 0 DO
+                prime_factors ← prime_factors APPEND factor
+                num ← num ÷ factor
+            END WHILE
+        END FOR
+
+        IF num > 2 THEN
+            prime_factors ← prime_factors APPEND num
+        END IF
+
         RETURN prime_factors
 
-    FOR num from 1 to 100:
-        fact  = CALL get_prime_factors(num)
+    END FUNCTION
+
+
+    FOR num ← 1 TO 100 DO
+        fact ← CALL get_prime_factors(num)
         PRINT num, fact
+    END FOR
 
 
 | The python code implementing the algorithm is shown below:

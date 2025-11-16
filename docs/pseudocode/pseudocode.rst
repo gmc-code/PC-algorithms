@@ -32,9 +32,9 @@ Python to Pseudocode Summary
 	* - =
 	  - ←
 	* - print
-	  - OUTPUT or Print or DISPLAY
+	  - OUTPUT or PRINT or DISPLAY
 	* - input
-	  - Input or GET
+	  - INPUT or GET
 	* - if
 	  - IF ....THEN
 	* - elif
@@ -200,5 +200,67 @@ Relational and Logical Operators
      - Logical negation
      - ``NOT TRUE``
      - ``FALSE``
+
+
+----
+
+.. list-table:: Extra Pseudocode Keywords
+   :header-rows: 1
+   :widths: 25 35
+
+   * - Keyword
+     - Meaning / Usage
+   * - MAIN PROGRAM
+     - Entry point of the pseudocode program
+   * - PROCEDURE
+     - Defines a procedure (subroutine)
+   * - ENDPROCEDURE / END PROCEDURE
+     - Marks the end of a procedure
+   * - PROCESS
+     - Defines a process (similar to procedure, sometimes used in flowcharts)
+   * - ENDPROCESS / END PROCESS
+     - Marks the end of a process
+   * - CALL
+     - Calls a function or procedure
+   * - CASE / OF
+     - Multi-way branch (like switch/case)
+   * - ENDCASE / END CASE
+     - Marks the end of a case block
+   * - STEP
+     - Increment in a FOR loop
+   * - LOOP
+     - General loop construct
+   * - REPEAT / UNTIL
+     - Repeat loop until condition is true
+   * - END UNTIL
+     - Marks the end of a repeat-until loop
+   * - DO
+     - Loop body keyword (used with WHILE or UNTIL)
+   * - EXIT WHEN
+     - Exit loop when condition is met
+   * - DISPLAY / SHOW / PROMPT / SCAN
+     - Variants of output/input operations
+   * - WRITE LINE / READ LINE
+     - File or console I/O line operations
+   * - ARRAY / LIST / RECORD / TABLE / STACK / QUEUE
+     - Data structures
+   * - DECLARE / CONSTANT / VARIABLE / TYPE / OF TYPE
+     - Declarations of variables, constants, or types
+   * - SET / SET OF
+     - Set data type or assignment
+   * - BEGIN / START / END
+     - Block delimiters
+   * - EXIT / BREAK / CONTINUE
+     - Loop control statements
+   * - COMMENT
+     - Marks a comment
+   * - WITH / BY
+     - Used in structured statements (e.g. WITH record BY field)
+   * - DEFAULT / OTHERWISE
+     - Default branch in CASE statements
+   * - NULL / EMPTY
+     - Null or empty value
+   * - IS / IN
+     - Membership or comparison operators
 
 
