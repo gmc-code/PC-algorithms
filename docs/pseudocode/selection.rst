@@ -63,9 +63,9 @@ If, else
       score ← 65
       cut_off_score ← 60
       IF score >= cut_off_score THEN
-         OUTPUT "Suitable standard."
+         PRINT "Suitable standard."
       ELSE
-         OUTPUT "Do a retest."
+         PRINT "Do a retest."
       ENDIF
    END
 
@@ -148,11 +148,11 @@ If, elif, else
       scoreA ← 88
       scoreB ← 85
       IF scoreA > scoreB THEN
-         OUTPUT "A won."
+         PRINT "A won."
       ELSEIF scoreB > scoreA THEN
-         OUTPUT "B won."
+         PRINT "B won."
       ELSE
-         OUTPUT "A drew with B."
+         PRINT "A drew with B."
       ENDIF
    END
 
@@ -206,9 +206,9 @@ If, elif, else
          BEGIN
             is_raining ← TRUE
             IF is_raining THEN
-               OUTPUT "Catch the bus."
+               PRINT "Catch the bus."
             ELSE
-               OUTPUT "Ride the bike."
+               PRINT "Ride the bike."
             ENDIF
          END
 
@@ -257,11 +257,11 @@ And, or, not
    BEGIN
       is_raining ← TRUE
       is_cold ← TRUE
-      OUTPUT "Good Morning."
+      PRINT "Good Morning."
       IF is_raining AND is_cold THEN
-         OUTPUT "Bring Umbrella and jacket."
+         PRINT "Bring Umbrella and jacket."
       ELSE
-         OUTPUT "Umbrella and jacket are optional."
+         PRINT "Umbrella and jacket are optional."
       ENDIF
    END
 
@@ -338,11 +338,11 @@ And, or, not
    BEGIN
       is_raining ← FALSE
       is_cold ← FALSE
-      OUTPUT "Good Morning."
+      PRINT "Good Morning."
       IF is_raining OR is_cold THEN
-         OUTPUT "Bring Umbrella or jacket or both."
+         PRINT "Bring Umbrella or jacket or both."
       ELSE
-         OUTPUT "Wear a sun hat."
+         PRINT "Wear a sun hat."
       ENDIF
    END
 
@@ -416,11 +416,11 @@ And, or, not
    BEGIN
       is_raining ← TRUE
       is_cold ← FALSE
-      OUTPUT "Good Morning."
+      PRINT "Good Morning."
       IF is_raining AND is_cold THEN
-         OUTPUT "Bring Umbrella AND jacket."
+         PRINT "Bring Umbrella AND jacket."
       ELSEIF is_raining AND NOT (is_cold) THEN
-         OUTPUT "Bring Umbrella."
+         PRINT "Bring Umbrella."
       ENDIF
    END
 
@@ -475,15 +475,15 @@ And, or, not
          BEGIN
             is_raining ← False
             is_cold ← False
-            OUTPUT "Good Morning."
+            PRINT "Good Morning."
             IF is_raining AND is_cold THEN
-               OUTPUT "Bring Umbrella and jacket."
+               PRINT "Bring Umbrella and jacket."
             ELSEIF is_raining AND NOT(is_cold) THEN
-               OUTPUT "Bring Umbrella."
+               PRINT "Bring Umbrella."
             ELSEIF NOT(is_raining) AND is_cold THEN
-               OUTPUT "Bring Jacket."
+               PRINT "Bring Jacket."
             ELSE
-               OUTPUT "Wear a sun hat."
+               PRINT "Wear a sun hat."
             ENDIF
          END
 
@@ -545,18 +545,18 @@ Nested if
       scoreB ← 35
       IF scoreA > scoreB THEN
          IF scoreA - scoreB > 14 THEN
-               OUTPUT "A won easily."
+               PRINT "A won easily."
          ELSE
-               OUTPUT "A won."
+               PRINT "A won."
          ENDIF
       ELSEIF scoreB > scoreA THEN
          IF scoreB - scoreA > 14 THEN
-               OUTPUT "B won easily."
+               PRINT "B won easily."
          ELSE
-               OUTPUT "B won."
+               PRINT "B won."
          ENDIF
       ELSE
-         OUTPUT "A drew with B."
+         PRINT "A drew with B."
       ENDIF
    END
 
@@ -608,18 +608,18 @@ Nested if
                   IF scoreA > scoreB THEN
                      margin = str(scoreA - scoreB)
                      IF scoreA - scoreB > 14 THEN
-                        OUTPUT ("The " + teamA + " won easily by " + margin + ".")
+                        PRINT "The " + teamA + " won easily by " + margin + "."
                      ELSE
-                        OUTPUT ("The " + teamA + " won by " + margin + ".")
+                        PRINT "The " + teamA + " won by " + margin + "."
                      ENDIF
                   ELSEIF scoreB > scoreA THEN
                      margin = str(scoreB - scoreA)
                      IF scoreB - scoreA > 14 THEN
-                        OUTPUT ("The " + teamB + " won easily by " + margin + ".")
+                        PRINT "The " + teamB + " won easily by " + margin + "."
                      ELSE
-                        OUTPUT ("The " + teamB + " won by " + margin + ".")
+                        PRINT "The " + teamB + " won by " + margin + "."
                      ENDIF
                   ELSE
-                     OUTPUT ("The " + teamA + " drew with the " + teamB + ".")
+                     PRINT "The " + teamA + " drew with the " + teamB + "."
                   ENDIF
                END
