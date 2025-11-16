@@ -32,7 +32,7 @@ def hexagon(t, length=50, start_pos=(0, 0), start_h=60, penw=1, penc="black", fi
 
     if fillc is not None:
         t.end_fill()
-        
+
 
 def tes_hexagon(t, screen_width, screen_height, side_length, start_h=0):
     slsqr3 = side_length * (3 ** 0.5) * 0.5

@@ -16,38 +16,40 @@ LCM
 
 ----
 
-LCM pseudocode
+LCM of 2 numbers using HCF
 ------------------------------------------------
 
 | The Pseudocode to find LCM of two numbers has the steps to find the lowest common multiple of two numbers:
 
-| **begin**
-|   // Declare variables for the two numbers and the LCM
-|   **number** num1, num2, lcm
-|   **list** factors1, factors2, all_factors
-|
-|   // Prompt the user to enter the two numbers
-|   **ouput** "Enter the first number: "
-|   **input** num1
-|   **ouput** "Enter the second number: "
-|   **input** num2
-|
-|   // Find the prime factors of each number
-|   factors1 ← prime_factors(num1)
-|   factors2 ← prime_factors(num2)
-|
-|   // Find the union of all the prime factors with highest power
-|   all_factors ← union(factors1, factors2)
-|
-|   // Multiply all the prime factors
-|   lcm ← product(all_factors)
-|
-|   // Display the LCM
-|   **ouput** "The LCM of " + num1 + " and " + num2 + " is " + lcm
-| **end**
+.. code-block:: pseudocode
 
+    FUNCTION HCF_SUB(a, b)
+        WHILE a ≠ b DO
+            IF a > b THEN
+                a ← a - b
+            ELSE
+                b ← b - a
+            ENDIF
+        ENDWHILE
+        RETURN a
+    ENDFUNCTION
 
-.. literalinclude:: files/lcm_using_primes.py
+    FUNCTION LCM(a, b)
+        hcf ← HCF_SUB(a, b)
+        lcm ← (a * b) ÷ hcf
+        RETURN lcm
+    ENDFUNCTION
+
+    BEGIN
+        a ← 48
+        b ← 18
+        result ← LCM(a, b)
+        PRINT("LCM of ", a, " and ", b, " is ", result)
+    END
+
+| The Python code below implements this algorithm.
+
+.. literalinclude:: files/lcm_using_hcf.py
     :linenos:
 
 ----
@@ -56,6 +58,43 @@ LCM of multiple numbers
 ---------------------------------------------------
 
 | The lowest common multiple of triples or more natural numbers can be found by finding multiplying the highest power of their prime factors.
+| The pseudocode to find LCM of multiple numbers has the steps to find the lowest common multiple of multiple numbers:
+
+.. code-block:: pseudocode
+
+    FUNCTION HCF_SUB(a, b)
+        WHILE a ≠ b DO
+            IF a > b THEN
+                a ← a - b
+            ELSE
+                b ← b - a
+            ENDIF
+        ENDWHILE
+        RETURN a
+    ENDFUNCTION
+
+    FUNCTION LCM(a, b)
+        hcf ← HCF_SUB(a, b)
+        lcm ← (a * b) ÷ hcf
+        RETURN lcm
+    ENDFUNCTION
+
+    FUNCTION LCM_LIST(numbers)
+        result ← numbers[0]
+        FOR i ← 1 TO LENGTH(numbers) - 1 DO
+            result ← LCM(result, numbers[i])
+        ENDFOR
+        RETURN result
+    ENDFUNCTION
+
+    BEGIN
+        numbers ← [12, 18, 30]
+        result ← LCM_LIST(numbers)
+        PRINT("LCM of ", numbers, " is ", result)
+    END
+
+
+| The code below handles multiple positive integers.
 
 .. literalinclude:: files/lcm_using_primes_multi.py
     :linenos:
@@ -77,7 +116,7 @@ LCM using gcd
 LCM of multiple numbers using gcd
 ---------------------------------------------------
 
-| The code belwo handles multiple positive integers.
+| The code below handles multiple positive integers.
 
 .. literalinclude:: files/lcm_gcd_multi.py
     :linenos:
