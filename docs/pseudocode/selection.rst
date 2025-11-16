@@ -98,7 +98,7 @@ If, else
 
             Give a value for ``score`` in the code above such that the output is ``"Do a retest."``.
 
-            .. code-block::
+            .. code-block:: none
 
                "Do a retest." is in the False branch.
                So the score is below 60. e.g. 59
@@ -107,19 +107,19 @@ If, else
 
             | Assuming scores can only be integers from and including 0 to 100, how many different scores would result in the output of ``"Do a retest."``?
 
-            .. code-block::
+            .. code-block:: none
 
-               | Required scores are from 0 to 59.
-               | There are 60 scores.
+               Required scores are from 0 to 59.
+               There are 60 scores.
 
          .. tab-item:: Q4
 
             | Assuming scores can only be integers from and including 0 to 100, how many different scores would result in the output of ``"Suitable standard."``?
 
-            .. code-block::
+            .. code-block:: none
 
-               | Required scores are from 60 to 100.
-               | There are 41 scores.
+               Required scores are from 60 to 100.
+               There are 41 scores.
 
 ----
 
@@ -177,7 +177,7 @@ If, elif, else
 
             .. code-block:: none
 
-               | ``scoreA > scoreB`` is True since 88 > 85.
+               ``scoreA > scoreB`` is True since 88 > 85.
 
          .. tab-item:: Q2
 
@@ -185,7 +185,7 @@ If, elif, else
 
             .. code-block:: none
 
-               | ``scoreB > scoreA`` so scoreB > 88. e.g. scoreB = 89
+               ``scoreB > scoreA`` so scoreB > 88. e.g. scoreB = 89
 
          .. tab-item:: Q3
 
@@ -193,7 +193,7 @@ If, elif, else
 
             .. code-block:: none
 
-               | ``scoreB == scoreA`` so scoreB = 88. e.g. scoreB = 88
+               ``scoreB == scoreA`` so scoreB = 88. e.g. scoreB = 88
 
 ----
 
@@ -295,7 +295,7 @@ And, or, not
 
             .. code-block:: none
 
-               | "Bring Umbrella and jacket."
+               "Bring Umbrella and jacket."
 
          .. tab-item:: Q3
 
@@ -303,7 +303,7 @@ And, or, not
 
             .. code-block:: none
 
-               | Yes, since the condition would evaluate to False instead of True.
+               Yes, since the condition would evaluate to False instead of True.
 
          .. tab-item:: Q4
 
@@ -311,7 +311,7 @@ And, or, not
 
             .. code-block:: none
 
-               | Yes, the out put would be: "Umbrella and jacket are optional."
+               Yes, the out put would be: "Umbrella and jacket are optional."
 
 ----
 
@@ -368,7 +368,7 @@ And, or, not
 
             .. code-block:: none
 
-               | ``is_raining OR is_cold`` is False since both ``is_raining``and ``is_cold`` are False.
+               ``is_raining OR is_cold`` is False since both ``is_raining``and ``is_cold`` are False.
 
          .. tab-item:: Q2
 
@@ -376,7 +376,7 @@ And, or, not
 
             .. code-block:: none
 
-               | "Wear a sun hat."
+               "Wear a sun hat."
 
          .. tab-item:: Q3
 
@@ -384,7 +384,7 @@ And, or, not
 
             .. code-block:: none
 
-               | Yes, since the condition would evaluate to True instead of False.
+               Yes, since the condition would evaluate to True instead of False.
 
          .. tab-item:: Q4
 
@@ -392,7 +392,7 @@ And, or, not
 
             .. code-block:: none
 
-               | Yes, the output would be: "Bring Umbrella or jacket or both."
+               Yes, the output would be: "Bring Umbrella or jacket or both."
 
 ----
 
@@ -445,7 +445,7 @@ And, or, not
 
             .. code-block:: none
 
-               | ``is_raining AND NOT (is_cold)`` is TRUE since both ``is_raining``and ``NOT (is_cold)`` are True.
+               ``is_raining AND NOT (is_cold)`` is TRUE since both ``is_raining``and ``NOT (is_cold)`` are True.
 
          .. tab-item:: Q2
 
@@ -453,7 +453,7 @@ And, or, not
 
             .. code-block:: none
 
-               | "Bring Umbrella."
+               "Bring Umbrella."
 
          .. tab-item:: Q3
 
@@ -461,7 +461,7 @@ And, or, not
 
             .. code-block:: none
 
-               | Change ``is_cold ← FALSE`` to ``is_cold ← TRUE``.
+               Change ``is_cold ← FALSE`` to ``is_cold ← TRUE``.
 
 
 ----
