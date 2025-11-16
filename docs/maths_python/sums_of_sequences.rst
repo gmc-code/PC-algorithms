@@ -29,14 +29,17 @@ Listed numbers
 
 .. code-block:: pseudocode
 
-    nums ← [1, 2, 3, 4, 5]
-    sum ← 0
+    BEGIN
+        nums ← [1, 2, 3, 4, 5]
+        sum ← 0
 
-    FOR EACH num IN nums DO
-        sum ← sum + num
-    END FOR
+        FOR EACH num IN nums DO
+            sum ← sum + num
+        ENDFOR
 
-    PRINT sum
+        PRINT("Sum is ", sum)
+    END
+
 
 
 ----
@@ -59,16 +62,18 @@ Range from 0
 
 .. code-block:: pseudocode
 
-    nums ← [0, 1, 2, 3, 4, 5]
-    PRINT nums
+    BEGIN
+        nums ← [0, 1, 2, 3, 4, 5]
+        PRINT("Numbers are ", nums)
 
-    sum ← 0
+        sum ← 0
 
-    FOR EACH num IN nums DO
-        sum ← sum + num
-    END FOR
+        FOR EACH num IN nums DO
+            sum ← sum + num
+        ENDFOR
 
-    PRINT sum
+        PRINT("Sum is ", sum)
+    END
 
 
 
@@ -94,19 +99,22 @@ Range: first and last
 
 .. code-block:: pseudocode
 
-    start_num ← 4
-    end_num ← 12
+    BEGIN
+        start_num ← 4
+        end_num ← 12
 
-    nums ← list of integers from start_num to end_num
-    PRINT nums
+        nums ← LIST OF INTEGERS FROM start_num TO end_num
+        PRINT("Numbers are ", nums)
 
-    sum ← 0
+        sum ← 0
 
-    FOR EACH num IN nums DO
-        sum ← sum + num
-    END FOR
+        FOR EACH num IN nums DO
+            sum ← sum + num
+        ENDFOR
 
-    PRINT sum
+        PRINT("Sum is ", sum)
+    END
+
 
 
 ----
@@ -132,20 +140,23 @@ Range: step size
 
 .. code-block:: pseudocode
 
-    start_num ← 4
-    end_num ← 12
-    step_size ← 2
+    BEGIN
+        start_num ← 4
+        end_num ← 12
+        step_size ← 2
 
-    nums ← list of integers from start_num to end_num in steps of step_size
-    PRINT nums
+        nums ← LIST OF INTEGERS FROM start_num TO end_num IN STEPS OF step_size
+        PRINT("Numbers are ", nums)
 
-    sum ← 0
+        sum ← 0
 
-    FOR EACH num IN nums DO
-        sum ← sum + num
-    END FOR
+        FOR EACH num IN nums DO
+            sum ← sum + num
+        ENDFOR
 
-    PRINT sum
+        PRINT("Sum is ", sum)
+    END
+
 
 
 ----
@@ -174,12 +185,16 @@ Arithmetic sequence formula 1
 
 .. code-block:: pseudocode
 
-    a ← 4
-    n ← 5
-    d ← 2
+    BEGIN
+        a ← 4          -- first term
+        n ← 5          -- number of terms
+        d ← 2          -- common difference
 
-    sum ← (n / 2) * (2 * a + (n - 1) * d)
-    PRINT sum
+        sum ← (n ÷ 2) * (2 * a + (n - 1) * d)
+
+        PRINT("Sum of arithmetic progression is ", sum)
+    END
+
 
 
 ----
@@ -208,12 +223,15 @@ Arithmetic sequence formula 2
 
 .. code-block:: pseudocode
 
-    a ← 4
-    n ← 5
-    l ← 12
+    BEGIN
+        a ← 4          -- first term
+        n ← 5          -- number of terms
+        l ← 12         -- last term
 
-    sum ← (n / 2) * (a + l)
-    PRINT sum
+        sum ← (n ÷ 2) * (a + l)
+
+        PRINT("Sum of arithmetic progression is ", sum)
+    END
 
 
 
