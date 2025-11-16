@@ -24,7 +24,26 @@ Modelling
 | See: http://www.consortiumland.com/investors/introduction-to-the-australian-wheatbelt/
 | It seems that the Indigenous grain belt with native grasses covers a similar or slightly larger area than the current wheat belt, but this is just a guess.
 
----
+
+.. image:: https://www.consortiumland.com/wp-content/uploads/2016/06/Wheat-growing-regions-of-the-Australian-Wheatbelt.gif
+   :alt: Wheat belt of Australia 2016
+   :width: 600
+   :align: center
+
+.. image:: https://grdc.com.au/__data/assets/image/0021/437070/aus-map.jpg
+   :alt: Wheat belt of Australia 2024
+   :width: 600
+   :align: center
+
+| According to the RIRDC Report June 2015, the traditional Aboriginal grain belt (Tindale's Arc) covers a large area of southern Australia, including parts of Western Australia, South Australia, New South Wales, Victoria and Tasmania.
+| See: https://www.agrifutures.com.au/wp-content/uploads/publications/15-056.pdf
+
+.. image:: https://www.agrifutures.com.au/wp-content/uploads/2015/06/15-056-Figure-1.jpg
+   :alt: Tindale's Arc Aboriginal grain belt
+   :width: 600
+   :align: center
+
+----
 
 Steps for Mathematical Modelling
 -------------------------------------
