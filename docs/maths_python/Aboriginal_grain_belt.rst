@@ -23,3 +23,67 @@ Modelling
 | The land area of the current wheat belt is estimated to be **460,000 square kilometres**.
 | See: http://www.consortiumland.com/investors/introduction-to-the-australian-wheatbelt/
 | It seems that the Indigenous grain belt with native grasses covers a similar or slightly larger area than the current wheat belt, but this is just a guess.
+
+---
+
+Steps for Mathematical Modelling
+-------------------------------------
+
+| The **honeycomb tiling** method is efficient for modelling area because hexagons tessellate without gaps and approximate circular regions better than squares.
+
+1. **Define the regions**
+   - Obtain maps showing the **traditional Aboriginal grain belt** (where native grains like *microlaena* or *panicum* were cultivated) and the **current Australian grain belt** (primarily wheat and barley regions).
+   - Represent each region as a polygon or shape on a coordinate grid.
+
+2. **Overlay a geometric tiling (honeycomb pattern)**
+   - Use dynamic geometry software (e.g. GeoGebra) to overlay a **hexagonal grid** across the map.
+   - Each hexagon represents a unit of land area.
+
+3. **Count and compare proportions**
+   - Count how many hexagons fall within the traditional grain belt.
+   - Count how many hexagons fall within the current grain belt.
+   - Calculate the proportion:
+     \[
+     \text{Proportion} = \frac{\text{Hexagons in traditional belt}}{\text{Hexagons in current belt}}
+     \]
+
+4. **Interpret the result**
+   - Express the proportion as a percentage.
+   - Communicate what this means in terms of land use change — e.g. “The traditional grain belt covered about 40% of the area of today’s grain belt.”
+
+
+----
+
+Using GeoGebra
+---------------------
+
+1. **Open GeoGebra Geometry or GeoGebra Classic**
+   - Go to [GeoGebra](https://www.geogebra.org/geometry).
+   - Import or insert an image of the map you want to study (e.g. Australia’s grain belt regions).
+
+2. **Create a hexagon tile**
+   - Use the **Polygon tool** to draw a regular hexagon.
+   - Alternatively, type in the input bar:
+     ```
+     RegularPolygon[(0,0),(1,0),6]
+     ```
+     This makes a hexagon with side length 1.
+
+3. **Duplicate the hexagon to form a grid**
+   - Use the **Translate by Vector tool** to copy the hexagon horizontally and vertically.
+   - For a honeycomb effect, shift every second row by half a hexagon width.
+   - Repeat until the grid covers the entire map area.
+
+4. **Overlay the grid on the map**
+   - Adjust transparency of the hexagons (right-click → Object Properties → Color → Opacity).
+   - Position the grid so it covers both the traditional grain belt and the current grain belt.
+
+5. **Count and compare areas**
+   - Count how many hexagons fall inside each region.
+   - Calculate proportions:
+     \[
+     \text{Proportion} = \frac{\text{Hexagons in traditional belt}}{\text{Hexagons in current belt}}
+     \]
+   - Express as a percentage and interpret in context.
+
+
