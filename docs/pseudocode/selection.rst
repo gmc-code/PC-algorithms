@@ -89,10 +89,10 @@ If, else
 
             In the code above, is the condition in the if statement True or False?
 
-            .. code-block::
+            .. code-block:: none
 
-               | ``if score >= cut_off_score`` becomes ``if 65 >= 60:``
-               | This evaluates to True
+               ``if score >= cut_off_score`` becomes ``if 65 >= 60:``
+               This evaluates to True
 
          .. tab-item:: Q2
 
@@ -100,8 +100,8 @@ If, else
 
             .. code-block::
 
-               | "Do a retest." is in the False branch.
-               | So the score is below 60. e.g. 59
+               "Do a retest." is in the False branch.
+               So the score is below 60. e.g. 59
 
          .. tab-item:: Q3
 
@@ -175,7 +175,7 @@ If, elif, else
 
             | In the code above, is the condition in the if statement True or False?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | ``scoreA > scoreB`` is True since 88 > 85.
 
@@ -183,7 +183,7 @@ If, elif, else
 
             | Give a value for ``scoreB`` in the code above such that the output is ``"B won."``.
 
-            .. code-block:: text
+            .. code-block:: none
 
                | ``scoreB > scoreA`` so scoreB > 88. e.g. scoreB = 89
 
@@ -191,7 +191,7 @@ If, elif, else
 
             | Give a value for ``scoreB`` in the code above such that the output is ``"A drew with B."``.
 
-            .. code-block:: text
+            .. code-block:: none
 
                | ``scoreB == scoreA`` so scoreB = 88. e.g. scoreB = 88
 
@@ -285,7 +285,7 @@ And, or, not
 
             | In the code above, is the condition in the if statement True or False?
 
-            .. code-block:: text
+            .. code-block:: none
 
                ``is_raining AND is_cold`` is True since both ``is_raining``and ``is_cold`` are True.
 
@@ -293,7 +293,7 @@ And, or, not
 
             | What is the expected output from the code above?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | "Bring Umbrella and jacket."
 
@@ -301,7 +301,7 @@ And, or, not
 
             | Would changing ``is_raining`` to ``False`` result in a change in the output?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | Yes, since the condition would evaluate to False instead of True.
 
@@ -309,7 +309,7 @@ And, or, not
 
             | Would changing ``is_raining`` to ``False`` and ``is_cold`` to ``False`` result in a change from the original output?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | Yes, the out put would be: "Umbrella and jacket are optional."
 
@@ -366,7 +366,7 @@ And, or, not
 
             | In the code above, is the condition in the if statement True or False?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | ``is_raining OR is_cold`` is False since both ``is_raining``and ``is_cold`` are False.
 
@@ -374,7 +374,7 @@ And, or, not
 
             | What is the expected output from the code above?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | "Wear a sun hat."
 
@@ -382,7 +382,7 @@ And, or, not
 
             | Would changing ``is_raining`` to ``True`` result in a change in the output?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | Yes, since the condition would evaluate to True instead of False.
 
@@ -390,7 +390,7 @@ And, or, not
 
             | Would changing ``is_raining`` to ``True`` and ``is_cold`` to ``True`` result in a change from the original output?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | Yes, the output would be: "Bring Umbrella or jacket or both."
 
@@ -443,7 +443,7 @@ And, or, not
 
             | In the code above, is the condition in the ELSEIF statement True or False?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | ``is_raining AND NOT (is_cold)`` is TRUE since both ``is_raining``and ``NOT (is_cold)`` are True.
 
@@ -451,7 +451,7 @@ And, or, not
 
             | What is the expected output from the code above?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | "Bring Umbrella."
 
@@ -459,7 +459,7 @@ And, or, not
 
             | What change would be needed in the variable assignments to result in the output being ``"Bring Umbrella AND jacket."``?
 
-            .. code-block:: text
+            .. code-block:: none
 
                | Change ``is_cold ← FALSE`` to ``is_cold ← TRUE``.
 
