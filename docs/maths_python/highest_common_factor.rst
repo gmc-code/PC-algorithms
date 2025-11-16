@@ -38,7 +38,7 @@ HCF by repeated subtraction (Euclidean algorithm)
     ENDFUNCTION
 
 
-    MAIN PROGRAM:
+    BEGIN:
         a ← 48
         b ← 18
         result ← HCF_SUB(a, b)
@@ -78,7 +78,7 @@ HCF by repeatedly getting remainders from division
     ENDFUNCTION
 
 
-    MAIN PROGRAM:
+    BEGIN:
         a ← 48
         b ← 18
         result ← HCF_DIV(a, b)
@@ -108,7 +108,7 @@ HCF by repeatedly getting remainders from division
     ENDFUNCTION
 
 
-    MAIN PROGRAM:
+    BEGIN:
         a ← 48        # Example: 1071
         b ← 18        # Example: 462
         result ← HCF_MOD(a, b)

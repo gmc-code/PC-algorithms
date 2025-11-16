@@ -56,7 +56,7 @@ FUNCTION add_fractions(fraction1, fraction2):
         RETURN "result_numerator/result_denominator"
 
 
-MAIN PROGRAM:
+BEGIN:
     fraction1 = (1, 2)
     fraction2 = (2, 3)
     result = CALL add_fractions(fraction1, fraction2)
@@ -82,7 +82,7 @@ Adding fractions using the fractions module
 
 .. code-block:: pseudocode
 
-    MAIN PROGRAM:
+    BEGIN:
     fraction1 = 1/3
     fraction2 = 2/3
 

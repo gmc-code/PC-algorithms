@@ -51,7 +51,7 @@ Random walks
         SAVE graph to filepath with high resolution
 
 
-    MAIN PROGRAM:
+    BEGIN:
         positions = CALL random_walk_1d(start_position = 3)
         CALL plot_random_walk_1d(positions)
 
@@ -252,7 +252,7 @@ Levy flights
         SAVE graph to filepath with high resolution
 
 
-    MAIN PROGRAM:
+    BEGIN:
         levy_interval = 100
         total_steps = 1000
         min_jump = 10

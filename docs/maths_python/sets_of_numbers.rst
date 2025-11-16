@@ -28,7 +28,7 @@ Simple rule
         RETURN result
 
 
-    MAIN PROGRAM:
+    BEGIN:
         numbers = set of integers from 1 to 10
         manipulated_numbers = CALL manipulate_numbers(numbers)
         PRINT manipulated_numbers
@@ -55,7 +55,7 @@ Even numbers
 
         RETURN even_numbers
 
-    MAIN PROGRAM:
+    BEGIN:
         numbers = set of integers from 1 to 10
         even_numbers = CALL get_even_numbers(numbers)
         PRINT even_numbers
@@ -82,7 +82,7 @@ Sum numbers in sequence
 
         RETURN running_totals
 
-    MAIN PROGRAM:
+    BEGIN:
         numbers = set of integers from 1 to 10
         running_totals = CALL sum_numbers_in_sequence(numbers)
         PRINT running_totals

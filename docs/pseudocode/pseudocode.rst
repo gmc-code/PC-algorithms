@@ -210,7 +210,7 @@ Relational and Logical Operators
 
    * - Keyword
      - Meaning / Usage
-   * - MAIN PROGRAM
+   * - BEGIN
      - Entry point of the pseudocode program
    * - PROCEDURE
      - Defines a procedure (subroutine)

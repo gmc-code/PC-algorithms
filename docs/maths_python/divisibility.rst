@@ -33,11 +33,11 @@ Divisibility by 2
     ENDFUNCTION
 
 
-    MAIN PROGRAM
+    BEGIN
         num ← RANDOM INTEGER BETWEEN 10 AND 300
         result ← DIV_BY_2(num)
         PRINT(num, result)
-    END PROGRAM
+    END
 
 
 | The python code implementing the algorithm is shown below:
@@ -90,11 +90,11 @@ by 3.
     ENDFUNCTION
 
 
-    MAIN PROGRAM
+    BEGIN
         num ← RANDOM INTEGER BETWEEN 12 AND 300
         result ← DIV_BY_3(num)
         PRINT(num, result)
-    END PROGRAM
+    END
 
 
 
@@ -129,11 +129,11 @@ Divisibility by 5
     ENDFUNCTION
 
 
-    MAIN PROGRAM
+    BEGIN
         num ← RANDOM INTEGER BETWEEN 10 AND 300
         result ← DIV_BY_5(num)
         PRINT(num, result)
-    END PROGRAM
+    END
 
 
 | The python code implementing the algorithm is shown below:
@@ -187,11 +187,11 @@ Divisibility by 7
     ENDFUNCTION
 
 
-    MAIN PROGRAM
+    BEGIN
         num ← RANDOM INTEGER BETWEEN 12 AND 300
         result ← DIV_BY_7(num)
         PRINT(num, result)
-    END PROGRAM
+    END
 
 
 | The python code implementing the algorithm is shown below:

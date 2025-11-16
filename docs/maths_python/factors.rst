@@ -41,7 +41,7 @@ Prime factor list
         RETURN prime_factors
 
 
-    MAIN PROGRAM:
+    BEGIN:
         REPEAT 10 times:
             num = random integer between 12 and 300
             factors = CALL get_prime_factors(num)
@@ -95,7 +95,7 @@ Prime factor lists
         RETURN prime_factors
 
 
-    MAIN PROGRAM:
+    BEGIN:
         FOR num from 2 to 100:
             factors = CALL get_prime_factors(num)
             IF count of unique values in factors > 2:
