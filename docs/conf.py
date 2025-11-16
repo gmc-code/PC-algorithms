@@ -91,6 +91,9 @@ html_css_files = ["css/custom.css"]
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
+# Add your custom JS
+html_js_files = ['custom.js']
+
 # html_static_path = ['../_static/'] # for jupyter
 
 # -- sphinx-rtd-theme Theme Options ------
