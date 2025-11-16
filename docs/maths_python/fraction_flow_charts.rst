@@ -1,5 +1,5 @@
 =======================
-Flow charts
+Fraction Flow charts
 =======================
 
 | VCMNA221: level 6: Design algorithms involving branching and iteration to solve specific classes of mathematical problems
@@ -33,34 +33,47 @@ Adding fractions
 
 .. code-block:: pseudocode
 
-FUNCTION add_fractions(fraction1, fraction2):
-    EXTRACT numerator1, denominator1 from fraction1
-    EXTRACT numerator2, denominator2 from fraction2
+    FUNCTION add_fractions(fraction1, fraction2)
+        EXTRACT numerator1, denominator1 FROM fraction1
+        EXTRACT numerator2, denominator2 FROM fraction2
 
-    FIND lcd = (denominator1 * denominator2) / gcd(denominator1, denominator2)
+        lcd = (denominator1 * denominator2) / gcd(denominator1, denominator2)
 
-    CONVERT numerator1 = numerator1 * (lcd / denominator1)
-    CONVERT numerator2 = numerator2 * (lcd / denominator2)
+        numerator1 = numerator1 * (lcd DIV denominator1)
+        numerator2 = numerator2 * (lcd DIV denominator2)
 
-    numerator_sum = numerator1 + numerator2
+        numerator_sum = numerator1 + numerator2
 
-    gcd_value = gcd(numerator_sum, lcd)
-    result_numerator = numerator_sum / gcd_value
-    result_denominator = lcd / gcd_value
+        gcd_value = gcd(numerator_sum, lcd)
+        result_numerator = numerator_sum DIV gcd_value
+        result_denominator = lcd DIV gcd_value
 
-    IF result_numerator > result_denominator:
-        whole_number = result_numerator / result_denominator
-        remainder = result_numerator MOD result_denominator
-        RETURN "whole_number remainder/result_denominator"
-    ELSE:
-        RETURN "result_numerator/result_denominator"
+        IF result_numerator > result_denominator
+            whole_number = result_numerator DIV result_denominator
+            remainder = result_numerator MOD result_denominator
+            RETURN whole_number, remainder, result_denominator
+        ELSE
+            RETURN result_numerator, result_denominator
+        END IF
+    END FUNCTION
 
 
-BEGIN:
-    fraction1 = (1, 2)
-    fraction2 = (2, 3)
-    result = CALL add_fractions(fraction1, fraction2)
-    PRINT "fraction1 + fraction2 = result"
+    BEGIN
+        fraction1 = (1, 2)
+        fraction2 = (2, 3)
+        result = CALL add_fractions(fraction1, fraction2)
+
+        PRINT "fraction1 =", fraction1
+        PRINT "fraction2 =", fraction2
+
+        IF LENGTH(result) = 3
+            PRINT "fraction1 + fraction2 =", result[0], "and", result[1], "/", result[2]
+        ELSE
+            PRINT "fraction1 + fraction2 =", result[0], "/", result[1]
+        END IF
+    END
+
+
 
 
 | The python code implementing the algorithm is shown below:
@@ -82,25 +95,29 @@ Adding fractions using the fractions module
 
 .. code-block:: pseudocode
 
-    BEGIN:
-    fraction1 = 1/3
-    fraction2 = 2/3
+    BEGIN
+        fraction1 = 1/3
+        fraction2 = 2/3
 
-    result = fraction1 + fraction2
-    whole_number = integer part of result
+        result = fraction1 + fraction2
+        whole_number = INTEGER PART OF result
 
-    IF whole_number > 0:
-        fraction_part = result - whole_number
+        IF whole_number > 0 THEN
+            fraction_part = result - whole_number
 
-        IF fraction_part > 0:
-            PRINT "fraction1 + fraction2 = whole_number fraction_part"
-            # Example: 1/2 + 2/3 = 1 1/6
-        ELSE:
-            PRINT "fraction1 + fraction2 = result"
-            # Example: 1/3 + 2/3 = 1
-    ELSE:
-        PRINT "fraction1 + fraction2 = result"
-        # Example: 1/6 + 2/3 = 5/6
+            IF fraction_part > 0 THEN
+                PRINT "fraction1 + fraction2 =", whole_number, fraction_part
+                # Example: 1/2 + 2/3 = 1 1/6
+            ELSE
+                PRINT "fraction1 + fraction2 =", result
+                # Example: 1/3 + 2/3 = 1
+            END IF
+        ELSE
+            PRINT "fraction1 + fraction2 =", result
+            # Example: 1/6 + 2/3 = 5/6
+        END IF
+    END
+
 
 
 | The python code implementing the algorithm using the fractions module is shown below:

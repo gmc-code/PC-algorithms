@@ -56,8 +56,7 @@ PC-algorithms
 
 
     maths_python/introduction_maths_python.rst
-    maths_python/divisibility.rst
-    maths_python/prime_factors.rst
+
     maths_python/simple_stats.rst
 
 
@@ -80,11 +79,11 @@ PC-algorithms
     :caption: Maths python 6
     :numbered:
 
-    maths_python/factors.rst
     maths_python/flow_charts.rst
     maths_python/fraction_sequence.rst
     maths_python/primes_as sums_of_squares.rst
     maths_python/Sieve_of_Eratosthenes.rst
+    maths_python/prime_factors.rst
 
 
 .. toctree::

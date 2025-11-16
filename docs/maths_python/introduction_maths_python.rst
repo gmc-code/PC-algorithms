@@ -42,6 +42,7 @@ Introduction to maths python
 	* creating a classification scheme for regular, irregular, concave or convex polygons that are sorted according to the number of sides
 
 | level 7  Use mathematical modelling to solve practical problems involving rational numbers and percentages, including financial contexts such as 'best buys'; formulate problems, choosing representations and efficient calculation strategies, designing algorithms and using digital tools as appropriate; interpret and communicate solutions in terms of the situation, justifying choices made about the representation (VC2M7N10)
+| See: https://victoriancurriculum.vcaa.vic.edu.au/Curriculum/ContentDescription/VC2M7N10
 
 	* modelling additive situations involving positive and negative quantities; for example, a lift travelling up and down floors in a high-rise apartment where the ground floor is interpreted as zero, or in geography when determining altitude above and below sea level
 	* modelling contexts involving proportion, such as the proportion of students attending the school disco, proportion of the bottle cost to the recycling refund, proportion of the school site that is green space, 55% of Year 7 students attended the end of term function or 23% of the school population voted 'yes' to a change of school uniform; and interpreting and communicating answers in terms of the context of the situation
@@ -49,8 +50,7 @@ Introduction to maths python
 
 	* **finding the sum of a set of consecutive numbers using a loop structure**
 	* **constructing geometric patterns such as a honeycomb, using dynamic geometry functionality**
-
-	* using mathematical modelling to investigate the proportion of land mass/area of Aboriginal Peoples' traditional grain belt compared with Australia's current grain belt
+	* **using mathematical modelling to investigate the proportion of land mass/area of Aboriginal Peoples' traditional grain belt compared with Australia's current grain belt**
 
 
 ----
