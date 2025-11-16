@@ -2,6 +2,8 @@
 Divisibility
 =======================
 
+| VC2M8A04 level 8 Use algorithms and related testing procedures to identify and correct errors.
+
 * testing a number for divisibility
 
 ----------------------------------

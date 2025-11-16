@@ -104,6 +104,7 @@ PC-algorithms
     :numbered:
 
     maths_python/debugging.rst
+    maths_python/divisibility.rst
 
 
 .. toctree::
@@ -111,10 +112,11 @@ PC-algorithms
     :caption: Maths python 9
     :numbered:
 
+    maths_python/Pythagorean_triples.rst
     maths_python/angle_bisection.rst
     maths_python/polygon_construction.rst
+
     maths_python/population_sampling.rst
-    maths_python/Pythagorean_triples.rst
 
 
 .. toctree::
