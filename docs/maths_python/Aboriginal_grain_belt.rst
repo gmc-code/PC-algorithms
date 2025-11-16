@@ -37,7 +37,7 @@ Modelling
 
 | According to the RIRDC Report June 2015, the traditional Aboriginal grain belt (Tindale's Arc) covers a large area of southern Australia, including parts of Western Australia, South Australia, New South Wales, Victoria and Tasmania.
 
-.. image:: images/RIRDC Map of Tindales Arc.jpg
+.. image:: images/RIRDC_Map_of_Tindales_Arc.jpg
    :alt: Tindale's Arc Aboriginal grain belt
    :width: 600
    :align: center
