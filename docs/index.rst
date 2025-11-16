@@ -50,6 +50,7 @@ PC-algorithms
     flowcharts/While_True_loops.rst
 
 
+
 .. toctree::
     :maxdepth: 2
     :caption: Maths python
