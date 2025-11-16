@@ -26,16 +26,16 @@ Pythagorean triples up to a given integer
     :linenos:
 
 | Sample output giving lists of Pythagorean triples for numbers up to 100.
-| [[3, 4, 5], [5, 12, 13], [15, 8, 17], [7, 24, 25], [21, 20, 29], [35, 12, 37], [9, 40, 41], 
-| [45, 28, 53], [11, 60, 61], [33, 56, 65], [63, 16, 65], [55, 48, 73], 
+| [[3, 4, 5], [5, 12, 13], [15, 8, 17], [7, 24, 25], [21, 20, 29], [35, 12, 37], [9, 40, 41],
+| [45, 28, 53], [11, 60, 61], [33, 56, 65], [63, 16, 65], [55, 48, 73],
 | [13, 84, 85], [77, 36, 85], [39, 80, 89], [65, 72, 97]]
 
 
 | A second version is below that uses list comprehension with conditionals:
-| The `:=` operator is called the walrus operator or the assignment expression. It allows you to assign a value to a variable and use it in the same expression.
-| In `and (c := math.pow(m, 2) + math.pow(n, 2)) < num `, 
-| the value of `math.pow(m, 2) + math.pow(n, 2)` 
-| is assigned to the variable c and then compared with num. This way, you don't have to calculate c twice or use a separate line to assign it. 
+| The ``:=`` operator is called the walrus operator or the assignment expression. It allows you to assign a value to a variable and use it in the same expression.
+| In ``and (c := math.pow(m, 2) + math.pow(n, 2)) < num ``,
+| the value of ``math.pow(m, 2) + math.pow(n, 2)``
+| is assigned to the variable c and then compared with num. This way, you don't have to calculate c twice or use a separate line to assign it.
 | The walrus operator was introduced in Python 3.8 and can be used in list comprehensions, lambda functions, if statements and other places where you want to avoid repeating calculations or code.
 
 .. literalinclude:: files/pythagorean_triples_2.py
