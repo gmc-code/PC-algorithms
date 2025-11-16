@@ -46,8 +46,11 @@ Output
 
 .. code-block:: pseudocode
 
-    PRINT("Winner")
+    PRINT "Winner"
 
+.. admonition:: Note
+
+    Some pseudocode variants use the python style: PRINT("Winner")
 
 ----
 
@@ -78,7 +81,7 @@ Output
 
                 .. code-block:: pseudocode
 
-                    PRINT("Melbourne")
+                    PRINT "Melbourne"
 
 ----
 

@@ -34,7 +34,7 @@ For loops
 
     BEGIN
         FOR i ← 0 TO 3
-            OUTPUT i
+            PRINT i
         NEXT i
     END
 
@@ -72,7 +72,7 @@ For loops
 
     BEGIN
         FOR i ← 4 TO 8
-            OUTPUT i
+            PRINT i
         NEXT i
     END
 
@@ -96,7 +96,7 @@ While loops: forever
 
     BEGIN
         WHILE TRUE
-            OUTPUT "Can't stop me."
+            PRINT "Can't stop me."
         ENDWHILE
     END
 
@@ -133,7 +133,7 @@ While loops: pre-test
     BEGIN
         num ← 1
         WHILE num < 10
-            OUTPUT num
+            PRINT num
             num ← num + 1
         ENDWHILE
     END
@@ -154,7 +154,7 @@ Pseudocode: post-test REPEAT UNTIL
     BEGIN
         num ← 1
         REPEAT
-            OUTPUT num
+            PRINT num
             num ← num + 2
         UNTIL num > 9
     END
@@ -197,7 +197,7 @@ Pseudocode: post-test DO WHILE
     BEGIN
         num ← 1
         DO
-            OUTPUT num
+            PRINT num
             num ← num + 2
         WHILE num < 10
     END
@@ -240,7 +240,7 @@ Practice Questions
             BEGIN
                 i = 0
                 WHILE (i <= 10)
-                    print i
+                    PRINT i
                     i = i + 21
                 ENDWHILE
             END

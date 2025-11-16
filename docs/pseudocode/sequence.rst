@@ -38,7 +38,7 @@ Input and output
 
    BEGIN
       name ← INPUT "Enter your name?"
-      PRINT("Hello, " + name + ". Nice to meet you.")
+      PRINT "Hello, " + name + ". Nice to meet you."
    END
 
 ----
@@ -68,7 +68,7 @@ Input and output
 
                a ← 5
                b ← 6
-               OUTPUT a * b
+               PRINT a * b
 
 ----
 
@@ -84,7 +84,7 @@ Input and output
             Multiply by 3
             Add 18
             Multiply by 3
-            OUTPUT all the digits but 1
+            PRINT all the digits but 1
          END
 
    .. dropdown::
