@@ -89,7 +89,7 @@ If, else
 
             In the code above, is the condition in the if statement True or False?
 
-            .. code-block:: text
+            .. code-block::
 
                | ``if score >= cut_off_score`` becomes ``if 65 >= 60:``
                | This evaluates to True
@@ -98,7 +98,7 @@ If, else
 
             Give a value for ``score`` in the code above such that the output is ``"Do a retest."``.
 
-            .. code-block:: text
+            .. code-block::
 
                | "Do a retest." is in the False branch.
                | So the score is below 60. e.g. 59
@@ -107,7 +107,7 @@ If, else
 
             | Assuming scores can only be integers from and including 0 to 100, how many different scores would result in the output of ``"Do a retest."``?
 
-            .. code-block:: text
+            .. code-block::
 
                | Required scores are from 0 to 59.
                | There are 60 scores.
@@ -116,7 +116,7 @@ If, else
 
             | Assuming scores can only be integers from and including 0 to 100, how many different scores would result in the output of ``"Suitable standard."``?
 
-            .. code-block:: text
+            .. code-block::
 
                | Required scores are from 60 to 100.
                | There are 41 scores.
