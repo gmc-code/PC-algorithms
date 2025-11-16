@@ -188,8 +188,8 @@ Pseudocode alternatives
 --------------------------
 
 | In pseudocode, the code for each case can be on the same line as the case value.
-| The keywords: OF, OTHERS, can be used.
-| The OTHERS clause with its default sequence is optional.
+| The keywords: OF, OTHERWISE, can be used.
+| The OTHERWISE clause with its default sequence is optional.
 | The general pattern may be:
 
 .. code-block:: pseudocode
@@ -202,7 +202,7 @@ Pseudocode alternatives
         ...
         condition n :
             sequence n
-        OTHERS :
+        OTHERWISE :
             default sequence
     ENDCASE
 
@@ -238,6 +238,6 @@ Example:
             print("Missus")
         case "Ms":
             print("Miss")
-        case other:
+        case _:
             print("Form of address not recognised")
 
