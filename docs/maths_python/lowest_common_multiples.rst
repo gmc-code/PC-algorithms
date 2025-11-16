@@ -57,7 +57,6 @@ LCM of 2 numbers using HCF
 LCM of multiple numbers
 ---------------------------------------------------
 
-| The lowest common multiple of triples or more natural numbers can be found by finding multiplying the highest power of their prime factors.
 | The pseudocode to find LCM of multiple numbers has the steps to find the lowest common multiple of multiple numbers:
 
 .. code-block:: pseudocode
@@ -96,7 +95,7 @@ LCM of multiple numbers
 
 | The code below handles multiple positive integers.
 
-.. literalinclude:: files/lcm_using_primes_multi.py
+.. literalinclude:: files/lcm_using_hcf_multi.py
     :linenos:
 
 ----
