@@ -36,20 +36,6 @@ Newton's method
     END PROCEDURE
 
 
-
-| **define** newton(f(x), f'(x), x0, max_iter, tol)
-|     i ← 0
-|     **while** i < max_iter
-|         x1 ← x0 - f(x0) ÷ f'(x0)
-|         **if** abs(x1 - x0) ≤ tol **then**
-|             **return** x1
-|         x0 ← x1
-|         i ← i + 1
-|     **end while**
-|     **return** x1
-| **end define**
-
-
 | This pseudocode defines a function newton that takes five arguments: f(x), f'(x), x0, max_iter, and tol.
 | The function initializes a loop counter i to 0 and enters a while loop that iterates max_iter times.
 | The maximum number of iterations allowed is specified by the max_iter parameter.
