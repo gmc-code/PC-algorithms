@@ -15,23 +15,33 @@ Simple rule
 
 .. code-block:: pseudocode
 
-    FUNCTION manipulate_numbers(numbers):
-        CREATE empty set result
+    FUNCTION manipulate_numbers(numbers)
+        result ← EMPTY SET
 
-        FOR each number in numbers:
-            IF number is even:
-                new_value = number / 2
-            ELSE:
-                new_value = (number - 1) / 2
-            ADD new_value to result
+        FOR EACH number IN numbers DO
+            IF number MOD 2 = 0 THEN
+                new_value ← number ÷ 2
+            ELSE
+                new_value ← (number - 1) ÷ 2
+            ENDIF
+            ADD new_value TO result
+        ENDFOR
 
         RETURN result
+    ENDFUNCTION
 
 
-    BEGIN:
-        numbers = set of integers from 1 to 10
-        manipulated_numbers = CALL manipulate_numbers(numbers)
-        PRINT manipulated_numbers
+    BEGIN
+        INPUTS:
+            numbers ← SET OF INTEGERS FROM 1 TO 10
+
+        PROCESS:
+            manipulated_numbers ← CALL manipulate_numbers(numbers)
+
+        OUTPUT:
+            PRINT("Manipulated numbers are ", manipulated_numbers)
+    END
+
 
 
 .. literalinclude:: files/sets_of_numbers.py
@@ -46,19 +56,30 @@ Even numbers
 
 .. code-block:: pseudocode
 
-    FUNCTION get_even_numbers(numbers):
-        CREATE empty set even_numbers
+    FUNCTION get_even_numbers(numbers)
+        even_numbers ← EMPTY SET
 
-        FOR each number in numbers:
-            IF number is even:
-                ADD number to even_numbers
+        FOR EACH number IN numbers DO
+            IF number MOD 2 = 0 THEN
+                ADD number TO even_numbers
+            ENDIF
+        ENDFOR
 
         RETURN even_numbers
+    ENDFUNCTION
 
-    BEGIN:
-        numbers = set of integers from 1 to 10
-        even_numbers = CALL get_even_numbers(numbers)
-        PRINT even_numbers
+
+    BEGIN
+        INPUTS:
+            numbers ← SET OF INTEGERS FROM 1 TO 10
+
+        PROCESS:
+            even_numbers ← CALL get_even_numbers(numbers)
+
+        OUTPUT:
+            PRINT("Even numbers are ", even_numbers)
+    END
+
 
 .. literalinclude:: files/sets_of_numbers_even.py
     :linenos:
@@ -72,20 +93,30 @@ Sum numbers in sequence
 
 .. code-block:: pseudocode
 
-    FUNCTION sum_numbers_in_sequence(numbers):
-        CREATE empty list running_totals
-        total = 0
+    FUNCTION sum_numbers_in_sequence(numbers)
+        running_totals ← EMPTY LIST
+        total ← 0
 
-        FOR each number in numbers:
-            total = total + number
-            ADD total to running_totals
+        FOR EACH number IN numbers DO
+            total ← total + number
+            APPEND total TO running_totals
+        ENDFOR
 
         RETURN running_totals
+    ENDFUNCTION
 
-    BEGIN:
-        numbers = set of integers from 1 to 10
-        running_totals = CALL sum_numbers_in_sequence(numbers)
-        PRINT running_totals
+
+    BEGIN
+        INPUTS:
+            numbers ← SET OF INTEGERS FROM 1 TO 10
+
+        PROCESS:
+            running_totals ← CALL sum_numbers_in_sequence(numbers)
+
+        OUTPUT:
+            PRINT("Running totals are ", running_totals)
+    END
+
 
 .. literalinclude:: files/sets_of_numbers_sum.py
     :linenos:
