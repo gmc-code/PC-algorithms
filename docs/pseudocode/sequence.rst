@@ -37,8 +37,8 @@ Input and output
 .. code-block:: pseudocode
 
    BEGIN
-      name ← INPUT ("Enter your name?")
-      PRINT "Hello, " + name + ". Nice to meet you."
+      name ← INPUT "Enter your name?"
+      PRINT("Hello, " + name + ". Nice to meet you.")
    END
 
 ----
@@ -68,7 +68,7 @@ Input and output
 
                a ← 5
                b ← 6
-               OUTPUT (a * b)
+               OUTPUT a * b
 
 ----
 
