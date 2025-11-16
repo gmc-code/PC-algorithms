@@ -206,8 +206,6 @@ Pseudocode alternatives
             default sequence
     ENDCASE
 
-
-
 Example:
 
 .. code-block:: pseudocode
