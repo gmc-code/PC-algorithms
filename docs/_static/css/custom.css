@@ -253,8 +253,11 @@ button.copybtn {
     border: 1px solid #7e7e7e;
 }
 
+.highlight-vcaapseudocode .highlight {
+    background: rgb(234, 234, 234) !important;
+    border: 1px solid #7e7e7e;
+}
 
-/* Override keyword color inside pseudocode */
 .highlight-pseudocode .k {
     color: #3d3dff;  /* blue */
     /* font-weight: bold; */
@@ -267,10 +270,16 @@ button.copybtn {
 }
 
 
-/* Override keyword color inside pseudocode */
 .highlight-pseudocode .n {
     color: #008000;  /* green */
     /* font-weight: bold; */
+}
+
+
+.highlight-vcaapseudocode .n {
+    color: #008000;  /* green */
+    font-weight: bold;    /* make bold */
+    text-transform: lowercase; /* force lowercase */
 }
 
 .highlight-pseudocode .err {
@@ -278,6 +287,10 @@ button.copybtn {
     border: 0px solid #fff;
 }
 
+.highlight-vcaapseudocode .err {
+    color: #000;  /* default is red */
+    border: 0px solid #fff;
+}
 
 /* .highlight {
      background: rgb(234, 234, 234);
