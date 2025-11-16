@@ -109,8 +109,8 @@ HCF by repeatedly getting remainders from division
 
 
     BEGIN:
-        a ← 48        # Example: 1071
-        b ← 18        # Example: 462
+        a ← 48
+        b ← 18
         result ← HCF_MOD(a, b)
         PRINT("HCF(a, b) IS", result)
     END
