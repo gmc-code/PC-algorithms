@@ -55,9 +55,9 @@ PC-algorithms
     :numbered:
 
 
-    maths_python/maths_python_intro.rst
+    maths_python/introduction_maths_python.rst
     maths_python/divisibility.rst
-    maths_python/highest_common_factor.rst
+
     maths_python/prime_factors.rst
     maths_python/simple_stats.rst
     maths_python/sums_of_sequences.rst
@@ -68,9 +68,11 @@ PC-algorithms
     :caption: Maths python 5
     :numbered:
 
-    maths_python/multiple_or_factor.rst
     maths_python/random_walks.rst
+    maths_python/multiple_or_factor.rst
     maths_python/sets_of_numbers.rst
+    maths_python/highest_common_factors.rst
+    maths_python/lowest_common_multiples.rst
     maths_python/spreadsheet_fill_down.rst
 
 
@@ -82,8 +84,6 @@ PC-algorithms
     maths_python/factors.rst
     maths_python/flow_charts.rst
     maths_python/fraction_sequence.rst
-    maths_python/highest_common_factors.rst
-    maths_python/lowest_common_multiples.rst
     maths_python/primes_as sums_of_squares.rst
     maths_python/Sieve_of_Eratosthenes.rst
 

@@ -2,6 +2,8 @@
 Sums of sequences
 =======================
 
+| VC2M7N10 level 7  Use mathematical modelling to solve practical problems involving rational numbers and percentages, including financial contexts such as 'best buys'; formulate problems, choosing representations and efficient calculation strategies, designing algorithms and using digital tools as appropriate; interpret and communicate solutions in terms of the situation, justifying choices made about the representation.
+
 * finding the sum of a set of consecutive numbers using a loop structure
 
 ----

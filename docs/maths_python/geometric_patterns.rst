@@ -2,7 +2,7 @@
 Geometric patterns
 =======================
 
-| VCMNA254: level 7: Design and implement mathematical algorithms using a simple general purpose programming language
+| VC2M7N10 level 7  Use mathematical modelling to solve practical problems involving rational numbers and percentages, including financial contexts such as 'best buys'; formulate problems, choosing representations and efficient calculation strategies, designing algorithms and using digital tools as appropriate; interpret and communicate solutions in terms of the situation, justifying choices made about the representation.
 
 * constructing geometric patterns such as a honeycomb, using dynamic geometry functionality
 
@@ -19,10 +19,10 @@ Turtle basics
 Tessellation (tiling)
 ----------------------
 
-| A tessellation is a repeated pattern in the plane or on a surface where shapes completely fill all the space around a given point where their boundaries meet. 
-| For example, a honeycomb is a tessellation using hexagons. 
+| A tessellation is a repeated pattern in the plane or on a surface where shapes completely fill all the space around a given point where their boundaries meet.
+| For example, a honeycomb is a tessellation using hexagons.
 | Tiling patterns are tessellations using rectangular tiles or brick pavers in paths, mosaics in buildings, quilts and art.
-| A regular tessellation is created by tessellating regular polygons. 
+| A regular tessellation is created by tessellating regular polygons.
 | If more than one regular polygon is used, it is a semi-regular tessellation.
 
 ----
@@ -42,7 +42,7 @@ Square patterns
     :width: 500
     :align: center
 
-|  
+|
 |  Python code for both examples, where the initial angle can be set to 0 or 45 degrees.
 
 .. literalinclude:: files/square_grid.py
@@ -59,12 +59,12 @@ Hexagon patterns
     :width: 500
     :align: center
 
-|  
+|
 |  Python code:
 
 .. literalinclude:: files/hexagon_diamonds.py
     :linenos:
-  
+
 ----
 
 | Staggered hexagons creating a tessalation with no overlap.
@@ -73,7 +73,7 @@ Hexagon patterns
     :width: 500
     :align: center
 
-|  
+|
 |  Python code:
 
 .. literalinclude:: files/hexagon_tesselation.py
@@ -88,7 +88,7 @@ s
     :margin: 0
     :padding: 0
 
-    .. grid-item-card::  
+    .. grid-item-card::
 
         hexagons_overlap_50
         ^^^
@@ -113,7 +113,7 @@ s
     :margin: 0
     :padding: 0
 
-    .. grid-item-card::  
+    .. grid-item-card::
 
         hexagons_overlap_75
         ^^^
@@ -133,7 +133,7 @@ s
             :alt: hexagons_overlap_100
             :figclass: align-center
 
-|  
+|
 |  Python code:
 
 .. literalinclude:: files/hexagons_overlap.py
