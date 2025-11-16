@@ -24,11 +24,11 @@ Mean
 
 .. code-block:: pseudocode
 
-    my_list ← [17, 13, 14, 16, 12, 12]
-    my_mean ← sum(my_list) ÷ length(my_list)
-    PRINT "Mean:", my_mean
-    # 14.0
-
+    BEGIN
+        my_list ← [17, 13, 14, 16, 12, 12]
+        my_mean ← SUM(my_list) ÷ LENGTH(my_list)
+        PRINT("Mean is ", my_mean)
+    END
 
 | Alternatively, the mean of a list can be found using **statistics.mean(list)**.
 
@@ -45,12 +45,12 @@ Mean
 
 .. code-block:: pseudocode
 
-    IMPORT mean FROM statistics
+    BEGIN
+        my_list ← [17, 13, 14, 16, 12, 12]
+        my_mean ← MEAN(my_list)
+        PRINT("Mean using statistics module is ", my_mean)
+    END
 
-    my_list ← [17, 13, 14, 16, 12, 12]
-    my_mean ← mean(my_list)
-    PRINT "Mean using statistics module:", my_mean
-    # 14
 
 ----
 
@@ -73,10 +73,11 @@ Sort list
 
 .. code-block:: pseudocode
 
-    my_list ← [17, 13, 14, 16, 12, 12]
-    CALL sort(my_list)
-    PRINT "Sorted list:", my_list
-    # [12, 12, 13, 14, 16, 17]
+    BEGIN
+        my_list ← [17, 13, 14, 16, 12, 12]
+        SORT(my_list)
+        PRINT("Sorted list is ", my_list)
+    END
 
 ----
 
@@ -112,19 +113,22 @@ Median
 
 .. code-block:: pseudocode
 
-    my_list ← [17, 13, 14, 16, 12, 12]
-    CALL sort(my_list)
-    n ← length(my_list)
-    IF n MOD 2 = 0 THEN
-        # average of middle 2 for even number of numbers
-        my_median ← (my_list[n ÷ 2 - 1] + my_list[n ÷ 2]) ÷ 2
-    ELSE
-        # middle number of odd number of numbers
-        my_median ← my_list[n ÷ 2]
-    ENDIF
+    BEGIN
+        my_list ← [17, 13, 14, 16, 12, 12]
+        SORT(my_list)
+        n ← LENGTH(my_list)
 
-    PRINT "Median:", my_median
-    # 13.5
+        IF n MOD 2 = 0 THEN
+            -- average of middle 2 for even number of elements
+            my_median ← (my_list[(n ÷ 2) - 1] + my_list[n ÷ 2]) ÷ 2
+        ELSE
+            -- middle element for odd number of elements
+            my_median ← my_list[n ÷ 2]
+        ENDIF
+
+        PRINT("Median is ", my_median)
+    END
+
 
 
 ----
@@ -146,12 +150,12 @@ Median
 
 .. code-block:: pseudocode
 
-    IMPORT median FROM statistics
+    BEGIN
+        my_list ← [17, 13, 14, 16, 12, 12]
+        my_median ← MEDIAN(my_list)
+        PRINT("Median using statistics module is ", my_median)
+    END
 
-    my_list ← [17, 13, 14, 16, 12, 12]
-    my_median ← median(my_list)
-    PRINT "Median using statistics module:", my_median
-    # 13.5
 
 ----
 
@@ -185,27 +189,36 @@ Mode
 
 .. code-block:: pseudocode
 
-    my_list ← [17, 13, 14, 16, 12, 12]
+    BEGIN
+        my_list ← [17, 13, 14, 16, 12, 12]
 
-    # Count the occurrences of each number
-    num_counts ← empty dictionary
-    FOR each num IN my_list DO
-        IF num IN num_counts THEN
-            num_counts[num] ← num_counts[num] + 1
-        ELSE
-            num_counts[num] ← 1
-        ENDIF
-    ENDFOR
+        -- Count the occurrences of each number uisng a DICTIONARY
+        num_counts ← EMPTY DICTIONARY
+        FOR EACH num IN my_list DO
+            IF num IN num_counts THEN
+                num_counts[num] ← num_counts[num] + 1
+            ELSE
+                num_counts[num] ← 1
+            ENDIF
+        ENDFOR
 
-    # Print the frequency of each number
-    FOR each (num, cnt) IN items of num_counts DO
-        PRINT num + ": " + cnt
-    ENDFOR
-    # Find the number with the highest count
-    mode_count ← max(values of num_counts)
-    mode_num ← [num FOR each (num, cnt) IN items of num_counts IF cnt = mode_count]
-    PRINT "Mode:", mode_num
-    # [12]
+        -- Print the frequency of each number
+        FOR EACH (num, cnt) IN ITEMS OF num_counts DO
+            PRINT("Frequency of ", num, " is ", cnt)
+        ENDFOR
+
+        -- Find the number(s) with the highest count
+        mode_count ← MAX(VALUES OF num_counts)
+        mode_nums ← EMPTY LIST
+        FOR EACH (num, cnt) IN ITEMS OF num_counts DO
+            IF cnt = mode_count THEN
+                APPEND num TO mode_nums
+            ENDIF
+        ENDFOR
+
+        PRINT("Mode is ", mode_nums)
+    END
+
 
 | Below is the output showing the frequencies of each number.
 
@@ -251,12 +264,12 @@ Mode
 
 .. code-block:: pseudocode
 
-    IMPORT multitude FROM statistics
+    BEGIN
+        my_list ← [17, 13, 14, 16, 12, 12]
+        my_mode ← MODE(my_list)
+        PRINT("Mode is ", my_mode)
+    END
 
-    my_list ← [17, 13, 14, 16, 12, 12]
-    my_mode ← multitude(my_list)
-    PRINT "Mode:", my_mode
-    # [12]
 
 ----
 
@@ -276,7 +289,9 @@ Range
 
 .. code-block:: pseudocode
 
-    my_list ← [17, 13, 14, 16, 12, 12]
-    my_range ← max(my_list) - min(my_list)
-    PRINT my_range
-    # 5
+    BEGIN
+        my_list ← [17, 13, 14, 16, 12, 12]
+        my_range ← MAX(my_list) - MIN(my_list)
+        PRINT("Range is ", my_range)
+    END
+
