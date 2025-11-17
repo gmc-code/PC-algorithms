@@ -48,10 +48,7 @@ Flowcharts Classify Triangles by Sides
         ENDIF
     END
 
-
 |
-|
-
 
 
 .. admonition:: Tasks
