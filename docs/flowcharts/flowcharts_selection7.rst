@@ -50,7 +50,9 @@ Flowcharts Classify Triangles by Angles
 
                 .. code-block:: none
 
-                    All other possibilities have been tested for, so an obtuse triangle is the last possibility, so it doesn't need testing to confirm it.
+                    All other possibilities have been tested for,
+                    so an obtuse triangle is the last possibility,
+                    so it doesn't need testing to confirm it.
 
             .. tab-item:: Q2
 
