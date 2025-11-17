@@ -2,8 +2,6 @@
 Flowcharts Classify Triangles by Sides
 =================================================
 
-
-
 | Logical operators are used to combine conditions in decision-making.
 
 .. list-table:: Logical Operators
@@ -23,7 +21,7 @@ Flowcharts Classify Triangles by Sides
      - Logical NOT
      - Reverses the truth value (true → false)
 
-
+----
 
 | The flowchart below checks to see if a triangle has all sides equal, or just 2 sides equal, and classifies it accordingly.
 
