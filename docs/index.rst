@@ -44,6 +44,7 @@ PC-algorithms
     flowcharts/flowcharts_selection4.rst
     flowcharts/flowcharts_selection5.rst
     flowcharts/flowcharts_selection6.rst
+    flowcharts/flowcharts_selection7.rst
 
     flowcharts/Selection.rst
     flowcharts/While_loops.rst
