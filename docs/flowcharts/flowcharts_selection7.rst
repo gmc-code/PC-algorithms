@@ -33,8 +33,8 @@ Flowcharts Classify Triangles by Angles
     #. In the flowchart, fill in the missing text.
 
         .. image:: drawio_files/selection/triangles_by_angles_st.png
-        :scale: 60 %
-        :align: center
+            :scale: 60 %
+            :align: center
 
 
     .. dropdown::
