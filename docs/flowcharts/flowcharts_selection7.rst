@@ -51,7 +51,7 @@ Flowcharts Classify Angle Type
     #. On the flowchart, fill in the shapes with text to represent the pseudocode above.
 
         .. image:: drawio_files/selection/angle_types_st.png
-            :width: 30%
+            :width: 75%
             :align: center
 
     .. dropdown::
@@ -66,6 +66,6 @@ Flowcharts Classify Angle Type
                 On the flowchart, fill in the shapes with text to represent the pseudocode above.
 
                 .. image:: drawio_files/selection/angle_types.png
-                    :width: 40%
+                    :width: 75%
                     :align: center
 
