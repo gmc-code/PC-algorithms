@@ -48,7 +48,7 @@ Flowcharts Classify Triangles by Angles
 
                 In the pseudocode, why has ``ELSEIF angleA > 90 OR angleB > 90 OR angleC > 90 THEN`` been replaced with just ``ELSE``?
 
-                '' code-block:: none
+                .. code-block:: none
 
                     All other possibilities have been tested for, so an obtuse triangle is the last possibility, so it doesn't need testing to confirm it.
 
