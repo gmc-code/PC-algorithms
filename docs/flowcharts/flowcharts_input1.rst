@@ -45,7 +45,7 @@ Flowcharts askName
 
                 .. code-block:: pseudocode
 
-                    An oval.
+                    A capsule.
 
             .. tab-item:: Q2
 
